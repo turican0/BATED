@@ -11,21 +11,29 @@ aa //command
 */
 
 typedef struct {
+    long lineIndex;
+    string entity;
+} TypeLine;
+
+typedef struct {
     //long lineIndex;
     //long charIndex;
+    vector<TypeLine> lines;
     string entity;
     bool comment;
 } TypeCommentEnt;
 
 vector<TypeCommentEnt> ent;
 
-void FindComments(vector<TypeCommentEnt>* ent, string testcode) {
+void AnalyzeComments(vector<TypeCommentEnt>* ent, string testcode) {
     int state = 0;
     long index = 0;
     bool runAgain = true;
     //index = testcode.find("//", index + 1);
     while (runAgain)
     {
+        if (index == -1)
+            break;
         long oldindex = index;
         if (state == 0)
         {
@@ -72,6 +80,7 @@ void FindComments(vector<TypeCommentEnt>* ent, string testcode) {
         {
             index = testcode.find("\n", index);
             TypeCommentEnt locEnt;
+            index++;
             locEnt.entity = testcode.substr(oldindex, index - oldindex);
             locEnt.comment = true;
             if (locEnt.entity.length() > 0)
@@ -82,6 +91,9 @@ void FindComments(vector<TypeCommentEnt>* ent, string testcode) {
         {
             index = testcode.find("*/", index);
             TypeCommentEnt locEnt;
+            index+=2;
+            if(testcode[index]=='\n')
+                index++;
             locEnt.entity = testcode.substr(oldindex, index - oldindex);
             locEnt.comment = true;
             if (locEnt.entity.length() > 0)
@@ -91,11 +103,46 @@ void FindComments(vector<TypeCommentEnt>* ent, string testcode) {
     }
 };
 
+void AnalyzeLines(vector<TypeCommentEnt>* ent, string testcode) {
+    long lineIndex = 0;
+    for (int i = 0; i < ent->size(); i++)
+    {
+        TypeCommentEnt* actEnt = &(*ent)[i];
+        bool runAgain = true;
+        //index = testcode.find("//", index + 1);
+        long index = 0;
+        while (runAgain) {
+            long oldindex = index;
+            index = actEnt->entity.find("\n", index);
+            if (index > -1)
+            {
+                TypeLine locLine;
+                index++;
+                locLine.entity = actEnt->entity.substr(oldindex, index - oldindex);
+                locLine.lineIndex = lineIndex++;
+                if (locLine.entity.length() > 0)
+                    actEnt->lines.push_back(locLine);
+            }
+            else
+            {
+                TypeLine locLine;
+                index = actEnt->entity.size();
+                locLine.entity = actEnt->entity.substr(oldindex, index - oldindex);
+                locLine.lineIndex = lineIndex;
+                if (locLine.entity.length() > 0)
+                    actEnt->lines.push_back(locLine);
+                runAgain = false;
+            }
+        }
+    }
+};
+
 int main()
 {
-    testcode = "#include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n";
+    testcode = "#include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n/*   */\n";
 
-    FindComments(&ent, testcode);
+    AnalyzeComments(&ent, testcode);
+    AnalyzeLines(&ent, testcode);
 
     std::cout << "Hello World!\n";
 }
