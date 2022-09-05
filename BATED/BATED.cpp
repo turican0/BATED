@@ -155,7 +155,7 @@ int main()
     //REN - rename
     //MOV - move
     //FDR - find references
-    //INS
-    //DEL
+    //INS - insert
+    //DEL - delete
 }
 
