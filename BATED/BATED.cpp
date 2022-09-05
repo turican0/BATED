@@ -11,13 +11,23 @@ aa //command
 */
 
 typedef struct {
+    int type;
+    string entity;
+    long beginEnt;
+    long endEnt;
+    long beginWord;
+    long endWord;
+} TypeWord;
+
+typedef struct {
+    vector<TypeWord> words;
     long lineIndex;
     string entity;
 } TypeLine;
 
+//void test    () {};
+
 typedef struct {
-    //long lineIndex;
-    //long charIndex;
     vector<TypeLine> lines;
     string entity;
     bool comment;
@@ -103,13 +113,12 @@ void AnalyzeComments(vector<TypeCommentEnt>* ent, string testcode) {
     }
 };
 
-void AnalyzeLines(vector<TypeCommentEnt>* ent, string testcode) {
+void AnalyzeLines(vector<TypeCommentEnt>* ent) {
     long lineIndex = 0;
     for (int i = 0; i < ent->size(); i++)
     {
         TypeCommentEnt* actEnt = &(*ent)[i];
         bool runAgain = true;
-        //index = testcode.find("//", index + 1);
         long index = 0;
         while (runAgain) {
             long oldindex = index;
@@ -137,25 +146,285 @@ void AnalyzeLines(vector<TypeCommentEnt>* ent, string testcode) {
     }
 };
 
-void AnalyzeWords(vector<TypeCommentEnt>* ent, string testcode) {
+string prepComm[] = { "#undef","#ifdef","#ifndef","#if","#else","#elif","#endif","#include","#error","#pragma" };
+string stdComm[] = { "asm", "auto", "bool", "break", "case", "catch", "char", "class", "const", "const_cast", "continue", "default", "delete", "do", "double", "dynamic_cast", "else", "enum", "explicit", "export", "extern", "false", "float", "for", "friend", "goto", "if", "inline", "int", "long", "mutable", "namespace", "new", "operator", "private", "protected", "public", "register", "reinterpret_cast", "return", "short", "signed", "sizeof", "static", "static_cast", "struct", "switch", "template", "this", "throw", "true", "try", "typedef", "typeid", "typename", "union", "unsigned", "using", "virtual", "void", "volatile", "wchar_t", "while" };
+string stdOp[] = { "and", "and_eq", "bitand", "bitor ", "compl", "not", "not_eq ", "or ", "or_eq", "xor", "xor_eq" };
+
+int GetStdType(string word)
+{
+    size_t i = 0;
+    while (!prepComm[i].empty())
+    {
+        if (!word.compare(prepComm[i]))
+            return 5;
+        i++;
+    }
+    i = 0;
+    while (!stdComm[i].empty())
+    {
+        if (!word.compare(stdComm[i]))
+            return 4;
+        i++;
+    }
+    i = 0;
+    while (!stdOp[i].empty())
+    {
+        if (!word.compare(stdOp[i]))
+            return 3;
+        i++;
+    }
+    if ((word[0] >= '0') && (word[0] <= '9'))
+        return 2;
+
+    return 1;
 }
 
-void AnalyzeProcedures(vector<TypeCommentEnt>* ent, string testcode) {
+long FindBeginWord(string entity, long index) {
+    long actIndex = index;
+    while (actIndex < entity.size())
+    {
+        if (((entity[actIndex] >= '0') && (entity[actIndex] <= '9')) || 
+            ((entity[actIndex] >= 'a') && (entity[actIndex] <= 'z')) ||
+            ((entity[actIndex] >= 'A') && (entity[actIndex] <= 'Z')) ||
+            (entity[actIndex] == '_') || (entity[actIndex] == '#'))
+            return actIndex;
+        else
+            actIndex++;
+    }
+    return -1;
+}
+
+long FindEndWord(string entity, long index) {
+    long actIndex = index;
+    while (actIndex < entity.size())
+    {
+        if (((entity[actIndex] >= '0') && (entity[actIndex] <= '9')) ||
+            ((entity[actIndex] >= 'a') && (entity[actIndex] <= 'z')) ||
+            ((entity[actIndex] >= 'A') && (entity[actIndex] <= 'Z')) ||
+            (entity[actIndex] == '_') || (entity[actIndex] == '#'))
+            actIndex++;
+        else
+            return actIndex;
+    }
+    return -1;
+}
+
+void AnalyzeWords(vector<TypeCommentEnt>* ent) {
+    for (int i = 0; i < ent->size(); i++)
+    {
+        TypeCommentEnt* actEnt = &(*ent)[i];
+        for (int j = 0; j < actEnt->lines.size(); j++)
+        {
+            TypeLine* actLine = &(*actEnt).lines[j];
+            bool runAgain = true;
+            long index = 0;
+            int state = 0;
+            while (runAgain) {
+                long oldindex = index;
+                if (state == 0)
+                {
+                    state = 1;
+                    index = FindBeginWord(actLine->entity, index);
+                    if (index == -1)
+                    {
+                        runAgain = false;
+                        index = actLine->entity.size();
+                    }
+                    TypeWord locWord;
+                    locWord.entity = actLine->entity.substr(oldindex, index - oldindex);
+                    locWord.type = 0;
+                    if (locWord.entity.length() > 0)
+                        actLine->words.push_back(locWord);
+                }
+                else
+                {
+                    state = 0;
+                    index = FindEndWord(actLine->entity, index);
+                    if (index == -1)
+                    {
+                        runAgain = false;
+                        index = actLine->entity.size();
+                    }
+                    TypeWord locWord;
+                    locWord.entity = actLine->entity.substr(oldindex, index - oldindex);
+                    locWord.type = GetStdType(locWord.entity);
+
+                    if (locWord.entity.length() > 0)
+                        actLine->words.push_back(locWord);
+                }
+            }
+        }
+    }
+}
+
+
+bool ExistWord(vector<TypeCommentEnt>* ent, long i, long j, long k)
+{
+    if ((i < 0) || (i >= ent->size()))
+        return false;
+    if ((j < 0) || (j >= (*ent)[i].lines.size()))
+        return false;
+    if ((k < 0) || (k >= (*ent)[i].lines[j].words.size()))
+        return false;
+    return true;
+}
+
+void GetPreIndex(vector<TypeCommentEnt>* ent, long* i, long* j, long* k) {
+    (*k)--;
+    if (ExistWord(ent, (*i), (*j), (*k)))
+        return;
+    else
+    {
+        (*j)--;
+        (*k) = 0;
+        if (ExistWord(ent, (*i), (*j), (*k)))
+        {
+            (*k) = (*ent)[(*i)].lines[(*j)].words.size() - 1;
+            if (ExistWord(ent, (*i), (*j), (*k)))
+                return;
+        }
+        else
+        {
+            (*i)--;
+            (*j) = 0;
+            if (ExistWord(ent, (*i), (*j), (*k)))
+            {
+                (*j) = (*ent)[(*i)].lines.size() - 1;
+                if (ExistWord(ent, (*i), (*j), (*k)))
+                    return;
+            }
+        }
+    }
+    (*i) = -1;
+    (*j) = -1;
+    (*k) = -1;
+}
+
+void GetPostIndex(vector<TypeCommentEnt>* ent, long* i, long* j, long* k) {
+    (*k)++;
+    if (ExistWord(ent, (*i), (*j), (*k)))
+        return;
+    else
+    {
+        (*j)++;
+        (*k) = 0;
+        if (ExistWord(ent, (*i), (*j), (*k)))
+        {
+            //(*k) = (*ent)[(*i)].lines[(*j)].words.size() - 1;
+            if (ExistWord(ent, (*i), (*j), (*k)))
+                return;
+        }
+        else
+        {
+            (*i)++;
+            (*j) = 0;
+            if (ExistWord(ent, (*i), (*j), (*k)))
+            {
+                //(*j) = (*ent)[(*i)].lines.size() - 1;
+                if (ExistWord(ent, (*i), (*j), (*k)))
+                    return;
+            }
+        }
+    }
+    (*i) = -1;
+    (*j) = -1;
+    (*k) = -1;
+}
+
+void SetProcedureInfo(vector<TypeCommentEnt>* ent, long i, long j, long k) {
+    long preI = i;
+    long preJ = j;
+    long preK = k;
+    long preI2 = i;
+    long preJ2 = j;
+    long preK2 = k;
+
+    bool test;
+    bool test2;
+    do
+    {
+        preI2 = preI;
+        preJ2 = preJ;
+        preK2 = preK;
+
+        GetPreIndex(ent, &preI, &preJ, &preK);
+    } while ((preI > -1) && (((*ent)[preI].lines[preJ].words[preK].entity.find("\n") == -1) && (((*ent)[preI].lines[preJ].words[preK].entity.find(";") == -1) || (*ent)[preI].comment)));
+
+    long postI = i;
+    long postJ = j;
+    long postK = k;
+    long postI2 = i;
+    long postJ2 = j;
+    long postK2 = k;
+    int procState = 0;
+    bool isProc = false;
+    bool isDec = false;
+    do
+    {
+        postI2 = postI;
+        postJ2 = postJ;
+        postK2 = postK;
+
+        if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('(') > -1) || (*ent)[postI].comment))
+        {
+            procState++;
+            isDec = true;
+        }
+        if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find(')') > -1) || (*ent)[postI].comment))
+        {
+            procState++;
+        }
+        if (procState >= 2)
+        {
+            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('{') > -1) || (*ent)[postI].comment))
+            {
+                procState++;
+                isProc = true;
+            }
+            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('}') > -1) || (*ent)[postI].comment))
+            {
+                procState--;
+            }
+        }
+        GetPostIndex(ent, &postI, &postJ, &postK);
+    } while ((postI > -1) && ((((*ent)[postI].lines[postJ].words[postK].entity.find('}') == -1) || (*ent)[postI].comment) || procState!=2));
+
+};
+
+void AnalyzeProcedures(vector<TypeCommentEnt>* ent) {
+    for (int i = 0; i < ent->size(); i++)
+    {
+        TypeCommentEnt* actEnt = &(*ent)[i];
+        for (int j = 0; j < actEnt->lines.size(); j++)
+        {
+            if (!actEnt->comment)
+            {
+                TypeLine* actLine = &(*actEnt).lines[j];
+                for (int k = 0; k < actLine->words.size(); k++)
+                {
+                    if (actLine->words[k].type == 1)
+                    {
+                        SetProcedureInfo(ent, i, j, k);
+                    }
+                }
+            }
+        }
+    }
 }
 
 int main()
 {
-    testcode = "#include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n/*   */\n";
+    testcode = "999 #include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n/*   */\n";
 
     AnalyzeComments(&ent, testcode);
-    AnalyzeLines(&ent, testcode);
-    AnalyzeWords(&ent, testcode);
-    AnalyzeProcedures(&ent, testcode);
+    AnalyzeLines(&ent);
+    AnalyzeWords(&ent);
+    AnalyzeProcedures(&ent);
 
     //REN - rename
     //MOV - move
     //FDR - find references
     //INS - insert
-    //DEL - delete 
+    //DEL - delete
 }
 
