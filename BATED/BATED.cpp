@@ -137,13 +137,25 @@ void AnalyzeLines(vector<TypeCommentEnt>* ent, string testcode) {
     }
 };
 
+void AnalyzeWords(vector<TypeCommentEnt>* ent, string testcode) {
+}
+
+void AnalyzeProcedures(vector<TypeCommentEnt>* ent, string testcode) {
+}
+
 int main()
 {
     testcode = "#include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n/*   */\n";
 
     AnalyzeComments(&ent, testcode);
     AnalyzeLines(&ent, testcode);
+    AnalyzeWords(&ent, testcode);
+    AnalyzeProcedures(&ent, testcode);
 
-    std::cout << "Hello World!\n";
+    //REN - rename
+    //MOV - move
+    //FDR - find references
+    //INS
+    //DEL
 }
 
