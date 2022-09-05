@@ -14,8 +14,10 @@ typedef struct {
     int type;
     string entity;
     long beginEnt;
-    long endEnt;
+    long beginLine;
     long beginWord;
+    long endEnt;
+    long endLine;
     long endWord;
 } TypeWord;
 
@@ -176,40 +178,73 @@ int GetStdType(string word)
     if ((word[0] >= '0') && (word[0] <= '9'))
         return 2;
 
-    return 1;
+    if (((word[0] >= 'a') && (word[0] <= 'z'))|| ((word[0] >= 'A') && (word[0] <= 'Z')))
+        return 1;
+
+    return 0;
 }
 
-long FindBeginWord(string entity, long index) {
+long FindNextWord(string entity, long index, bool isComment, int* state) {
     long actIndex = index;
     while (actIndex < entity.size())
     {
-        if (((entity[actIndex] >= '0') && (entity[actIndex] <= '9')) || 
-            ((entity[actIndex] >= 'a') && (entity[actIndex] <= 'z')) ||
-            ((entity[actIndex] >= 'A') && (entity[actIndex] <= 'Z')) ||
-            (entity[actIndex] == '_') || (entity[actIndex] == '#'))
-            return actIndex;
+            if (!isComment)
+                if ((entity[actIndex] == '(') && (*state != '(')) {
+                    *state = '(';
+                    return actIndex;
+                }
+            if (!isComment)
+                if ((entity[actIndex] == ')') && (*state != ')')) {
+                    *state = ')';
+                    return actIndex;
+                }
+            if (!isComment)
+                if ((entity[actIndex] == '{') && (*state != '{')) {
+                    *state = '{';
+                    return actIndex;
+                }
+            if (!isComment)
+                if ((entity[actIndex] == '}') && (*state != '}')) {
+                    *state = '}';
+                    return actIndex;
+                }
+            if (!isComment)
+                if ((entity[actIndex] == ';') && (*state != ';')) {
+                    *state = ';';
+                    return actIndex;
+                }
+            if (!isComment)
+                if ((entity[actIndex] == '\n') && (*state != '\n')) {
+                    *state = '\n';
+                    return actIndex;
+                }
+            if ((((entity[actIndex] >= '0') && (entity[actIndex] <= '9')) ||
+                ((entity[actIndex] >= 'a') && (entity[actIndex] <= 'z')) ||
+                ((entity[actIndex] >= 'A') && (entity[actIndex] <= 'Z')) ||
+                (entity[actIndex] == '_') || (entity[actIndex] == '#')) && (*state != 1))
+            {
+                *state = 1;
+                return actIndex;
+            }
+            if ((((entity[actIndex] < '0') || (entity[actIndex] > '9')) &&
+                ((entity[actIndex] < 'a') || (entity[actIndex] > 'z')) &&
+                ((entity[actIndex] < 'A') || (entity[actIndex] > 'Z')) &&
+                (entity[actIndex] != '_') && (entity[actIndex] != '#')) && (*state != 0)&&
+                (entity[actIndex] != '(') && (entity[actIndex] != ')') &&
+                (entity[actIndex] != '{') && (entity[actIndex] != '}') &&
+                (entity[actIndex] != ';') && (entity[actIndex] != '\n'))
+            {
+                *state = 0;
+                return actIndex;
+            }
         else
             actIndex++;
-    }
-    return -1;
-}
-
-long FindEndWord(string entity, long index) {
-    long actIndex = index;
-    while (actIndex < entity.size())
-    {
-        if (((entity[actIndex] >= '0') && (entity[actIndex] <= '9')) ||
-            ((entity[actIndex] >= 'a') && (entity[actIndex] <= 'z')) ||
-            ((entity[actIndex] >= 'A') && (entity[actIndex] <= 'Z')) ||
-            (entity[actIndex] == '_') || (entity[actIndex] == '#'))
-            actIndex++;
-        else
-            return actIndex;
     }
     return -1;
 }
 
 void AnalyzeWords(vector<TypeCommentEnt>* ent) {
+    bool single = false;
     for (int i = 0; i < ent->size(); i++)
     {
         TypeCommentEnt* actEnt = &(*ent)[i];
@@ -218,40 +253,20 @@ void AnalyzeWords(vector<TypeCommentEnt>* ent) {
             TypeLine* actLine = &(*actEnt).lines[j];
             bool runAgain = true;
             long index = 0;
-            int state = 0;
+            int state = -1;
             while (runAgain) {
                 long oldindex = index;
-                if (state == 0)
+                index = FindNextWord(actLine->entity, index, actEnt->comment, &state);
+                if (index == -1)
                 {
-                    state = 1;
-                    index = FindBeginWord(actLine->entity, index);
-                    if (index == -1)
-                    {
-                        runAgain = false;
-                        index = actLine->entity.size();
-                    }
-                    TypeWord locWord;
-                    locWord.entity = actLine->entity.substr(oldindex, index - oldindex);
-                    locWord.type = 0;
-                    if (locWord.entity.length() > 0)
-                        actLine->words.push_back(locWord);
-                }
-                else
-                {
-                    state = 0;
-                    index = FindEndWord(actLine->entity, index);
-                    if (index == -1)
-                    {
-                        runAgain = false;
-                        index = actLine->entity.size();
-                    }
-                    TypeWord locWord;
-                    locWord.entity = actLine->entity.substr(oldindex, index - oldindex);
-                    locWord.type = GetStdType(locWord.entity);
-
-                    if (locWord.entity.length() > 0)
-                        actLine->words.push_back(locWord);
-                }
+                    runAgain = false;
+                    index = actLine->entity.size();
+                }                
+                TypeWord locWord;
+                locWord.entity = actLine->entity.substr(oldindex, index - oldindex);
+                locWord.type = GetStdType(locWord.entity);
+                if (locWord.entity.length() > 0)
+                    actLine->words.push_back(locWord);
             }
         }
     }
@@ -348,7 +363,7 @@ void SetProcedureInfo(vector<TypeCommentEnt>* ent, long i, long j, long k) {
         preK2 = preK;
 
         GetPreIndex(ent, &preI, &preJ, &preK);
-    } while ((preI > -1) && (((*ent)[preI].lines[preJ].words[preK].entity.find("\n") == -1) && (((*ent)[preI].lines[preJ].words[preK].entity.find(";") == -1) || (*ent)[preI].comment)));
+    } while ((preI > -1) && (((*ent)[preI].lines[preJ].words[preK].entity != "\n") && (((*ent)[preI].lines[preJ].words[preK].entity != ";") || (*ent)[preI].comment)));
 
     long postI = i;
     long postJ = j;
@@ -359,36 +374,62 @@ void SetProcedureInfo(vector<TypeCommentEnt>* ent, long i, long j, long k) {
     int procState = 0;
     bool isProc = false;
     bool isDec = false;
+    bool runAgain = true;
     do
     {
         postI2 = postI;
         postJ2 = postJ;
         postK2 = postK;
 
-        if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('(') > -1) || (*ent)[postI].comment))
+        if ((procState == 0) && (((*ent)[postI].lines[postJ].words[postK].entity == "(") && !(*ent)[postI].comment))
         {
             procState++;
             isDec = true;
         }
-        if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find(')') > -1) || (*ent)[postI].comment))
+        if ((procState == 1) && (((*ent)[postI].lines[postJ].words[postK].entity == ")") && !(*ent)[postI].comment))
         {
             procState++;
         }
+        if ((procState == 2) && (((*ent)[postI].lines[postJ].words[postK].entity == ";") && !(*ent)[postI].comment))
+        {
+            runAgain = false;
+        }
         if (procState >= 2)
         {
-            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('{') > -1) || (*ent)[postI].comment))
+            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity == "{") && !(*ent)[postI].comment))
             {
                 procState++;
                 isProc = true;
             }
-            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity.find('}') > -1) || (*ent)[postI].comment))
+            if ((procState) && (((*ent)[postI].lines[postJ].words[postK].entity == "}") && !(*ent)[postI].comment))
             {
                 procState--;
+                if(procState == 2)
+                    runAgain = false;
             }
         }
         GetPostIndex(ent, &postI, &postJ, &postK);
-    } while ((postI > -1) && ((((*ent)[postI].lines[postJ].words[postK].entity.find('}') == -1) || (*ent)[postI].comment) || procState!=2));
-
+    } while ((postI > -1) && runAgain);
+    if (isDec)
+    {
+        (*ent)[postI].lines[postJ].words[postK].type = 10;
+        (*ent)[postI].lines[postJ].words[postK].beginEnt = preI2;
+        (*ent)[postI].lines[postJ].words[postK].beginLine = preJ2;
+        (*ent)[postI].lines[postJ].words[postK].beginWord = preK2;
+        (*ent)[postI].lines[postJ].words[postK].endEnt = postI2;
+        (*ent)[postI].lines[postJ].words[postK].endLine = postJ2;
+        (*ent)[postI].lines[postJ].words[postK].endWord = postK2;
+    }
+    if (isProc)
+    {
+        (*ent)[postI].lines[postJ].words[postK].type = 20;
+        (*ent)[postI].lines[postJ].words[postK].beginEnt = preI2;
+        (*ent)[postI].lines[postJ].words[postK].beginLine = preJ2;
+        (*ent)[postI].lines[postJ].words[postK].beginWord = preK2;
+        (*ent)[postI].lines[postJ].words[postK].endEnt = postI2;
+        (*ent)[postI].lines[postJ].words[postK].endLine = postJ2;
+        (*ent)[postI].lines[postJ].words[postK].endWord = postK2;
+    }
 };
 
 void AnalyzeProcedures(vector<TypeCommentEnt>* ent) {
@@ -414,7 +455,7 @@ void AnalyzeProcedures(vector<TypeCommentEnt>* ent) {
 
 int main()
 {
-    testcode = "999 #include <iostream>\n//my code /*\n    /*\n    aa //command\n    //\n    */\n    int main()\n    {\n    }\n/*   */\n";
+    testcode = "int main() {}\n";
 
     AnalyzeComments(&ent, testcode);
     AnalyzeLines(&ent);
