@@ -176,7 +176,7 @@ int GetStdType(string word)
     return 0;
 }
 
-long FindNextWord(string* entity, string* comment, long index, int* state) {
+long FindNextWord(string* entity, string* comment, long index, int* state, char* commentSt) {
     long actIndex = index;
     while (actIndex < entity->size())
     {
@@ -218,6 +218,12 @@ long FindNextWord(string* entity, string* comment, long index, int* state) {
                 *state = 1;
                 return actIndex;
             }
+            if (*commentSt != (*comment)[actIndex])
+            {
+                *commentSt = (*comment)[actIndex];
+                *state = 0;
+                return actIndex;
+            }
             if (((((*entity)[actIndex] < '0') || ((*entity)[actIndex] > '9')) &&
                 (((*entity)[actIndex] < 'a') || ((*entity)[actIndex] > 'z')) &&
                 (((*entity)[actIndex] < 'A') || ((*entity)[actIndex] > 'Z')) &&
@@ -242,9 +248,10 @@ void AnalyzeWords(vector<TypeLine>* ent) {
         bool runAgain = true;
         long index = 0;
         int state = -1;
+        char commentSt = actLine->comment[0];
         while (runAgain) {
             long oldindex = index;
-            index = FindNextWord(&actLine->entity, &actLine->comment, index, &state);
+            index = FindNextWord(&actLine->entity, &actLine->comment, index, &state, &commentSt);
             if (index == -1)
             {
                 runAgain = false;
@@ -393,7 +400,7 @@ bool PostLineComment(vector<TypeLine>* ent, long* j, long* k)
         if (endTempJ > -1)
             if ((*ent)[endTempJ].lineIndex - (*ent)[beginTempJ].lineIndex == 2)
                 runAgain = false;
-    } while ((runAgain) && (beginTempJ > -1));
+    } while ((runAgain) && (endTempJ > -1));
     if (endTempJ == -1)
     {
         endTempJ = tempJ;
@@ -403,15 +410,16 @@ bool PostLineComment(vector<TypeLine>* ent, long* j, long* k)
         GetPreIndex(ent, &endTempJ, &endTempK);
     if ((*ent)[beginTempJ].lineIndex == (*ent)[endTempJ].lineIndex)
         return false;
-    endTempK = 0;
     do
     {
-        if (((*ent)[endTempJ].words[endTempK].type != 0) && !(WordComment((*ent)[endTempJ].words[endTempK].comment)))
+        GetPostIndex(ent, &beginTempJ, &beginTempK);
+        if (beginTempJ == -1)
+            break;
+        if (((*ent)[beginTempJ].words[beginTempK].type != 0) && !(WordComment((*ent)[beginTempJ].words[beginTempK].comment)))
             return false;
         if (WordComment((*ent)[beginTempJ].words[beginTempK].comment))
             isComment = true;
-        GetPreIndex(ent, &endTempJ, &endTempK);
-    } while ((endTempJ > -1) && ((beginTempJ != endTempJ) || (beginTempK != endTempK)));
+    } while ((beginTempJ > -1) && ((beginTempJ != endTempJ) || (beginTempK != endTempK)));
     if (!isComment) return false;
     return true;
 }
@@ -434,7 +442,7 @@ bool PostLineEmpty(vector<TypeLine>* ent, long* j, long* k)
         if (endTempJ > -1)
             if ((*ent)[endTempJ].lineIndex - (*ent)[beginTempJ].lineIndex == 2)
                 runAgain = false;
-    } while ((runAgain) && (beginTempJ > -1));
+    } while ((runAgain) && (endTempJ > -1));
     if (endTempJ == -1)
     {
         endTempJ = tempJ;
@@ -444,15 +452,17 @@ bool PostLineEmpty(vector<TypeLine>* ent, long* j, long* k)
         GetPreIndex(ent, &endTempJ, &endTempK);
     if ((*ent)[beginTempJ].lineIndex == (*ent)[endTempJ].lineIndex)
         return false;
-    endTempK = 0;
     do
     {
-        if (((*ent)[endTempJ].words[endTempK].type != 0) && !(WordComment((*ent)[endTempJ].words[endTempK].comment)))
+        GetPostIndex(ent, &beginTempJ, &beginTempK);
+        if (beginTempJ == -1)
+            break;
+        if (((*ent)[beginTempJ].words[beginTempK].type != 0) && !(WordComment((*ent)[beginTempJ].words[beginTempK].comment)))
             return false;
-        //if ((*ent)[endTempI].comment)
+        //if (WordComment((*ent)[beginTempJ].words[beginTempK].comment))
         //    isComment = true;
-        GetPreIndex(ent, &endTempJ, &endTempK);
-    } while ((endTempJ > -1) && ((beginTempJ != endTempJ) || (beginTempK != endTempK)));
+        //GetPostIndex(ent, &beginTempJ, &beginTempK);
+    } while ((beginTempJ > -1) && ((beginTempJ != endTempJ) || (beginTempK != endTempK)));
     //if (!isComment) return false;
     return true;
 }
@@ -513,6 +523,7 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
         if ((procState == 2) && (((*ent)[postJ].words[postK].entity == ";") && !WordComment((*ent)[postJ].words[postK].comment)))
         {
             runAgain = false;
+            break;
         }
         if (procState >= 2)
         {
@@ -524,8 +535,11 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
             if ((procState) && (((*ent)[postJ].words[postK].entity == "}") && !WordComment((*ent)[postJ].words[postK].comment)))
             {
                 procState--;
-                if(procState == 2)
+                if (procState == 2)
+                {
                     runAgain = false;
+                    break;
+                }
             }
         }
         GetPostIndex(ent, &postJ, &postK);
@@ -581,6 +595,7 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
                 postJ2 = tempJ2;
                 postK2 = tempK2;
                 runAgain = false;
+                break;
             }
             GetPostIndex(ent, &postJ, &postK);
         } while ((runAgain) && (postJ > -1));
@@ -600,6 +615,7 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
             if ((*ent)[postJ].words[postK].entity == "\n")
             {
                 runAgain = false;
+                break;
             }
             if ((((*ent)[postJ].words[postK].type != 0) && !WordComment((*ent)[postJ].words[postK].comment)))
             {
@@ -608,6 +624,7 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
                 postJ2 = tempJ2;
                 postK2 = tempK2;
                 runAgain = false;
+                break;
             }
             GetPostIndex(ent, &postJ, &postK);
         } while ((runAgain) && (postJ > -1));
@@ -618,7 +635,7 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
                 SetPrevLine(ent, &preJ2, &preK2);
             while (PostLineComment(ent, &postJ2, &postK2))
                 SetPostLine(ent, &postJ2, &postK2);
-            while (PostLineEmpty(ent, &postJ2, &postK2))
+            if (PostLineEmpty(ent, &postJ2, &postK2))
                 SetPostLine(ent, &postJ2, &postK2);
         }
 
@@ -651,7 +668,7 @@ void AnalyzeProcedures(vector<TypeLine>* ent) {
 
 int main()
 {
-    testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n111\n22\n";
+    testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n \n                ";
     string testcomment;
     AnalyzeComments(&testcode, &testcomment);
     AnalyzeLines(&ent, &testcode, &testcomment);
