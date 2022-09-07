@@ -1,8 +1,13 @@
 ﻿#include <iostream>
 #include <vector>
+//#include <sstream>
+#include <string>
+#include <functional>
+#include <dirent.h>
+
 
 using namespace std;
-string testcode;
+//string testcode;
 
 //my code /*
 /*
@@ -29,6 +34,13 @@ typedef struct {
     string comment;
 } TypeLine;
 
+typedef struct {
+    vector<TypeLine> lines;
+    string filename;
+    string source;
+    string comment;
+} TypeFile;
+
 //void test    () {};
 
 /*typedef struct {
@@ -37,14 +49,17 @@ typedef struct {
     bool comment;
 } TypeCommentEnt;*/
 
-vector<TypeLine> ent;
-
-void SetComment(string* testcomment, long begin, long size, bool comment) {
+void SetComment(string* testcomment, long begin, long size, int comment) {
     for (int i = begin; i < begin + size; i++)
-        if (comment)
+    {
+
+        if (comment == 1)
             (*testcomment)[i] = 'y';
+        else if (comment == 3)
+            (*testcomment)[i] = 't';
         else
             (*testcomment)[i] = 'n';
+    }
 };
 
 void AnalyzeComments(string* testcode, string* testcomment) {
@@ -67,7 +82,7 @@ void AnalyzeComments(string* testcode, string* testcomment) {
             if (testIndex2 < 0) testIndex2 = 0xfffffff;
             if ((testIndex1 == 0xfffffff) && (testIndex2 == 0xfffffff))
             {
-                SetComment(testcomment, oldindex, testcode->length() - oldindex, false);
+                SetComment(testcomment, oldindex, testcode->length() - oldindex, 0);
                 break;
             }
             else
@@ -75,13 +90,13 @@ void AnalyzeComments(string* testcode, string* testcomment) {
                 if (testIndex1 < testIndex2)
                 {
                     index = testIndex1;
-                    SetComment(testcomment, oldindex, index - oldindex, false);
+                    SetComment(testcomment, oldindex, index - oldindex, 0);
                     state = 1;
                 }
                 else
                 {
                     index = testIndex2;
-                    SetComment(testcomment, oldindex, index - oldindex, false);
+                    SetComment(testcomment, oldindex, index - oldindex, 0);
                     state = 2;
                 }
             }
@@ -95,14 +110,90 @@ void AnalyzeComments(string* testcode, string* testcomment) {
                 runAgain = false;
             }
             index++;
-            SetComment(testcomment, oldindex, index - oldindex, true);
+            SetComment(testcomment, oldindex, index - oldindex, 1);
             state = 0;
         }
         else
         {
             index = testcode->find("*/", index);
             index += 2;
-            SetComment(testcomment, oldindex, index - oldindex, true);
+            SetComment(testcomment, oldindex, index - oldindex, 1);
+            state = 0;
+        }
+    }
+};
+
+void AnalyzeText(string* testcode, string* testcomment) {
+    int state = 0;
+    long index = 0;
+    bool runAgain = true;
+    while (runAgain)
+    {
+        if (index == -1)
+            break;
+        long oldindex = index;
+        if (state == 0)
+        {
+            long testIndex2 = index;
+            
+            bool runAgain2 = true;
+            while (runAgain2)
+            {
+                runAgain2 = false;
+                testIndex2 = testcode->find("\"", testIndex2);
+                if (testIndex2 > -1)
+                {
+                    if ((*testcomment)[testIndex2] == 'y')
+                    {
+                        testIndex2++;
+                        runAgain2 = true;
+                    }
+                    else if ((testIndex2 > 0) && ((*testcode)[testIndex2 - 1] == '\\'))
+                    {
+                        testIndex2++;
+                        runAgain2 = true;
+                    }
+                }
+            }
+
+            if (testIndex2 < 0) testIndex2 = 0xfffffff;
+            if (testIndex2 == 0xfffffff)
+            {
+                //SetComment(testcomment, oldindex, testcode->length() - oldindex, 4);
+                break;
+            }
+            else
+            {
+                    index = testIndex2;
+                    //SetComment(testcomment, oldindex, index - oldindex, 4);
+                    index++;
+                    state = 2;
+            }
+        }
+        else
+        {            
+            bool runAgain2 = true;
+            while (runAgain2)
+            {
+                runAgain2 = false;
+                index = testcode->find("\"", index);
+                if (index > -1)
+                {
+                    if ((*testcomment)[index] == 'y')
+                    {
+                        index++;
+                        runAgain2 = true;
+                    } else if ((index > 0) && ((*testcode)[index - 1] == '\\'))
+                    {
+                        index++;
+                        runAgain2 = true;
+                    }
+                }
+            }
+            if (index == -1)
+                runAgain = false;
+            index++;
+            SetComment(testcomment, oldindex - 1, index - oldindex + 1, 3);
             state = 0;
         }
     }
@@ -170,17 +261,64 @@ int GetStdType(string word)
     if ((word[0] >= '0') && (word[0] <= '9'))
         return 2;
 
-    if (((word[0] >= 'a') && (word[0] <= 'z'))|| ((word[0] >= 'A') && (word[0] <= 'Z')))
+    if (((word[0] >= 'a') && (word[0] <= 'z')) || ((word[0] >= 'A') && (word[0] <= 'Z')) || ((word[0] == '_')))
         return 1;
 
     return 0;
 }
 
-long FindNextWord(string* entity, string* comment, long index, int* state, char* commentSt) {
-    long actIndex = index;
-    while (actIndex < entity->size())
+long FindNextWord(string* entity, string* comment, long index, int* state, char* commentSt, bool config) {    
+    if (config)
     {
-            if ((*comment)[actIndex]=='n')
+        long actIndex = index;
+        while (actIndex < entity->size())
+        {
+            if ((*comment)[actIndex] == 'n')
+                if (((*entity)[actIndex] == '=') && (*state != '=')) {
+                    *state = '=';
+                    return actIndex;
+                }
+            //if (!isComment)
+            if (((*entity)[actIndex] == '\n') && (*state != '\n')) {
+                *state = '\n';
+                return actIndex;
+            }
+            if (((((*entity)[actIndex] >= '0') && ((*entity)[actIndex] <= '9')) ||
+                (((*entity)[actIndex] >= 'a') && ((*entity)[actIndex] <= 'z')) ||
+                (((*entity)[actIndex] >= 'A') && ((*entity)[actIndex] <= 'Z')) ||
+                ((*entity)[actIndex] == '_') || ((*entity)[actIndex] == '#')
+                || ((*entity)[actIndex] == '/') || ((*entity)[actIndex] == '\\')) && (*state != 1))
+            {
+                *state = 1;
+                return actIndex;
+            }
+            if (*commentSt != (*comment)[actIndex])
+            {
+                *commentSt = (*comment)[actIndex];
+                *state = 0;
+                return actIndex;
+            }
+            if (((((*entity)[actIndex] < '0') || ((*entity)[actIndex] > '9')) &&
+                (((*entity)[actIndex] < 'a') || ((*entity)[actIndex] > 'z')) &&
+                (((*entity)[actIndex] < 'A') || ((*entity)[actIndex] > 'Z')) &&
+                ((*entity)[actIndex] != '_') && ((*entity)[actIndex] != '#') &&
+                ((*entity)[actIndex] == '/') && ((*entity)[actIndex] == '\\')) &&
+                (*state != 0) &&
+                ((*entity)[actIndex] != '=') && ((*entity)[actIndex] != '\n'))
+            {
+                *state = 0;
+                return actIndex;
+            }
+            else
+                actIndex++;
+        }
+    }
+    else
+    {
+        long actIndex = index;
+        while (actIndex < entity->size())
+        {
+            if ((*comment)[actIndex] == 'n')
                 if (((*entity)[actIndex] == '(') && (*state != '(')) {
                     *state = '(';
                     return actIndex;
@@ -205,11 +343,16 @@ long FindNextWord(string* entity, string* comment, long index, int* state, char*
                     *state = ';';
                     return actIndex;
                 }
-            //if (!isComment)
-                if (((*entity)[actIndex] == '\n') && (*state != '\n')) {
-                    *state = '\n';
+            if ((*comment)[actIndex] == 'n')
+                if (((*entity)[actIndex] == '=') && (*state != '=')) {
+                    *state = '=';
                     return actIndex;
                 }
+            //if (!isComment)
+            if (((*entity)[actIndex] == '\n') && (*state != '\n')) {
+                *state = '\n';
+                return actIndex;
+            }
             if (((((*entity)[actIndex] >= '0') && ((*entity)[actIndex] <= '9')) ||
                 (((*entity)[actIndex] >= 'a') && ((*entity)[actIndex] <= 'z')) ||
                 (((*entity)[actIndex] >= 'A') && ((*entity)[actIndex] <= 'Z')) ||
@@ -227,21 +370,23 @@ long FindNextWord(string* entity, string* comment, long index, int* state, char*
             if (((((*entity)[actIndex] < '0') || ((*entity)[actIndex] > '9')) &&
                 (((*entity)[actIndex] < 'a') || ((*entity)[actIndex] > 'z')) &&
                 (((*entity)[actIndex] < 'A') || ((*entity)[actIndex] > 'Z')) &&
-                ((*entity)[actIndex] != '_') && ((*entity)[actIndex] != '#')) && (*state != 0)&&
+                ((*entity)[actIndex] != '_') && ((*entity)[actIndex] != '#')) && (*state != 0) &&
                 ((*entity)[actIndex] != '(') && ((*entity)[actIndex] != ')') &&
                 ((*entity)[actIndex] != '{') && ((*entity)[actIndex] != '}') &&
-                ((*entity)[actIndex] != ';') && ((*entity)[actIndex] != '\n'))
+                ((*entity)[actIndex] != '=') && ((*entity)[actIndex] != ';') &&
+                ((*entity)[actIndex] != '\n'))
             {
                 *state = 0;
                 return actIndex;
             }
             else
                 actIndex++;
+        }
     }
     return -1;
 }
 
-void AnalyzeWords(vector<TypeLine>* ent) {
+void AnalyzeWords(vector<TypeLine>* ent, bool config) {
     for (int j = 0; j < ent->size(); j++)
     {
         TypeLine* actLine = &(*ent)[j];
@@ -251,7 +396,7 @@ void AnalyzeWords(vector<TypeLine>* ent) {
         char commentSt = actLine->comment[0];
         while (runAgain) {
             long oldindex = index;
-            index = FindNextWord(&actLine->entity, &actLine->comment, index, &state, &commentSt);
+            index = FindNextWord(&actLine->entity, &actLine->comment, index, &state, &commentSt, config);
             if (index == -1)
             {
                 runAgain = false;
@@ -481,6 +626,9 @@ void SetPostLine(vector<TypeLine>* ent, long* j, long* k)
     *k = (*ent)[tempJ].words.size()-1;
 }
 
+long lastEndProcLine = -1;
+long lastEndProcWord = -1;
+
 void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
 
     long preJ = j;
@@ -490,14 +638,23 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
 
     bool test;
     bool test2;
+    bool setType = false;
     do
     {
         preJ2 = preJ;
         preK2 = preK;
-
+        if ((*ent)[preJ].words[preK].entity == ")")
+            return;
+        if ((*ent)[preJ].words[preK].entity == "}")
+            return;
+        if ((*ent)[preJ].words[preK].entity == "#define")
+            return;
+        if (((*ent)[preJ].words[preK].type != 0) && ((preJ != j) || (preK != k)))
+            setType = true;
         GetPreIndex(ent, &preJ, &preK);
     } while ((preJ > -1) && (((*ent)[preJ].words[preK].entity != "\n") && (((*ent)[preJ].words[preK].entity != ";") || WordComment((*ent)[preJ].words[preK].comment))));
-
+    if (!setType)
+        return;
     long postJ = j;
     long postK = k;
     long postJ2 = j;
@@ -511,10 +668,22 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
         postJ2 = postJ;
         postK2 = postK;
 
+        if (((postJ != j) || (postK != k)) && (procState == 0) && ((*ent)[postJ].words[postK].type == 1))
+            break;
+
+        if (((postJ != j) || (postK != k)) && (procState == 0) && ((*ent)[postJ].words[postK].type == 2))
+            break;
+
+        if (((postJ != j) || (postK != k)) && (procState == 0) && ((*ent)[postJ].words[postK].entity == "="))
+            break;
+
         if ((procState == 0) && (((*ent)[postJ].words[postK].entity == "(") && !WordComment((*ent)[postJ].words[postK].comment)))
         {
             procState++;
-            isDec = true;
+        }
+        if ((procState == 0) && (((*ent)[postJ].words[postK].entity == ")") && !WordComment((*ent)[postJ].words[postK].comment)))
+        {
+            break;
         }
         if ((procState == 1) && (((*ent)[postJ].words[postK].entity == ")") && !WordComment((*ent)[postJ].words[postK].comment)))
         {
@@ -522,7 +691,16 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
         }
         if ((procState == 2) && (((*ent)[postJ].words[postK].entity == ";") && !WordComment((*ent)[postJ].words[postK].comment)))
         {
+            isDec = true;
             runAgain = false;
+            break;
+        }
+        if ((procState < 3) && (((*ent)[postJ].words[postK].entity == "}") && !WordComment((*ent)[postJ].words[postK].comment)))
+        {
+            break;
+        }
+        if ((procState < 2) && (((*ent)[postJ].words[postK].entity == "{") && !WordComment((*ent)[postJ].words[postK].comment)))
+        {
             break;
         }
         if (procState >= 2)
@@ -532,6 +710,9 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
                 procState++;
                 isProc = true;
             }
+        }
+        if (procState >= 3)
+        {
             if ((procState) && (((*ent)[postJ].words[postK].entity == "}") && !WordComment((*ent)[postJ].words[postK].comment)))
             {
                 procState--;
@@ -576,6 +757,8 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
         (*ent)[j].words[k].beginWord = preK2;
         (*ent)[j].words[k].endLine = postJ2;
         (*ent)[j].words[k].endWord = postK2;
+        lastEndProcLine = postJ2;
+        lastEndProcWord = postK2;
     }
 
     if (isProc)
@@ -644,15 +827,19 @@ void SetProcedureInfo(vector<TypeLine>* ent, long j, long k) {
         (*ent)[j].words[k].beginWord = preK2;
         (*ent)[j].words[k].endLine = postJ2;
         (*ent)[j].words[k].endWord = postK2;
+        lastEndProcLine = postJ2;
+        lastEndProcWord = postK2;
     }
 
-    if (isDec)
+    /*if (isDec)
         PrintEntity(ent, (*ent)[j].words[k], "Dec: |", "|\n");
     if ((isProc) && (!isProc))
-        PrintEntity(ent, (*ent)[j].words[k], "Proc: |", "|\n");
+        PrintEntity(ent, (*ent)[j].words[k], "Proc: |", "|\n");*/
 };
 
 void AnalyzeProcedures(vector<TypeLine>* ent) {
+    lastEndProcLine = -1;
+    lastEndProcWord = -1;
     for (int j = 0; j < ent->size(); j++)
     {
         TypeLine* actLine = &(*ent)[j];
@@ -660,25 +847,209 @@ void AnalyzeProcedures(vector<TypeLine>* ent) {
         {
             if (actLine->words[k].type == 1)
             {
-                SetProcedureInfo(ent, j, k);
+                if(actLine->words[k].comment[0] == 'n')
+                    if ((j > lastEndProcLine) || ((j == lastEndProcLine) && (k > lastEndProcWord)))
+                    {
+                        if ((actLine->words[k].entity == "or")&&(j==5))
+                        {
+                            int ss = 0;
+                            ss++;
+                        }
+                        SetProcedureInfo(ent, j, k);
+                    }
             }
         }
     }
 }
 
-int main()
-{
-    testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n \n                ";
-    string testcomment;
-    AnalyzeComments(&testcode, &testcomment);
-    AnalyzeLines(&ent, &testcode, &testcomment);
-    AnalyzeWords(&ent);
-    AnalyzeProcedures(&ent);
+void AnalyzeFile(TypeFile* typeFile) {
+    //testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n \n                ";
+    //string testcomment;
+    FILE* fptr_file;
+    fopen_s(&fptr_file, typeFile->filename.c_str(), "rb");
+    fseek(fptr_file, 0L, SEEK_END);
+    long sz_file = ftell(fptr_file);
+    fseek(fptr_file, 0L, SEEK_SET);
+    char* content_buffer = (char*)malloc(sz_file * sizeof(char*));
+    fread(content_buffer, sz_file, 1, fptr_file);
+    fclose(fptr_file);
+    typeFile->source.assign(content_buffer, sz_file);
+    free(content_buffer);
 
-    //REN - rename
-    //MOV - move
-    //FDR - find references
-    //INS - insert
-    //DEL - delete
-} ;
+    AnalyzeComments(&typeFile->source, &typeFile->comment);
+    AnalyzeText(&typeFile->source, &typeFile->comment);
+    AnalyzeLines(&typeFile->lines, &typeFile->source, &typeFile->comment);
+    AnalyzeWords(&typeFile->lines, false);
+    AnalyzeProcedures(&typeFile->lines);
+}
+
+long FindNextConfigWord(TypeLine* line, long* index)
+{
+    while ((*line).words.size() > *index)
+    {
+        if ((*line).words[*index].type != 0)
+            return *index;
+        (*index)++;
+    }
+    return -1;
+}
+
+string inPath;
+string outPath;
+
+void GetReqDirs(const std::string& path, std::vector<string>& files, const bool showHiddenDirs = false) {
+    DIR* dpdf;
+    struct dirent* epdf;
+    dpdf = opendir(path.c_str());
+    if (dpdf != NULL) {
+        while ((epdf = readdir(dpdf)) != NULL) {
+            if (showHiddenDirs ? (epdf->d_type == DT_DIR && string(epdf->d_name) != ".." && string(epdf->d_name) != ".") : (epdf->d_type == DT_DIR && strstr(epdf->d_name, "..") == NULL && strstr(epdf->d_name, ".") == NULL)) {
+                GetReqDirs(path + epdf->d_name + "/", files, showHiddenDirs);
+            }
+            if (epdf->d_type == DT_REG) {
+                files.push_back(path + epdf->d_name);
+            }
+        }
+    }
+    closedir(dpdf);
+}
+
+void listFiles(const std::string& path, std::function<void(const std::string&)> cb) {
+    if (auto dir = opendir(path.c_str())) {
+        while (auto f = readdir(dir)) {
+            if (!f->d_name || f->d_name[0] == '.') continue;
+            if (f->d_type == DT_DIR)
+                listFiles(path + f->d_name + "/", cb);
+
+            if (f->d_type == DT_REG)
+                cb(path + f->d_name);
+        }
+        closedir(dir);
+    }
+}
+
+void AnalyzeDir(vector<TypeFile>* locDir, string inPath) {
+    std::vector<string> files;
+    GetReqDirs(inPath, files);
+    for (string actFile : files)
+    {
+        if ((actFile.substr(actFile.length() - 2, 2) == ".h") ||
+            (actFile.substr(actFile.length() - 4, 4) == ".cpp"))
+        {
+            TypeFile typefile;
+            typefile.filename = actFile;
+            AnalyzeFile(&typefile);
+            locDir->push_back(typefile);
+        }
+    }
+};
+
+typedef struct {
+    string filename;
+    long lineIndex;
+    TypeWord word;
+} TypeDeclarations;
+
+bool FindDecl(vector<TypeDeclarations>* declarations, string* actWord, string* tempFile, long* tempLineIndex)
+{
+    for (TypeDeclarations actDecl : *declarations)
+    {
+        if (actDecl.word.entity == *actWord)
+        {
+            *tempFile = actDecl.filename;
+            *tempLineIndex = actDecl.lineIndex;
+            return true;
+        }
+    }
+    return false;
+}
+
+void MakeConfigCommand(TypeLine* line, long* index)
+{
+    vector<TypeFile> locDir;
+    if (!(*line).words[*index].entity.compare("IN"))
+    {
+        (*index)++;
+        if (FindNextConfigWord(line, index) > -1)
+            inPath = (*line).words[*index].entity;
+    }
+    else if (!(*line).words[*index].entity.compare("OUT"))
+    {
+        (*index)++;
+        if (FindNextConfigWord(line, index) > -1)
+            outPath = (*line).words[*index].entity;
+    }
+    else if (!(*line).words[*index].entity.compare("FDR"))
+    {
+        AnalyzeDir(&locDir, inPath);
+        vector<TypeDeclarations> declarations;
+        
+        for (TypeFile actFile : locDir) {
+            for (TypeLine actLine : actFile.lines) {
+                for (TypeWord actWord : actLine.words) {
+                    if (actWord.type == 10) {
+                        long tempLineIndex;
+                        string tempFile;
+                        if (FindDecl(&declarations, &actWord.entity, &tempFile, &tempLineIndex))
+                        {
+                            //printf("Duplicate declaration: %s", actFile.filename.c_str());
+                            //printf("%s", actWord.entity);
+                            
+                            printf("Duplicate declaration: %s %s : %d Prev: %s : %d\n", actWord.entity.c_str(), actFile.filename.c_str(), actLine.lineIndex, tempFile.c_str(), tempLineIndex);
+                            
+                        }
+                        else
+                        {
+                            TypeDeclarations locDeclaration;
+                            locDeclaration.filename = actFile.filename;
+                            locDeclaration.lineIndex = actLine.lineIndex;
+                            locDeclaration.word = actWord;
+                            declarations.push_back(locDeclaration);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+int main(int argc, char** argv)
+{
+    std::string configStr;
+    vector<TypeLine> config;
+
+    if (argc < 2)
+    {
+        printf("using:\bBATED script.bated\n\n");
+        printf("commands:\nIN=path\nOUT=path\nREN - rename\nMOV - move\n");
+        printf("FDR - find references\nINS - insert\nDEL - delete\n");
+    }
+    else
+    {
+        FILE* fptr_script;
+        fopen_s(&fptr_script, argv[1], "rb");
+        fseek(fptr_script, 0L, SEEK_END);
+        long sz_script = ftell(fptr_script);
+        fseek(fptr_script, 0L, SEEK_SET);
+        char* content_script = (char*)malloc(sz_script * sizeof(char*));
+        fread(content_script, sz_script, 1, fptr_script);
+        fclose(fptr_script);
+        configStr.assign(content_script, sz_script);
+        free(content_script);
+
+        string configcomment;
+        AnalyzeComments(&configStr, &configcomment);
+        AnalyzeText(&configStr, &configcomment);
+        AnalyzeLines(&config, &configStr, &configcomment);
+        AnalyzeWords(&config, true);
+
+        for (long lineIndex = 0; lineIndex < config.size(); lineIndex++)
+        {
+            long wordIndex = 0;
+            if (FindNextConfigWord(&config[lineIndex], &wordIndex) > -1)
+                MakeConfigCommand(&config[lineIndex], &wordIndex);
+        }
+        //AnalyzeFile();
+    }
+};
 
