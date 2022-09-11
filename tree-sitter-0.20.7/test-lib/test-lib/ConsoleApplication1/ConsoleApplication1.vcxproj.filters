@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Zdrojové soubory">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hlavičkové soubory">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Soubory zdrojů">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Zdrojové soubory\mycode">
+      <UniqueIdentifier>{b42b5ef8-aed7-44e3-a766-2b37d74e8ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zdrojové soubory\cpp">
+      <UniqueIdentifier>{e1a09a76-0f40-4155-a6a4-20d1d82d900d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\src\alloc.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\get_changed_ranges.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\node.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\parser.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\query.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\stack.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\subtree.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\tree.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\tree_cursor.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\language.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\lexer.c">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\BATED\BATED.cpp">
+      <Filter>Zdrojové soubory\mycode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\parser.c">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\scanner.cc">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lib\src\alloc.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\array.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\atomic.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\clock.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\error_costs.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\get_changed_ranges.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\host.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\language.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\length.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\lexer.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\point.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\reduce_action.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\reusable_node.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\stack.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\subtree.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\tree.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\tree_cursor.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\ptypes.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\umachine.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\urename.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\utf.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\utf16.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode\utf8.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\unicode.h">
+      <Filter>Zdrojové soubory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\tree_sitter\parser.h">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\tree_sitter\runtime.h">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\grammar.json">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </None>
+    <None Include="..\..\..\..\tree-sitter-cpp-0.20.0\src\node-types.json">
+      <Filter>Zdrojové soubory\cpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿  alloc.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\alloc.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  get_changed_ranges.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\point.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  language.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\point.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  lexer.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\point.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  lib.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\alloc.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  node.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\point.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  parser.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\parser.c(6,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  query.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  stack.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\alloc.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  subtree.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\alloc.h(4,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  tree.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\tree.c(1,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  tree_cursor.c
+c:\prenos\BETED2\tree-sitter-0.20.7\lib\src\tree_cursor.c(1,10): fatal error C1083: Nejde otevřít soubor zahrnout: tree_sitter/api.h: No such file or directory
+  Generování kódu...

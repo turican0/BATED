@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1091,5): warning MSB8027: Dva nebo více souborů s názvem parser.c vytvoří výstupy ve stejném umístění. To může způsobit nesprávný výsledek sestavení. Příslušné soubory jsou ..\..\..\..\tree-sitter-cpp-0.20.0\src\parser.c, ..\..\..\lib\src\parser.c.
+  BATED.cpp
+C:\prenos\BETED2\BATED\BATED.cpp(36,5): warning C4267: argument: Převod z: size_t na: long, může dojít ke ztrátě dat.
+x64\Debug\parser.obj : warning LNK4042: Objekt je zadaný víckrát. Nadbytečné se ignorují.
+     Vytváří se knihovna C:\prenos\BETED2\tree-sitter-0.20.7\test-lib\test-lib\x64\Debug\ConsoleApplication1.lib a objekt C:\prenos\BETED2\tree-sitter-0.20.7\test-lib\test-lib\x64\Debug\ConsoleApplication1.exp.
+  ConsoleApplication1.vcxproj -> C:\prenos\BETED2\tree-sitter-0.20.7\test-lib\test-lib\x64\Debug\ConsoleApplication1.exe

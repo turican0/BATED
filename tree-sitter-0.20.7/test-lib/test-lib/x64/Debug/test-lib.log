@@ -1,0 +1,263 @@
+﻿  alloc.c
+  get_changed_ranges.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  language.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  lexer.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  lib.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\parser.c(618,33): warning C4267: =: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(320,30): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(387,35): warning C4244: return: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1921,9): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1925,9): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1953,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1984,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2022,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2191,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2242,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2275,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2386,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2505,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3197,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3672,15): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3689,51): warning C4018: >: signed/unsigned – neshoda
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\stack.c(329,5): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(195,6): warning C4244: inicializování: TSSymbol se převádí na uint8_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(232,31): warning C4244: =: TSSymbol se převádí na uint8_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(516,57): warning C4267: =: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  node.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  parser.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\parser.c(618,33): warning C4267: =: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  query.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(320,30): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(387,35): warning C4244: return: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1921,9): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1925,9): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1953,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(1984,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2022,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2191,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2242,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2275,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2386,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(2505,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3197,1): warning C4244: inicializování: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3672,15): warning C4244: funkce: __int64 se převádí na uint32_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\query.c(3689,51): warning C4018: >: signed/unsigned – neshoda
+  stack.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\stack.c(329,5): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  subtree.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(195,6): warning C4244: inicializování: TSSymbol se převádí na uint8_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(232,31): warning C4244: =: TSSymbol se převádí na uint8_t; může dojít ke ztrátě dat.
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\subtree.c(516,57): warning C4267: =: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  tree.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  tree_cursor.c
+C:\prenos\BETED2\tree-sitter-0.20.7\lib\src\array.h(179,52): warning C4267: funkce: Převod z: size_t na: uint32_t, může dojít ke ztrátě dat.
+  Generování kódu...
+lib.obj : error LNK2005: ts_language_field_count už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_field_id_for_name už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_field_name_for_id už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_public_symbol už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_symbol_for_name už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_symbol_metadata už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_symbol_name už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_symbol_type už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_table_entry už je definované v language.obj.
+lib.obj : error LNK2005: ts_language_version už je definované v language.obj.
+lib.obj : error LNK2005: ts_lexer_advance_to_end už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_delete už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_finish už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_included_ranges už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_init už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_mark_end už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_reset už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_set_included_ranges už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_set_input už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_lexer_start už je definované v lexer.obj.
+lib.obj : error LNK2005: ts_range_array_get_changed_ranges už je definované v get_changed_ranges.obj.
+lib.obj : error LNK2005: ts_range_array_intersects už je definované v get_changed_ranges.obj.
+lib.obj : error LNK2005: ts_set_allocator už je definované v alloc.obj.
+lib.obj : error LNK2005: ts_subtree_get_changed_ranges už je definované v get_changed_ranges.obj.
+lib.obj : error LNK2005: ts_current_malloc už je definované v alloc.obj.
+lib.obj : error LNK2005: ts_current_calloc už je definované v alloc.obj.
+lib.obj : error LNK2005: ts_current_realloc už je definované v alloc.obj.
+lib.obj : error LNK2005: ts_current_free už je definované v alloc.obj.
+node.obj : error LNK2005: ts_node_child už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_child_by_field_id už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_child_by_field_name už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_child_count už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_descendant_for_byte_range už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_descendant_for_point_range už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_edit už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_end_byte už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_end_point už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_eq už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_field_name_for_child už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_first_child_for_byte už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_first_named_child_for_byte už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_has_changes už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_has_error už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_is_extra už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_is_missing už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_is_named už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_is_null už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_named_child už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_named_child_count už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_named_descendant_for_byte_range už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_named_descendant_for_point_range už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_new už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_next_named_sibling už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_next_sibling už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_parent už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_prev_named_sibling už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_prev_sibling už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_start_byte už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_start_point už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_string už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_symbol už je definované v lib.obj.
+node.obj : error LNK2005: ts_node_type už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_cancellation_flag už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_delete už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_included_ranges už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_language už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_logger už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_new už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_parse už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_parse_string už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_parse_string_encoding už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_print_dot_graphs už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_reset už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_set_cancellation_flag už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_set_included_ranges už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_set_language už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_set_logger už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_set_timeout_micros už je definované v lib.obj.
+parser.obj : error LNK2005: ts_parser_timeout_micros už je definované v lib.obj.
+query.obj : error LNK2005: ts_query__step_is_fallible už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_capture_count už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_capture_name_for_id už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_capture_quantifier_for_id už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor__compare_captures už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor__compare_nodes už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_delete už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_did_exceed_match_limit už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_exec už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_match_limit už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_new už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_next_capture už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_next_match už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_remove_match už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_set_byte_range už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_set_match_limit už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_cursor_set_point_range už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_delete už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_disable_capture už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_disable_pattern už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_is_pattern_guaranteed_at_step už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_is_pattern_rooted už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_new už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_pattern_count už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_predicates_for_pattern už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_start_byte_for_pattern už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_string_count už je definované v lib.obj.
+query.obj : error LNK2005: ts_query_string_value_for_id už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_can_merge už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_clear už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_copy_version už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_delete už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_dynamic_precedence už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_error_cost už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_get_summary už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_halt už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_has_advanced_since_error už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_is_active už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_is_halted už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_is_paused už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_last_external_token už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_merge už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_new už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_node_count_since_error už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_pause už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_pop_all už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_pop_count už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_pop_error už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_pop_pending už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_position už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_print_dot_graph už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_push už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_record_summary už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_remove_version už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_renumber_version už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_resume už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_set_last_external_token už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_state už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_swap_versions už je definované v lib.obj.
+stack.obj : error LNK2005: ts_stack_version_count už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_external_scanner_state_copy už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_external_scanner_state_data už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_external_scanner_state_delete už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_external_scanner_state_eq už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_external_scanner_state_init už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree__print_dot_graph už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_array_clear už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_array_copy už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_array_delete už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_array_remove_trailing_extras už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_array_reverse už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_balance už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_clone už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_compare už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_edit už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_external_scanner_state už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_external_scanner_state_eq už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_last_external_token už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_make_mut už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_new_error už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_new_error_node už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_new_leaf už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_new_missing_leaf už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_new_node už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_pool_delete už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_pool_new už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_print_dot_graph už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_release už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_retain už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_set_symbol už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_string už je definované v lib.obj.
+subtree.obj : error LNK2005: ts_subtree_summarize_children už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_copy už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_delete už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_edit už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_get_changed_ranges už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_language už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_new už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_print_dot_graph už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_root_node už je definované v lib.obj.
+tree.obj : error LNK2005: ts_tree_root_node_with_offset už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_copy už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_current_field_id už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_current_field_name už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_current_node už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_current_status už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_delete už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_goto_first_child už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_goto_first_child_for_byte už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_goto_first_child_for_point už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_goto_next_sibling už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_goto_parent už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_init už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_new už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_parent_node už je definované v lib.obj.
+tree_cursor.obj : error LNK2005: ts_tree_cursor_reset už je definované v lib.obj.
+language.obj : error LNK2019: Nerozpoznaný externí symbol ts_language_symbol_count odkazovaný ve funkci ts_language_symbol_for_name
+lib.obj : error LNK2001: Nerozpoznaný externí symbol ts_language_symbol_count
+MSVCRTD.lib(exe_main.obj) : error LNK2019: Nerozpoznaný externí symbol main odkazovaný ve funkci "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\prenos\BETED2\tree-sitter-0.20.7\test-lib\x64\Debug\test-lib.exe : fatal error LNK1120: Počet nerozpoznaných externích typů: 2
