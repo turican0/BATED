@@ -228,10 +228,13 @@ void AnalyzeLines(vector<TypeLine>* ent, string* testcode, string* testcomment) 
         index = (*testcode).find("\n", index);
         if (index > -1)
         {
+            int cutR = 1;
+            if ((*testcode)[index - 1] == '\r')
+                cutR = 2;
             TypeLine locLine;
             index++;
-            locLine.entity = (*testcode).substr(oldindex, index - oldindex);
-            locLine.comment = (*testcomment).substr(oldindex, index - oldindex);
+            locLine.entity = (*testcode).substr(oldindex, index - oldindex - cutR);
+            locLine.comment = (*testcomment).substr(oldindex, index - oldindex - cutR);
             locLine.lineIndex = lineIndex++;
             if (locLine.entity.length() > 0)
                 ent->push_back(locLine);
@@ -913,7 +916,9 @@ long ReadNumber(string* tree, long* index) {
 void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT) {
     while (true)
     {
-        if (((*tree)[*indexT] != '\n') && ((*tree)[*indexT] != ' ')) break;
+        if ((*tree)[*indexT] == '(') break;
+        if (*indexT >= (*tree).size()) return;
+        //if (((*tree)[*indexT] != '\n') && ((*tree)[*indexT] != ' ')) break;
         (*indexT)++;
     }
     if ((*tree)[*indexT] == ')') { (*indexT)++; return; }
@@ -943,6 +948,112 @@ void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT
             subTree->type = 6;
         else if (testStr == "preproc_directive")
             subTree->type = 7;
+        else if (testStr == "declaration")
+            subTree->type = 8;
+        else if (testStr == "type_identifier")
+            subTree->type = 9;
+        else if (testStr == "init_declarator")
+            subTree->type = 10;
+        else if (testStr == "number_literal")
+            subTree->type = 11;
+        else if (testStr == "comment")
+            subTree->type = 12;
+        else if (testStr == "primitive_type")
+            subTree->type = 13;
+        else if (testStr == "pointer_declarator")
+            subTree->type = 14;
+        else if (testStr == "array_declarator")
+            subTree->type = 15;
+        else if (testStr == "function_definition")
+            subTree->type = 16;
+        else if (testStr == "function_declarator")
+            subTree->type = 17;
+        else if (testStr == "parameter_list")
+            subTree->type = 18;
+        else if (testStr == "parameter_declaration")
+            subTree->type = 19;
+        else if (testStr == "parameter_dcompound_statementeclaration")
+            subTree->type = 20;
+        else if (testStr == "expression_statement")
+            subTree->type = 21;
+        else if (testStr == "assignment_expression")
+            subTree->type = 22;
+        else if (testStr == "compound_statement")
+            subTree->type = 23;
+        else if (testStr == "cast_expression")
+            subTree->type = 24;
+        else if (testStr == "type_descriptor")
+            subTree->type = 25;
+        else if (testStr == "abstract_pointer_declarator")
+            subTree->type = 26;
+        else if (testStr == "call_expression")
+            subTree->type = 27;
+        else if (testStr == "qualified_identifier")
+            subTree->type = 28;
+        else if (testStr == "namespace_identifier")
+            subTree->type = 29;
+        else if (testStr == "argument_list")
+            subTree->type = 30;
+        else if (testStr == "if_statement")
+            subTree->type = 31;
+        else if (testStr == "condition_clause")
+            subTree->type = 32;
+        else if (testStr == "pointer_expression")
+            subTree->type = 33;
+        else if (testStr == "subscript_expression")
+            subTree->type = 34;
+        else if (testStr == "do_statement")
+            subTree->type = 35;
+        else if (testStr == "break_statement")
+            subTree->type = 36;
+        else if (testStr == "binary_expression")
+            subTree->type = 37;
+        else if (testStr == "update_expression")
+            subTree->type = 38;
+        else if (testStr == "parenthesized_expression")
+            subTree->type = 39;
+        else if (testStr == "while_statement")
+            subTree->type = 40;
+        else if (testStr == "field_expression")
+            subTree->type = 41;
+        else if (testStr == "field_identifier")
+            subTree->type = 42;
+        else if (testStr == "switch_statement")
+            subTree->type = 43;
+        else if (testStr == "case_statement")
+            subTree->type = 44;
+        else if (testStr == "char_literal")
+            subTree->type = 45;
+        else if (testStr == "escape_sequence")
+            subTree->type = 46;
+        else if (testStr == "false")
+            subTree->type = 47;
+        else if (testStr == "true")
+            subTree->type = 48;
+        else if (testStr == "type_definition")
+            subTree->type = 49;
+        else if (testStr == "struct_specifier")
+            subTree->type = 50;
+        else if (testStr == "field_declaration_list")
+            subTree->type = 51;
+        else if (testStr == "field_declaration")
+            subTree->type = 52;
+        else if (testStr == "return_statement")
+            subTree->type = 53;
+        else if (testStr == "for_statement")
+            subTree->type = 54;
+        else if (testStr == "sizeof_expression")
+            subTree->type = 55;
+        else if (testStr == "unary_expression")
+            subTree->type = 56;
+        else if (testStr == "optional_parameter_declaration")
+            subTree->type = 57;
+        else if (testStr == "template_function")
+            subTree->type = 58;
+        else if (testStr == "template_argument_list")
+            subTree->type = 59;
+        else if (testStr == "null")
+            subTree->type = 60;
         else
             subTree->type = 200;
         (*indexT) += 2;
