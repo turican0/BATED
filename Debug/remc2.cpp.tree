@@ -1,0 +1,88 @@
+(translation_unit [0, 0] - [35, 0]
+  (comment [0, 0] - [0, 22])
+  (preproc_include [2, 0] - [3, 0]
+    path: (system_lib_string [2, 9] - [2, 30]))
+  (preproc_include [3, 0] - [4, 0]
+    path: (system_lib_string [3, 9] - [3, 25]))
+  (preproc_include [5, 0] - [6, 0]
+    path: (string_literal [5, 9] - [5, 37]))
+  (preproc_include [6, 0] - [7, 0]
+    path: (string_literal [6, 9] - [6, 34]))
+  (preproc_include [7, 0] - [8, 0]
+    path: (string_literal [7, 9] - [7, 21]))
+  (using_declaration [9, 0] - [9, 20]
+    (identifier [9, 16] - [9, 19]))
+  (preproc_ifdef [11, 0] - [15, 6]
+    name: (identifier [11, 7] - [11, 15])
+    (declaration [12, 0] - [12, 31]
+      type: (primitive_type [12, 0] - [12, 3])
+      declarator: (function_declarator [12, 4] - [12, 31]
+        declarator: (identifier [12, 4] - [12, 8])
+        parameters: (parameter_list [12, 8] - [12, 31]
+          (parameter_declaration [12, 9] - [12, 17]
+            type: (primitive_type [12, 9] - [12, 12])
+            declarator: (identifier [12, 13] - [12, 17]))
+          (parameter_declaration [12, 19] - [12, 30]
+            type: (primitive_type [12, 19] - [12, 23])
+            declarator: (pointer_declarator [12, 23] - [12, 30]
+              declarator: (pointer_declarator [12, 24] - [12, 30]
+                declarator: (identifier [12, 26] - [12, 30])))))))
+    alternative: (preproc_else [13, 0] - [14, 31]
+      (declaration [14, 0] - [14, 31]
+        type: (primitive_type [14, 0] - [14, 3])
+        declarator: (function_declarator [14, 4] - [14, 31]
+          declarator: (identifier [14, 4] - [14, 8])
+          parameters: (parameter_list [14, 8] - [14, 31]
+            (parameter_declaration [14, 9] - [14, 17]
+              type: (primitive_type [14, 9] - [14, 12])
+              declarator: (identifier [14, 13] - [14, 17]))
+            (parameter_declaration [14, 19] - [14, 30]
+              type: (primitive_type [14, 19] - [14, 23])
+              declarator: (pointer_declarator [14, 23] - [14, 30]
+                declarator: (pointer_declarator [14, 24] - [14, 30]
+                  declarator: (identifier [14, 26] - [14, 30])))))))))
+  (comment [16, 0] - [16, 13])
+  (compound_statement [17, 0] - [33, 1]
+    (comment [19, 1] - [19, 56])
+    (comment [20, 1] - [20, 52])
+    (declaration [21, 1] - [21, 25]
+      type: (primitive_type [21, 1] - [21, 5])
+      declarator: (init_declarator [21, 6] - [21, 24]
+        declarator: (pointer_declarator [21, 6] - [21, 13]
+          declarator: (array_declarator [21, 7] - [21, 13]
+            declarator: (identifier [21, 7] - [21, 11])))
+        value: (initializer_list [21, 16] - [21, 24]
+          (null [21, 18] - [21, 22]))))
+    (comment [22, 1] - [22, 38])
+    (comment [23, 1] - [23, 26])
+    (comment [24, 1] - [24, 81])
+    (expression_statement [26, 1] - [26, 36]
+      (call_expression [26, 1] - [26, 35]
+        function: (field_expression [26, 1] - [26, 23]
+          argument: (identifier [26, 1] - [26, 18])
+          field: (field_identifier [26, 19] - [26, 23]))
+        arguments: (argument_list [26, 23] - [26, 35]
+          (identifier [26, 24] - [26, 28])
+          (identifier [26, 30] - [26, 34]))))
+    (expression_statement [28, 1] - [28, 17]
+      (call_expression [28, 1] - [28, 16]
+        function: (identifier [28, 1] - [28, 14])
+        arguments: (argument_list [28, 14] - [28, 16])))
+    (declaration [29, 1] - [29, 41]
+      type: (primitive_type [29, 1] - [29, 4])
+      declarator: (init_declarator [29, 5] - [29, 40]
+        declarator: (identifier [29, 5] - [29, 11])
+        value: (call_expression [29, 14] - [29, 40]
+          function: (identifier [29, 14] - [29, 22])
+          arguments: (argument_list [29, 22] - [29, 40]
+            (identifier [29, 23] - [29, 27])
+            (identifier [29, 29] - [29, 33])
+            (identifier [29, 35] - [29, 39])))))
+    (expression_statement [30, 1] - [30, 15]
+      (call_expression [30, 1] - [30, 14]
+        function: (identifier [30, 1] - [30, 12])
+        arguments: (argument_list [30, 12] - [30, 14])))
+    (comment [31, 1] - [31, 19])
+    (return_statement [32, 4] - [32, 13]
+      (number_literal [32, 11] - [32, 12]))))
+c:\prenos\BATED\Debug\remc2.cpp	0 ms	(MISSING ";" [12, 31] - [12, 31])

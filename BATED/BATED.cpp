@@ -5,6 +5,11 @@
 #include <functional>
 #include <dirent.h>
 
+#include <direct.h> // _getcwd
+#include <stdlib.h> // free, perror
+#include <stdio.h>  // printf
+#include <string.h> // strlen
+
 
 using namespace std;
 //string testcode;
@@ -34,10 +39,24 @@ typedef struct {
     string comment;
 } TypeLine;
 
+typedef struct TypeTree TypeTree;
+
+struct TypeTree {
+    int pre;
+    int type;
+    long beginLine;
+    long beginChar;
+    long endLine;
+    long endChar;
+    vector<struct TypeTree> subTree;
+};
+
 typedef struct {
     vector<TypeLine> lines;
+    TypeTree subTree;
     string filename;
     string source;
+    string tree;
     string comment;
 } TypeFile;
 
@@ -861,26 +880,184 @@ void AnalyzeProcedures(vector<TypeLine>* ent) {
         }
     }
 }
+/*
+char getNext(string* tree, long* index) {
+    while (true)
+    {
+        if (((*tree)[*index] >= 'A') || ((*tree)[*index] <= 'Z')) break;
+        if (((*tree)[*index] >= 'a') || ((*tree)[*index] <= 'z')) break;
+        if (((*tree)[*index] >= '0') || ((*tree)[*index] <= '9')) break;
+        if ((*tree)[*index] == '(') break;
+        if ((*tree)[*index] == ')') break;
+        if ((*tree)[*index] == '-') break;
+        if ((*tree)[*index] == ',') break;
+        if ((*tree)[*index] == '[') break;
+        if ((*tree)[*index] == ']') break;
+        (*index)++;
+    }
+    return((*tree)[*index]);
+}*/
+
+long ReadNumber(string* tree, long* index) {
+    long value=0;
+    while (true)
+    {
+        if (((*tree)[*index] < '0') || ((*tree)[*index] > '9')) break;
+        value *= 10;
+        value += (*tree)[*index] - '0';
+        (*index)++;
+    }
+    return value;
+}
+
+void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT) {
+    while (true)
+    {
+        if (((*tree)[*indexT] != '\n') && ((*tree)[*indexT] != ' ')) break;
+        (*indexT)++;
+    }
+    if ((*tree)[*indexT] == ')') { (*indexT)++; return; }
+    if ((*tree)[*indexT] == '(')
+    {
+        (*indexT)++;
+        long beginWord = *indexT;
+        while (true)
+        {
+            if ((((*tree)[*indexT] < 'A') || ((*tree)[*indexT] > 'Z')) &&
+                (((*tree)[*indexT] < 'a') || ((*tree)[*indexT] > 'z')) &&
+                ((*tree)[*indexT] != '_')) break;
+            (*indexT)++;
+        }
+        string testStr = (*tree).substr(beginWord, *indexT - beginWord);
+        if (testStr == "translation_unit")
+            subTree->type = 1;
+        else if (testStr == "ERROR")
+            subTree->type = 2;
+        else if (testStr == "identifier")
+            subTree->type = 3;
+        else if (testStr == "preproc_include")
+            subTree->type = 4;
+        else if (testStr == "string_literal")
+            subTree->type = 5;
+        else if (testStr == "preproc_call")
+            subTree->type = 6;
+        else if (testStr == "preproc_directive")
+            subTree->type = 7;
+        else
+            subTree->type = 200;
+        (*indexT) += 2;
+        subTree->beginLine = ReadNumber(tree, indexT);
+        (*indexT) += 2;
+        subTree->beginChar = ReadNumber(tree, indexT);
+        (*indexT) += 5;
+        subTree->endLine = ReadNumber(tree, indexT);
+        (*indexT) += 2;
+        subTree->endChar = ReadNumber(tree, indexT);
+        (*indexT)++;
+        if ((*tree)[*indexT] == ')')
+        {
+            (*indexT)++;
+            return;
+        }
+        (*indexT) += 3;
+        if ((*tree)[*indexT] != '(')
+        {
+            (*indexT) += 2;
+            while (true)
+            {
+                if ((((*tree)[*indexT] < 'A') || ((*tree)[*indexT] > 'Z')) &&
+                    (((*tree)[*indexT] < 'a') || ((*tree)[*indexT] > 'z')) &&
+                    ((*tree)[*indexT] != '_') && ((*tree)[*indexT] != ':')) break;
+                (*indexT)++;
+            }
+            (*indexT)++;
+        }
+        while (true)
+        {
+            TypeTree nextTree;
+            AnalyzeBranch(source, tree, &nextTree, indexT);
+            subTree->subTree.push_back(nextTree);
+            if ((*tree)[*indexT] == ')')
+            {
+                break;
+            }
+        }
+        (*indexT)++;
+    }
+};
+
+void AnalyzeTree(TypeFile* typeFile) {
+    long indexT = 0;
+    AnalyzeBranch(&typeFile->source, &typeFile->tree, &typeFile->subTree, &indexT);
+}
 
 void AnalyzeFile(TypeFile* typeFile) {
-    //testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n \n                ";
-    //string testcomment;
-    FILE* fptr_file;
-    fopen_s(&fptr_file, typeFile->filename.c_str(), "rb");
-    fseek(fptr_file, 0L, SEEK_END);
-    long sz_file = ftell(fptr_file);
-    fseek(fptr_file, 0L, SEEK_SET);
-    char* content_buffer = (char*)malloc(sz_file * sizeof(char*));
-    fread(content_buffer, sz_file, 1, fptr_file);
-    fclose(fptr_file);
-    typeFile->source.assign(content_buffer, sz_file);
-    free(content_buffer);
+    char* buffer;
 
-    AnalyzeComments(&typeFile->source, &typeFile->comment);
-    AnalyzeText(&typeFile->source, &typeFile->comment);
-    AnalyzeLines(&typeFile->lines, &typeFile->source, &typeFile->comment);
-    AnalyzeWords(&typeFile->lines, false);
-    AnalyzeProcedures(&typeFile->lines);
+    // Get the current working directory:
+    if ((buffer = _getcwd(NULL, 0)) == NULL)
+    {
+        perror("_getcwd error");
+    }
+    else
+    {
+        //printf("%s \nLength: %zu\n", buffer, strlen(buffer));
+        char buffer2[512];
+        sprintf_s(buffer2, "%s\\tree-sitter.exe", buffer);
+        FILE* testf;
+        fopen_s(&testf, buffer2, "r");
+        if (!testf)
+        {
+            //fclose(testf);
+            sprintf_s(buffer2, "%s\\..\\DEBUG\\tree-sitter.exe", buffer);
+            FILE* testf;
+            fopen_s(&testf,buffer2, "r");
+            if (!testf)exit(-1);
+            fclose(testf);
+        }
+        char buffer3[512];
+        //sprintf_s(buffer3, "%s parse c:\\prenos\\BATED\\Debug\\remc2.cpp > c:\\prenos\\BATED\\Debug\\remc2.cpp.tree", buffer2, typeFile->filename.c_str(), typeFile->filename.c_str());
+        sprintf_s(buffer3, "%s parse %s > %s.tree", buffer2, typeFile->filename.c_str(), typeFile->filename.c_str());
+        //BATED/BATED
+        //BATED/DEBUG
+        system(buffer3);
+        //system("pause");
+        free(buffer);
+
+        //testcode = "  \n // \n/**/ /* */\n int main()\n {\n}\n //xx\n //yyy\n \n                ";
+//string testcomment;
+        FILE* fptr_file;
+        fopen_s(&fptr_file, typeFile->filename.c_str(), "rb");
+        fseek(fptr_file, 0L, SEEK_END);
+        long sz_file = ftell(fptr_file);
+        fseek(fptr_file, 0L, SEEK_SET);
+        char* content_buffer = (char*)malloc(sz_file * sizeof(char*));
+        fread(content_buffer, sz_file, 1, fptr_file);
+        fclose(fptr_file);
+        typeFile->source.assign(content_buffer, sz_file);
+        free(content_buffer);
+
+        sprintf_s(buffer3,"%s.tree", typeFile->filename.c_str());
+
+        FILE* fptr_file_tree;
+        fopen_s(&fptr_file_tree, buffer3, "rb");
+        fseek(fptr_file_tree, 0L, SEEK_END);
+        long sz_file_tree = ftell(fptr_file_tree);
+        fseek(fptr_file_tree, 0L, SEEK_SET);
+        char* content_buffer_tree = (char*)malloc(sz_file_tree * sizeof(char*));
+        fread(content_buffer_tree, sz_file_tree, 1, fptr_file_tree);
+        fclose(fptr_file_tree);
+        typeFile->tree.assign(content_buffer_tree, sz_file_tree);
+        free(content_buffer_tree);
+
+        AnalyzeTree(typeFile);
+    }    
+
+    //AnalyzeComments(&typeFile->source, &typeFile->comment);
+    //AnalyzeText(&typeFile->source, &typeFile->comment);
+    //AnalyzeLines(&typeFile->lines, &typeFile->source, &typeFile->comment);
+    //AnalyzeWords(&typeFile->lines, false);
+    //AnalyzeProcedures(&typeFile->lines);
 }
 
 long FindNextConfigWord(TypeLine* line, long* index)
@@ -1052,4 +1229,5 @@ int main(int argc, char** argv)
         //AnalyzeFile();
     }
 };
+
 
