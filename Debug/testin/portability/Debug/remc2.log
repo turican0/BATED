@@ -1,0 +1,1197 @@
+﻿  sub_main.cpp
+c:\prenos\remc2-development\remc2\portability\port_filesystem.h(10,1): warning C4103: Zarovnání se po začlenění hlavičky změnilo. Může to být kvůli chybějící direktivě #pragma pack(pop).
+C:\prenos\remc2-development\SDL-Mixer-X-master\src\music.h(32,32): warning C4273: round: nekonzistentní propojení dll
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(533,44): message : viz předchozí definice round
+c:\prenos\remc2-development\remc2\engine\engine_support.h(344,9): warning C4200: Používá se nestandardní rozšíření: Pole nulové velikosti ve struktuře/sjednocení
+c:\prenos\remc2-development\remc2\engine\engine_support.h(344,9): message : Tento člen bude konstruktor nastavený na výchozí hodnotu nebo operátor přiřazení copy/move ignorovat.
+c:\prenos\remc2-development\remc2\engine\engine_support.h(374,29): warning C4200: Používá se nestandardní rozšíření: Pole nulové velikosti ve struktuře/sjednocení
+c:\prenos\remc2-development\remc2\engine\engine_support.h(374,29): message : Tento člen bude konstruktor nastavený na výchozí hodnotu nebo operátor přiřazení copy/move ignorovat.
+c:\prenos\remc2-development\remc2\engine\defs.h(83,1): warning C4005: LOBYTE: předefinování makra
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(206): message : viz předchozí definice LOBYTE
+c:\prenos\remc2-development\remc2\engine\defs.h(84,1): warning C4005: LOWORD: předefinování makra
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(204): message : viz předchozí definice LOWORD
+c:\prenos\remc2-development\remc2\engine\defs.h(86,1): warning C4005: HIBYTE: předefinování makra
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(207): message : viz předchozí definice HIBYTE
+c:\prenos\remc2-development\remc2\engine\defs.h(87,1): warning C4005: HIWORD: předefinování makra
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(205): message : viz předchozí definice HIWORD
+c:\prenos\remc2-development\remc2\engine\Basic.h(68,10): warning C4200: Používá se nestandardní rozšíření: Pole nulové velikosti ve struktuře/sjednocení
+c:\prenos\remc2-development\remc2\engine\Basic.h(68,10): message : Tento člen bude konstruktor nastavený na výchozí hodnotu nebo operátor přiřazení copy/move ignorovat.
+c:\prenos\remc2-development\remc2\utilities\Wave.h(23,10): warning C4200: Používá se nestandardní rozšíření: Pole nulové velikosti ve struktuře/sjednocení
+c:\prenos\remc2-development\remc2\utilities\Wave.h(23,10): message : Tento člen bude konstruktor nastavený na výchozí hodnotu nebo operátor přiřazení copy/move ignorovat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2418,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2423,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2428,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2433,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2437,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2441,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2456,8): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2456,8): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2456,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2456,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,1): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,8): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,8): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,15): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,15): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,29): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2457,29): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2458,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2458,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,8): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,8): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,29): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2459,29): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,1): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,8): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,8): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2460,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,1): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,29): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2461,29): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,1): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,8): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,8): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,15): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,15): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,22): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2462,22): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2466,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2467,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2468,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2469,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2470,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2471,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2472,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2473,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2475,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2477,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2478,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2480,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2481,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2482,3): warning C4838: Převod z: unsigned long na: int vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2488,33): warning C4305: inicializování: zkrácení z: double na: float
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,32): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,32): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,42): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,42): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,52): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,52): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,77): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2497,77): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,37): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,37): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,57): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,57): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,62): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2498,62): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2499,47): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2499,47): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2499,57): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2499,57): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2500,67): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2500,67): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2500,87): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(2500,87): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(2579,24): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3649,58): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3649,58): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3650,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3650,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3651,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3651,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3652,58): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3652,58): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3654,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3654,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3655,44): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3655,44): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3656,44): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3656,44): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3657,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3657,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3658,65): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3658,65): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3659,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3659,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3660,58): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3660,58): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3661,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3661,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3662,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3662,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3663,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3663,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3664,44): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3664,44): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3665,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3665,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3666,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3666,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3667,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3667,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3668,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3668,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3669,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3669,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3671,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3671,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3672,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3672,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3673,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3673,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3674,37): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3674,37): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3675,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3675,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3676,44): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3676,44): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3677,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3677,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3678,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3678,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3679,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3679,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3680,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3680,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3681,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3681,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3682,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3682,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3683,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3683,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3684,44): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3684,44): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3685,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3685,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3686,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3686,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3687,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3687,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3688,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3688,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3689,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3689,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3690,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3690,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3691,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3691,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3692,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3692,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3693,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3693,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3694,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3694,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3695,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3695,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3696,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3696,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3697,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3697,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3698,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3698,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3699,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3699,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3700,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3700,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3701,23): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3701,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3702,30): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3702,30): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3703,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3703,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3704,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3704,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3705,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3705,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3706,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3706,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,2): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,2): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,9): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,9): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,16): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3707,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3708,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3708,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3708,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3709,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3709,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3709,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3710,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3710,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3710,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3711,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3711,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3711,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3712,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3712,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3712,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3713,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3713,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3713,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3714,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3714,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3714,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3715,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3715,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3715,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3716,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3716,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3716,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3717,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3717,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3717,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3718,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3718,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3718,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3719,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3719,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3719,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3720,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3720,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3720,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3721,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3721,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3721,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3722,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3722,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3722,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3723,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3723,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3723,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3724,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3724,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3724,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3725,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3725,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3725,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3726,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3726,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3727,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3727,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3727,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3728,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3728,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3728,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3729,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3729,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3729,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3730,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3730,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3730,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3731,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3731,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3731,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3732,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3732,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3733,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3733,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3733,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3734,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3734,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3734,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3735,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3735,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3735,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3736,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3737,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3737,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3737,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3738,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3738,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3738,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3739,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3740,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3741,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3741,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3741,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3742,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3742,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3743,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3743,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3744,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3744,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3744,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3745,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3746,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3746,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3746,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3747,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3747,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3747,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3748,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3748,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3748,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3749,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3749,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3749,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3750,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3750,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3750,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3751,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3751,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3751,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3752,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3752,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3752,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3753,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3753,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3753,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3754,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3754,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3754,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3755,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3755,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3755,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3757,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3757,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3757,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3758,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3758,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3758,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3759,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3759,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3759,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3760,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3760,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3760,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3761,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3761,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3761,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3762,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3762,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3762,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3763,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3763,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3763,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3764,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3764,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3764,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3765,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3765,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3765,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3766,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3766,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3766,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3767,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3767,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3767,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3768,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3768,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3768,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3769,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3769,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3769,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3770,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3770,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3770,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3771,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3771,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3771,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3772,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3772,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3772,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3773,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3773,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3773,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3774,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3774,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3774,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3775,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3775,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3776,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3776,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3776,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3777,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3777,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3777,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3778,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3778,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3778,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3779,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3779,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3779,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3780,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3780,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3780,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3781,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3781,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3782,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3782,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3782,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3783,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3783,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3783,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3784,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3784,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3784,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3785,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3786,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3786,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3786,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3787,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3787,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3787,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3788,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3789,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3790,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3790,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3790,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3791,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3791,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3792,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3792,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3793,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3793,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3793,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3794,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3795,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3795,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3795,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3796,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3796,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3796,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3797,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3797,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3797,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3798,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3798,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3798,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3799,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3799,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3799,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3800,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3800,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3800,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3801,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3801,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3801,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3802,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3802,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3802,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3803,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3803,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3803,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3804,51): warning C4838: Převod z: int na: int16_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(3804,51): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(3804,72): warning C4838: Převod z: unsigned int na: int32_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4135,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4135,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4136,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4136,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4139,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4139,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4144,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4144,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4145,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4145,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4146,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4146,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4147,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4147,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4148,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4148,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4152,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4152,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4155,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4155,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4156,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4156,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4157,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4157,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4158,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4159,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4160,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4161,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4162,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4163,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4164,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4165,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4165,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4165,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4165,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4166,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4166,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4166,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4166,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4167,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4167,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4167,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4167,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4168,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4168,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4168,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4168,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4169,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4169,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4170,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4170,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4170,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4170,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4171,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4171,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4171,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4171,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4172,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4172,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4172,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4172,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4173,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4173,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4173,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4173,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4174,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4174,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4174,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4174,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4175,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4175,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4177,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4177,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4178,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4178,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4180,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4180,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4182,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4182,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4184,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4184,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4185,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4185,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4185,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4185,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4186,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4186,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4186,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4186,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4187,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4187,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4187,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4187,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4188,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4188,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4188,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4188,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4189,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4189,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4189,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4189,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4190,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4191,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4191,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4191,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4191,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4192,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4192,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4192,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4192,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4193,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4193,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4193,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4193,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4194,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4194,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4194,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4194,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4195,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4195,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4196,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4196,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4197,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4197,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4198,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4198,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4199,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4199,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4200,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4200,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4201,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4201,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4202,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4202,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4203,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4203,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4204,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4204,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4205,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4205,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4206,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4206,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4207,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4207,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4208,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4208,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4209,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4209,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4210,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4210,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4211,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4211,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4212,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4212,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4213,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4213,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4214,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4214,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4215,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4215,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4216,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4216,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4217,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4217,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4218,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4218,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4218,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4218,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4219,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4219,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4219,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4219,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4220,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4220,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4220,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4220,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4221,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4221,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4221,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4221,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4222,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4223,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4224,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4224,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4224,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4224,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4225,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4225,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4225,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4225,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4226,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4226,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4226,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4226,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4227,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4227,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4227,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4227,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4228,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4228,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4229,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4229,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4230,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4230,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4231,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4231,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4232,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4232,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4233,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4233,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4235,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4235,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4236,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4236,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4237,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4237,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4248,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4248,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4249,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4249,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4250,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4250,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4251,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4251,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4254,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4254,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4255,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4255,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4256,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4256,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4257,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4257,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4258,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4258,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4259,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4259,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4260,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4260,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4260,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4260,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4261,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4261,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4261,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4261,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4262,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4262,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4263,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4263,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4264,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4264,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4265,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4265,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4266,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4266,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4267,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4267,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4268,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4268,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4268,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4268,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4269,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4269,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4270,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4270,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4271,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4271,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4271,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4271,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4272,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4272,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4272,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4272,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4273,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4273,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4274,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4274,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4274,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4274,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4275,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4275,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4275,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4275,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4276,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4276,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4276,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4276,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4277,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4277,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4277,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4277,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4278,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4278,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4279,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4279,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4280,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4280,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4280,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4280,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4281,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4281,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4281,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4281,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4282,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4282,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4282,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4282,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,16): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,16): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4283,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4284,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4284,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4284,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4284,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4285,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4285,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4285,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4285,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4286,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4286,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4287,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4287,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4287,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4287,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4288,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4288,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4288,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4288,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4289,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4289,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4290,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4290,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4290,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4290,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4291,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4291,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4291,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4291,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4292,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4292,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4292,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4292,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4293,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4293,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4293,31): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4293,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4294,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4294,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4302,1): warning C4838: Převod z: int na: int8_t vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4302,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4699,31): warning C4838: Převod z: int na: char vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4699,31): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4722,26): warning C4838: Převod z: unsigned int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4724,1): warning C4305: inicializování: zkrácení z: unsigned int na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(4722,26): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4722,37): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4724,1): warning C4305: inicializování: zkrácení z: int na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(4722,37): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,1): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,1): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,12): warning C4838: Převod z: unsigned int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,12): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,23): warning C4838: Převod z: int na: short vyžaduje zužující převod.
+c:\prenos\remc2-development\remc2\sub_main.cpp(4723,23): warning C4309: inicializování: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(5272,31): warning C4056: přetečení v aritmetice konstanty v podobě čísla s plovoucí desetinnou čárkou
+c:\prenos\remc2-development\remc2\sub_main.cpp(5562,12): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(5563,12): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(5568,42): warning C4244: =: uint16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(6442,15): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(6459,15): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(6661,9): warning C4244: =: short se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(6995,29): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(8266,72): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(8326,72): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(8375,72): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(9331,13): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(9336,9): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(9444,11): warning C4018: >: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(9640,22): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(9958,17): warning C4244: =: int16_t se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(9963,17): warning C4244: =: int16_t se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10204,19): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10205,19): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10217,21): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10229,21): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10257,10): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10283,10): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10500,22): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10501,22): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10520,22): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(10521,22): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(11971,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(11982,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12000,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12011,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12021,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12031,67): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12058,68): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(12963,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(14124,8): warning C4244: =: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(14182,9): warning C4244: =: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(14777,18): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(14826,22): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(14858,20): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15006,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15083,34): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15200,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15320,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15495,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15502,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15741,18): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(15778,31): warning C4244: =: int16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17194,13): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(17211,13): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(17230,13): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(17477,12): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17688,10): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17776,13): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17789,13): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17807,13): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(17909,11): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(18202,15): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(18685,47): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(18685,43): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(20105,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20124,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20270,14): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(20314,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20335,30): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20354,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20472,12): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(20593,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20683,19): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(20852,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(20956,28): warning C4244: =: unsigned __int64 se převádí na int32_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(21035,30): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21045,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21365,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21388,30): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21407,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21443,24): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21465,22): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21506,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(21577,17): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(21684,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(22469,46): warning C4244: argument: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(22514,13): warning C4244: =: uint16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(22623,25): warning C4244: =: int16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(22773,24): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(22890,21): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(22897,21): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(22949,20): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(22964,20): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(22972,19): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23009,19): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23022,20): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23058,18): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23061,18): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23121,31): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23132,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23256,20): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23268,18): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23289,20): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23408,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23430,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23453,39): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23463,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23469,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23481,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23792,76): warning C4244: +=: __int64 se převádí na int16_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(23839,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23851,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23890,18): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23979,18): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23991,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(23998,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(24165,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(24445,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(25764,29): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(25774,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(26026,17): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(26426,40): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(26615,26): warning C4244: =: double se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(26685,40): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(26868,80): warning C4267: =: Převod z: size_t na: int16_t, může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(27642,45): warning C4267: argument: Převod z: size_t na: int16_t, může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(27865,48): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(27872,11): warning C4244: =: short se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(27891,29): warning C4244: argument: short se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(28005,49): warning C4244: argument: int16_t se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(28572,126): warning C4267: argument: Převod z: size_t na: int16_t, může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(31133,16): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(33047,50): warning C4244: argument: int16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(33909,23): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(34701,15): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(37491,19): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(38931,25): warning C4244: =: __int64 se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39221,15): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39981,23): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39981,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39987,23): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39987,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39993,23): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39993,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39999,23): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(39999,19): warning C4244: argument: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40021,17): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40074,17): warning C4244: =: unsigned short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40451,36): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40452,36): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40453,36): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40694,53): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40694,49): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(40695,22): warning C4244: =: unsigned short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(42110,27): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(42204,35): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(42230,42): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: uint8_t
+c:\prenos\remc2-development\remc2\sub_main.cpp(42301,47): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: char
+c:\prenos\remc2-development\remc2\sub_main.cpp(43639,35): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: uint16_t
+c:\prenos\remc2-development\remc2\sub_main.cpp(43905,26): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: char
+c:\prenos\remc2-development\remc2\sub_main.cpp(44159,36): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: unsigned short
+c:\prenos\remc2-development\remc2\sub_main.cpp(44181,45): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(44326,27): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45184,43): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45219,36): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: unsigned short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45236,26): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: char
+c:\prenos\remc2-development\remc2\sub_main.cpp(45250,51): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: unsigned char
+c:\prenos\remc2-development\remc2\sub_main.cpp(45263,36): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: unsigned short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45285,41): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45331,40): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45340,44): warning C4302: přetypování: zkrácení z: type_event_0x6E8E * na: short
+c:\prenos\remc2-development\remc2\sub_main.cpp(45681,34): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(45791,33): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(45819,30): warning C4244: =: uint16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(47336,24): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(47549,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(47939,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(47960,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(48708,25): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(48733,26): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(49249,25): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(50874,35): warning C4244: =: uint16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(52697,65): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(52719,65): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53814,20): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53815,20): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53833,35): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53864,20): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53933,19): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53934,19): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53950,34): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(53972,23): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(55176,11): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(55318,67): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(55322,62): warning C4244: =: short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(55515,38): warning C4244: =: uint16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(58209,38): warning C4244: argument: uint16_t se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(58259,12): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(58272,15): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(58458,33): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(59631,18): warning C4244: =: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(60174,32): warning C4805: ^: Potenciálně nebezpečné směšování typu bool a typu unsigned char v jedné operaci
+c:\prenos\remc2-development\remc2\sub_main.cpp(60913,28): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(60965,28): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(61473,14): warning C4244: =: __int64 se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(61932,12): warning C4244: =: __int64 se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(62537,12): warning C4244: =: __int64 se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(64094,20): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(64097,21): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(65527,25): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(65941,28): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(68167,21): warning C4244: =: int16_t se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(70480,31): warning C4244: argument: short se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(70528,30): warning C4244: argument: short se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(71397,16): warning C4018: >: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(71842,70): warning C4805: ==: Potenciálně nebezpečné směšování typu bool a typu int v jedné operaci
+c:\prenos\remc2-development\remc2\sub_main.cpp(71864,47): warning C4805: ==: Potenciálně nebezpečné směšování typu bool a typu int v jedné operaci
+c:\prenos\remc2-development\remc2\sub_main.cpp(72131,4): warning C4477: sprintf: Formátovací řetězec %ld vyžaduje argument typu long, ale variadický argument 1 má typ type_event_0x6E8E.
+c:\prenos\remc2-development\remc2\sub_main.cpp(72578,38): warning C4018: <=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(73206,11): warning C4102: LABEL_22: neodkazovaná jmenovka
+c:\prenos\remc2-development\remc2\sub_main.cpp(73561,11): warning C4244: =: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(73565,10): warning C4244: =: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(74037,27): warning C4244: =: int16_t se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(74110,54): warning C4244: =: long se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(74909,14): warning C4018: >: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(74921,9): warning C4244: argument: int16_t se převádí na unsigned char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(74920,9): warning C4244: argument: int16_t se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75444,29): warning C4309: =: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(75758,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75762,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75766,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75770,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75774,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75778,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75782,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75787,18): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75798,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75802,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75806,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75810,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75814,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75818,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75822,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(75827,19): warning C4244: =: short se převádí na uint8; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(76320,9): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(76366,9): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(76412,9): warning C4244: return: short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(76472,30): warning C4244: argument: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(77111,37): warning C4244: =: _Ty se převádí na char; může dojít ke ztrátě dat.
+          with
+          [
+              _Ty=int16_t
+          ]
+c:\prenos\remc2-development\remc2\sub_main.cpp(77476,34): warning C4244: =: _Ty se převádí na char; může dojít ke ztrátě dat.
+          with
+          [
+              _Ty=int16_t
+          ]
+c:\prenos\remc2-development\remc2\sub_main.cpp(77590,32): warning C4244: =: short se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(78064,214): warning C4554: >>: Zkontrolujte, jestli není chyba v prioritě operátorů; zadejte prioritu jednoznačně pomocí závorek.
+c:\prenos\remc2-development\remc2\sub_main.cpp(78097,215): warning C4554: >>: Zkontrolujte, jestli není chyba v prioritě operátorů; zadejte prioritu jednoznačně pomocí závorek.
+c:\prenos\remc2-development\remc2\sub_main.cpp(78189,26): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(78191,105): warning C4018: <: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(78824,39): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(79169,37): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(79692,28): warning C4244: =: double se převádí na uint32; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(80164,44): warning C4244: =: int16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(80165,44): warning C4244: =: int16_t se převádí na int8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(80614,3): warning C4390: ; – Našel se prázdný řízený příkaz; zadali jste ho tak záměrně?
+c:\prenos\remc2-development\remc2\sub_main.cpp(80793,12): warning C4244: =: unsigned short se převádí na uint8_t; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(80874,11): warning C4244: =: unsigned short se převádí na char; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(80913,20): warning C4305: =: zkrácení z: double na: float
+c:\prenos\remc2-development\remc2\sub_main.cpp(81672,26): warning C4018: >=: signed/unsigned – neshoda
+c:\prenos\remc2-development\remc2\sub_main.cpp(82169,35): warning C4309: argument: zkrácení konstantní hodnoty
+c:\prenos\remc2-development\remc2\sub_main.cpp(82961,32): warning C4244: =: unsigned __int64 se převádí na int; může dojít ke ztrátě dat.
+c:\prenos\remc2-development\remc2\sub_main.cpp(83061,32): warning C4244: =: unsigned __int64 se převádí na int; může dojít ke ztrátě dat.
+  remc2.vcxproj -> C:\prenos\remc2-development\Debug\remc2.exe
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music0.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music1.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music2.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music3.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music4.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\music5.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\cave\Brevyn_-_02_-_Indigo.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\cave\how_the_night_came_-_04_-_IV_C6H807.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\cave\Komiku_-_52_-_Cave_of_time.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\cave\Metre_-_01_-_Cave_of_Crystals.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\day\Daniel_Birch_-_03_-_Walk_To_Nowhere.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\day\Daniel_Birch_-_05_-_Fluid_Dreams.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\day\Daniel_Birch_-_05_-_Run_It_Might_Be_Somebody.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\day\Marilyn_Roxie_-_01_-_Silent_Nature.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\day\Silent_Strangers_-_11_-_Crawl.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\night\Daniel_Birch_-_02_-_Trying_My_Best_To_Move_Forward.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\night\Daniel_Birch_-_05_-_Sinking_In_The_Rain.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\night\how_the_night_came_-_03_-_III_H3PO4.ogg
+  C:\prenos\remc2-development\enhancedassets\music-ogg\alternative\night\Lobo_Loco_-_08_-_Night_Rider_2_ID_992.ogg
+  19 File(s) copied

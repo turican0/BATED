@@ -1,0 +1,79 @@
+(translation_unit [0, 0] - [10, 1]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 25]))
+  (function_definition [2, 0] - [5, 1]
+    declarator: (function_declarator [2, 0] - [2, 29]
+      declarator: (qualified_identifier [2, 0] - [2, 27]
+        scope: (namespace_identifier [2, 0] - [2, 12])
+        name: (destructor_name [2, 14] - [2, 27]
+          (identifier [2, 15] - [2, 27])))
+      parameters: (parameter_list [2, 27] - [2, 29]))
+    body: (compound_statement [3, 0] - [5, 1]))
+  (function_definition [7, 0] - [10, 1]
+    type: (primitive_type [7, 0] - [7, 4])
+    declarator: (function_declarator [7, 5] - [7, 409]
+      declarator: (qualified_identifier [7, 5] - [7, 28]
+        scope: (namespace_identifier [7, 5] - [7, 17])
+        name: (identifier [7, 19] - [7, 28]))
+      parameters: (parameter_list [7, 28] - [7, 409]
+        (parameter_declaration [7, 29] - [7, 37]
+          type: (primitive_type [7, 29] - [7, 32])
+          declarator: (identifier [7, 33] - [7, 37]))
+        (parameter_declaration [7, 39] - [7, 47]
+          type: (primitive_type [7, 39] - [7, 42])
+          declarator: (identifier [7, 43] - [7, 47]))
+        (parameter_declaration [7, 49] - [7, 60]
+          type: (primitive_type [7, 49] - [7, 56])
+          declarator: (identifier [7, 57] - [7, 60]))
+        (parameter_declaration [7, 62] - [7, 74]
+          type: (primitive_type [7, 62] - [7, 69])
+          declarator: (identifier [7, 70] - [7, 74]))
+        (parameter_declaration [7, 76] - [7, 89]
+          type: (primitive_type [7, 76] - [7, 83])
+          declarator: (identifier [7, 84] - [7, 89]))
+        (parameter_declaration [7, 91] - [7, 103]
+          type: (primitive_type [7, 91] - [7, 98])
+          declarator: (identifier [7, 99] - [7, 103]))
+        (parameter_declaration [7, 105] - [7, 116]
+          type: (primitive_type [7, 105] - [7, 112])
+          declarator: (identifier [7, 113] - [7, 116]))
+        (parameter_declaration [7, 118] - [7, 137]
+          type: (primitive_type [7, 118] - [7, 125])
+          declarator: (array_declarator [7, 126] - [7, 137]
+            declarator: (identifier [7, 126] - [7, 135])))
+        (parameter_declaration [7, 139] - [7, 177]
+          type: (type_identifier [7, 139] - [7, 156])
+          declarator: (pointer_declarator [7, 156] - [7, 177]
+            declarator: (pointer_declarator [7, 157] - [7, 177]
+              declarator: (array_declarator [7, 159] - [7, 177]
+                declarator: (identifier [7, 159] - [7, 175])))))
+        (parameter_declaration [7, 179] - [7, 202]
+          type: (primitive_type [7, 179] - [7, 186])
+          declarator: (array_declarator [7, 187] - [7, 202]
+            declarator: (identifier [7, 187] - [7, 200])))
+        (parameter_declaration [7, 204] - [7, 227]
+          type: (primitive_type [7, 204] - [7, 211])
+          declarator: (array_declarator [7, 212] - [7, 227]
+            declarator: (identifier [7, 212] - [7, 225])))
+        (parameter_declaration [7, 229] - [7, 249]
+          type: (primitive_type [7, 229] - [7, 236])
+          declarator: (array_declarator [7, 237] - [7, 249]
+            declarator: (identifier [7, 237] - [7, 247])))
+        (parameter_declaration [7, 251] - [7, 285]
+          type: (type_identifier [7, 251] - [7, 268])
+          declarator: (pointer_declarator [7, 268] - [7, 285]
+            declarator: (array_declarator [7, 270] - [7, 285]
+              declarator: (identifier [7, 270] - [7, 283]))))
+        (parameter_declaration [7, 287] - [7, 325]
+          type: (type_identifier [7, 287] - [7, 308])
+          declarator: (identifier [7, 309] - [7, 325]))
+        (parameter_declaration [7, 327] - [7, 368]
+          type: (primitive_type [7, 327] - [7, 334])
+          declarator: (identifier [7, 335] - [7, 368]))
+        (parameter_declaration [7, 370] - [7, 390]
+          type: (primitive_type [7, 370] - [7, 377])
+          declarator: (identifier [7, 378] - [7, 390]))
+        (parameter_declaration [7, 392] - [7, 408]
+          type: (primitive_type [7, 392] - [7, 396])
+          declarator: (identifier [7, 397] - [7, 408]))))
+    body: (compound_statement [8, 0] - [10, 1])))

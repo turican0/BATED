@@ -1,0 +1,37 @@
+(translation_unit [0, 0] - [18, 0]
+  (preproc_ifdef [0, 0] - [17, 6]
+    name: (identifier [0, 8] - [0, 20])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 20]))
+    (preproc_include [3, 0] - [4, 0]
+      path: (system_lib_string [3, 9] - [3, 18]))
+    (comment [4, 0] - [4, 22])
+    (comment [5, 0] - [5, 21])
+    (comment [6, 0] - [6, 22])
+    (preproc_include [7, 0] - [8, 0]
+      path: (system_lib_string [7, 9] - [7, 19])
+      (comment [7, 24] - [7, 63]))
+    (comment [9, 0] - [9, 39])
+    (comment [11, 0] - [11, 49])
+    (comment [12, 0] - [12, 38])
+    (declaration [14, 0] - [14, 42]
+      type: (primitive_type [14, 0] - [14, 4])
+      declarator: (function_declarator [14, 5] - [14, 41]
+        declarator: (identifier [14, 5] - [14, 15])
+        parameters: (parameter_list [14, 15] - [14, 41]
+          (parameter_declaration [14, 16] - [14, 35]
+            (type_qualifier [14, 16] - [14, 21])
+            type: (primitive_type [14, 22] - [14, 26])
+            declarator: (pointer_declarator [14, 27] - [14, 35]
+              declarator: (identifier [14, 29] - [14, 35]))))))
+    (declaration [15, 0] - [15, 40]
+      type: (primitive_type [15, 0] - [15, 4])
+      declarator: (function_declarator [15, 5] - [15, 39]
+        declarator: (identifier [15, 5] - [15, 13])
+        parameters: (parameter_list [15, 13] - [15, 39]
+          (parameter_declaration [15, 14] - [15, 33]
+            (type_qualifier [15, 14] - [15, 19])
+            type: (primitive_type [15, 20] - [15, 24])
+            declarator: (pointer_declarator [15, 25] - [15, 33]
+              declarator: (identifier [15, 27] - [15, 33])))))))
+  (comment [17, 7] - [17, 22]))

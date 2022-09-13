@@ -1,0 +1,71 @@
+(translation_unit [0, 0] - [34, 23]
+  (preproc_call [0, 0] - [1, 0]
+    directive: (preproc_directive [0, 0] - [0, 7])
+    argument: (preproc_arg [0, 7] - [0, 13]))
+  (preproc_ifdef [1, 0] - [34, 6]
+    name: (identifier [1, 8] - [1, 22])
+    (preproc_def [2, 0] - [4, 0]
+      name: (identifier [2, 8] - [2, 22]))
+    (preproc_include [4, 0] - [5, 0]
+      path: (system_lib_string [4, 9] - [4, 17]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (system_lib_string [5, 9] - [5, 18]))
+    (preproc_if [7, 0] - [9, 6]
+      condition: (binary_expression [7, 4] - [7, 37]
+        left: (preproc_defined [7, 4] - [7, 18]
+          (identifier [7, 12] - [7, 17]))
+        right: (preproc_defined [7, 22] - [7, 37]
+          (identifier [7, 30] - [7, 36])))
+      (preproc_call [8, 0] - [9, 0]
+        directive: (preproc_directive [8, 0] - [8, 8])
+        argument: (preproc_arg [8, 8] - [8, 31])))
+    (preproc_ifdef [11, 0] - [14, 6]
+      name: (identifier [11, 7] - [11, 17])
+      (preproc_include [12, 0] - [13, 0]
+        path: (string_literal [12, 9] - [12, 20]))
+      (preproc_include [13, 0] - [14, 0]
+        path: (string_literal [13, 9] - [13, 23])))
+    (comment [14, 7] - [14, 20])
+    (preproc_def [16, 0] - [17, 0]
+      name: (identifier [16, 8] - [16, 14])
+      value: (preproc_arg [16, 14] - [16, 20]))
+    (preproc_def [17, 0] - [18, 0]
+      name: (identifier [17, 8] - [17, 14])
+      value: (preproc_arg [17, 14] - [17, 21]))
+    (preproc_def [18, 0] - [19, 0]
+      name: (identifier [18, 8] - [18, 15])
+      value: (preproc_arg [18, 15] - [18, 20]))
+    (preproc_call [20, 0] - [21, 0]
+      directive: (preproc_directive [20, 0] - [20, 7])
+      argument: (preproc_arg [20, 7] - [20, 17]))
+    (type_definition [21, 0] - [25, 15]
+      type: (struct_specifier [21, 8] - [25, 1]
+        body: (field_declaration_list [21, 15] - [25, 1]
+          (field_declaration [22, 1] - [22, 15]
+            type: (primitive_type [22, 1] - [22, 8])
+            declarator: (pointer_declarator [22, 8] - [22, 14]
+              declarator: (field_identifier [22, 10] - [22, 14])))
+          (field_declaration [23, 1] - [23, 17]
+            type: (primitive_type [23, 1] - [23, 8])
+            declarator: (field_identifier [23, 9] - [23, 16]))
+          (field_declaration [24, 1] - [24, 18]
+            type: (primitive_type [24, 1] - [24, 8])
+            declarator: (field_identifier [24, 9] - [24, 17]))))
+      declarator: (type_identifier [25, 2] - [25, 14]))
+    (type_definition [27, 0] - [31, 16]
+      type: (struct_specifier [27, 8] - [31, 1]
+        body: (field_declaration_list [27, 15] - [31, 1]
+          (field_declaration [28, 1] - [28, 17]
+            type: (primitive_type [28, 1] - [28, 9])
+            declarator: (field_identifier [28, 10] - [28, 16]))
+          (field_declaration [29, 1] - [29, 17]
+            type: (primitive_type [29, 1] - [29, 8])
+            declarator: (field_identifier [29, 9] - [29, 16]))
+          (field_declaration [30, 1] - [30, 18]
+            type: (primitive_type [30, 1] - [30, 8])
+            declarator: (field_identifier [30, 9] - [30, 17]))))
+      declarator: (type_identifier [31, 2] - [31, 15]))
+    (preproc_call [32, 0] - [33, 0]
+      directive: (preproc_directive [32, 0] - [32, 7])
+      argument: (preproc_arg [32, 7] - [32, 18])))
+  (comment [34, 7] - [34, 23]))

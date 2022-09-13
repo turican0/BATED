@@ -1,0 +1,42 @@
+(translation_unit [0, 0] - [8, 30]
+  (preproc_ifdef [0, 0] - [8, 6]
+    name: (identifier [0, 8] - [0, 29])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 29]))
+    (preproc_include [3, 0] - [4, 0]
+      path: (system_lib_string [3, 9] - [3, 18]))
+    (declaration [5, 0] - [5, 49]
+      type: (primitive_type [5, 0] - [5, 4])
+      declarator: (function_declarator [5, 5] - [5, 48]
+        declarator: (identifier [5, 5] - [5, 16])
+        parameters: (parameter_list [5, 16] - [5, 48]
+          (parameter_declaration [5, 17] - [5, 33]
+            type: (primitive_type [5, 17] - [5, 25])
+            declarator: (identifier [5, 26] - [5, 33]))
+          (parameter_declaration [5, 35] - [5, 40]
+            type: (primitive_type [5, 35] - [5, 38])
+            declarator: (identifier [5, 39] - [5, 40]))
+          (parameter_declaration [5, 42] - [5, 47]
+            type: (primitive_type [5, 42] - [5, 45])
+            declarator: (identifier [5, 46] - [5, 47])))))
+    (declaration [6, 0] - [6, 82]
+      type: (primitive_type [6, 0] - [6, 4])
+      declarator: (function_declarator [6, 5] - [6, 81]
+        declarator: (identifier [6, 5] - [6, 16])
+        parameters: (parameter_list [6, 16] - [6, 81]
+          (parameter_declaration [6, 17] - [6, 33]
+            type: (primitive_type [6, 17] - [6, 25])
+            declarator: (identifier [6, 26] - [6, 33]))
+          (parameter_declaration [6, 35] - [6, 40]
+            type: (primitive_type [6, 35] - [6, 38])
+            declarator: (identifier [6, 39] - [6, 40]))
+          (parameter_declaration [6, 42] - [6, 47]
+            type: (primitive_type [6, 42] - [6, 45])
+            declarator: (identifier [6, 46] - [6, 47]))
+          (parameter_declaration [6, 49] - [6, 63]
+            type: (primitive_type [6, 49] - [6, 57])
+            declarator: (identifier [6, 58] - [6, 63]))
+          (parameter_declaration [6, 65] - [6, 80]
+            type: (primitive_type [6, 65] - [6, 73])
+            declarator: (identifier [6, 74] - [6, 80]))))))
+  (comment [8, 7] - [8, 30]))

@@ -1,0 +1,25 @@
+(translation_unit [0, 0] - [9, 6]
+  (preproc_call [0, 0] - [1, 0]
+    directive: (preproc_directive [0, 0] - [0, 7])
+    argument: (preproc_arg [0, 7] - [0, 13]))
+  (preproc_ifdef [1, 0] - [9, 6]
+    name: (identifier [1, 8] - [1, 33])
+    (preproc_def [2, 0] - [4, 0]
+      name: (identifier [2, 8] - [2, 33]))
+    (preproc_include [4, 0] - [5, 0]
+      path: (system_lib_string [4, 9] - [4, 18]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (string_literal [5, 9] - [5, 27]))
+    (declaration [7, 0] - [7, 83]
+      type: (primitive_type [7, 0] - [7, 4])
+      declarator: (function_declarator [7, 5] - [7, 82]
+        declarator: (identifier [7, 5] - [7, 36])
+        parameters: (parameter_list [7, 36] - [7, 82]
+          (parameter_declaration [7, 37] - [7, 64]
+            type: (type_identifier [7, 37] - [7, 57])
+            declarator: (pointer_declarator [7, 57] - [7, 64]
+              declarator: (identifier [7, 59] - [7, 64])))
+          (parameter_declaration [7, 66] - [7, 81]
+            type: (primitive_type [7, 66] - [7, 73])
+            declarator: (pointer_declarator [7, 73] - [7, 81]
+              declarator: (identifier [7, 75] - [7, 81]))))))))

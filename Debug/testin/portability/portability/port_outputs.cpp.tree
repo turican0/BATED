@@ -1,0 +1,118 @@
+(translation_unit [0, 0] - [42, 0]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 25]))
+  (preproc_include [1, 0] - [2, 0]
+    path: (string_literal [1, 9] - [1, 31]))
+  (preproc_include [2, 0] - [3, 0]
+    path: (string_literal [2, 9] - [2, 40]))
+  (function_definition [4, 0] - [16, 1]
+    type: (primitive_type [4, 0] - [4, 4])
+    declarator: (function_declarator [4, 5] - [4, 41]
+      declarator: (identifier [4, 5] - [4, 15])
+      parameters: (parameter_list [4, 15] - [4, 41]
+        (parameter_declaration [4, 16] - [4, 35]
+          (type_qualifier [4, 16] - [4, 21])
+          type: (primitive_type [4, 22] - [4, 26])
+          declarator: (pointer_declarator [4, 27] - [4, 35]
+            declarator: (identifier [4, 29] - [4, 35])))))
+    body: (compound_statement [4, 42] - [16, 1]
+      (preproc_ifdef [5, 0] - [11, 6]
+        name: (identifier [5, 7] - [5, 17])
+        (expression_statement [6, 1] - [6, 23]
+          (call_expression [6, 1] - [6, 22]
+            function: (identifier [6, 1] - [6, 14])
+            arguments: (argument_list [6, 14] - [6, 22]
+              (identifier [6, 15] - [6, 21]))))
+        alternative: (preproc_else [7, 0] - [10, 32]
+          (if_statement [8, 1] - [9, 23]
+            condition: (condition_clause [8, 4] - [8, 47]
+              value: (call_expression [8, 5] - [8, 46]
+                function: (field_expression [8, 5] - [8, 44]
+                  argument: (identifier [8, 5] - [8, 22])
+                  field: (field_identifier [8, 23] - [8, 44]))
+                arguments: (argument_list [8, 44] - [8, 46])))
+            consequence: (expression_statement [9, 2] - [9, 23]
+              (call_expression [9, 2] - [9, 22]
+                function: (identifier [9, 2] - [9, 8])
+                arguments: (argument_list [9, 8] - [9, 22]
+                  (string_literal [9, 9] - [9, 13])
+                  (identifier [9, 15] - [9, 21])))))
+          (expression_statement [10, 1] - [10, 32]
+            (call_expression [10, 1] - [10, 31]
+              function: (identifier [10, 1] - [10, 16])
+              arguments: (argument_list [10, 16] - [10, 31]
+                (cast_expression [10, 17] - [10, 30]
+                  type: (type_descriptor [10, 18] - [10, 23]
+                    type: (primitive_type [10, 18] - [10, 22])
+                    declarator: (abstract_pointer_declarator [10, 22] - [10, 23]))
+                  value: (identifier [10, 24] - [10, 30])))))))
+      (comment [11, 7] - [11, 20])
+      (comment [13, 1] - [15, 27])))
+  (function_definition [18, 0] - [39, 1]
+    type: (primitive_type [18, 0] - [18, 4])
+    declarator: (function_declarator [18, 5] - [18, 39]
+      declarator: (identifier [18, 5] - [18, 13])
+      parameters: (parameter_list [18, 13] - [18, 39]
+        (parameter_declaration [18, 14] - [18, 33]
+          (type_qualifier [18, 14] - [18, 19])
+          type: (primitive_type [18, 20] - [18, 24])
+          declarator: (pointer_declarator [18, 25] - [18, 33]
+            declarator: (identifier [18, 27] - [18, 33])))))
+    body: (compound_statement [18, 40] - [39, 1]
+      (declaration [19, 1] - [19, 21]
+        type: (primitive_type [19, 1] - [19, 5])
+        declarator: (array_declarator [19, 6] - [19, 20]
+          declarator: (identifier [19, 6] - [19, 14])
+          size: (number_literal [19, 15] - [19, 19])))
+      (declaration [20, 1] - [20, 13]
+        type: (type_identifier [20, 1] - [20, 8])
+        declarator: (identifier [20, 9] - [20, 12]))
+      (comment [21, 1] - [21, 13])
+      (expression_statement [22, 1] - [22, 23]
+        (call_expression [22, 1] - [22, 22]
+          function: (identifier [22, 1] - [22, 9])
+          arguments: (argument_list [22, 9] - [22, 22]
+            (identifier [22, 10] - [22, 13])
+            (identifier [22, 15] - [22, 21]))))
+      (expression_statement [23, 1] - [23, 33]
+        (call_expression [23, 1] - [23, 32]
+          function: (identifier [23, 1] - [23, 9])
+          arguments: (argument_list [23, 9] - [23, 32]
+            (identifier [23, 10] - [23, 18])
+            (identifier [23, 20] - [23, 26])
+            (identifier [23, 28] - [23, 31]))))
+      (expression_statement [24, 1] - [24, 13]
+        (call_expression [24, 1] - [24, 12]
+          function: (identifier [24, 1] - [24, 7])
+          arguments: (argument_list [24, 7] - [24, 12]
+            (identifier [24, 8] - [24, 11]))))
+      (preproc_ifdef [26, 0] - [32, 6]
+        name: (identifier [26, 7] - [26, 17])
+        (expression_statement [27, 1] - [27, 25]
+          (call_expression [27, 1] - [27, 24]
+            function: (identifier [27, 1] - [27, 14])
+            arguments: (argument_list [27, 14] - [27, 24]
+              (identifier [27, 15] - [27, 23]))))
+        alternative: (preproc_else [28, 0] - [31, 27]
+          (if_statement [29, 1] - [30, 25]
+            condition: (condition_clause [29, 3] - [29, 46]
+              value: (call_expression [29, 4] - [29, 45]
+                function: (field_expression [29, 4] - [29, 43]
+                  argument: (identifier [29, 4] - [29, 21])
+                  field: (field_identifier [29, 22] - [29, 43]))
+                arguments: (argument_list [29, 43] - [29, 45])))
+            consequence: (expression_statement [30, 2] - [30, 25]
+              (call_expression [30, 2] - [30, 24]
+                function: (identifier [30, 2] - [30, 8])
+                arguments: (argument_list [30, 8] - [30, 24]
+                  (string_literal [30, 9] - [30, 13])
+                  (identifier [30, 15] - [30, 23])))))
+          (expression_statement [31, 1] - [31, 27]
+            (call_expression [31, 1] - [31, 26]
+              function: (identifier [31, 1] - [31, 16])
+              arguments: (argument_list [31, 16] - [31, 26]
+                (identifier [31, 17] - [31, 25]))))))
+      (comment [32, 7] - [32, 20])
+      (comment [34, 1] - [34, 28])
+      (comment [35, 1] - [35, 16])
+      (comment [36, 1] - [38, 27]))))

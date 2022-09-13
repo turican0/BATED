@@ -1,0 +1,19 @@
+(translation_unit [0, 0] - [9, 21]
+  (preproc_call [0, 0] - [1, 0]
+    directive: (preproc_directive [0, 0] - [0, 7])
+    argument: (preproc_arg [0, 7] - [0, 13]))
+  (preproc_ifdef [2, 0] - [9, 6]
+    name: (identifier [2, 8] - [2, 20])
+    (preproc_def [3, 0] - [5, 0]
+      name: (identifier [3, 8] - [3, 20]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (string_literal [5, 9] - [5, 19]))
+    (declaration [7, 0] - [7, 34]
+      (storage_class_specifier [7, 0] - [7, 6])
+      type: (primitive_type [7, 7] - [7, 15])
+      declarator: (array_declarator [7, 16] - [7, 33]
+        declarator: (array_declarator [7, 16] - [7, 30]
+          declarator: (identifier [7, 16] - [7, 26])
+          size: (number_literal [7, 27] - [7, 29]))
+        size: (number_literal [7, 31] - [7, 32]))))
+  (comment [9, 7] - [9, 21]))

@@ -1,0 +1,39 @@
+(translation_unit [0, 0] - [42, 0]
+  (comment [0, 0] - [20, 2])
+  (preproc_ifdef [22, 0] - [41, 6]
+    name: (identifier [22, 8] - [22, 28])
+    (preproc_def [23, 0] - [24, 0]
+      name: (identifier [23, 8] - [23, 28]))
+    (comment [24, 0] - [24, 22])
+    (comment [25, 0] - [25, 33])
+    (declaration [27, 0] - [28, 72]
+      type: (sized_type_specifier [27, 0] - [27, 13]
+        type: (primitive_type [27, 9] - [27, 13]))
+      declarator: (pointer_declarator [27, 13] - [28, 71]
+        declarator: (function_declarator [27, 15] - [28, 71]
+          declarator: (identifier [27, 15] - [27, 32])
+          parameters: (parameter_list [27, 32] - [28, 71]
+            (parameter_declaration [27, 33] - [27, 62]
+              (type_qualifier [27, 33] - [27, 38])
+              type: (sized_type_specifier [27, 39] - [27, 52]
+                type: (primitive_type [27, 48] - [27, 52]))
+              declarator: (pointer_declarator [27, 52] - [27, 62]
+                declarator: (identifier [27, 54] - [27, 62])))
+            (parameter_declaration [28, 33] - [28, 50]
+              type: (primitive_type [28, 33] - [28, 39])
+              declarator: (identifier [28, 40] - [28, 50]))
+            (parameter_declaration [28, 52] - [28, 70]
+              type: (primitive_type [28, 52] - [28, 58])
+              declarator: (pointer_declarator [28, 58] - [28, 70]
+                declarator: (identifier [28, 60] - [28, 70])))))))
+    (comment [30, 0] - [30, 35])
+    (comment [31, 0] - [31, 3])
+    (comment [32, 0] - [32, 73])
+    (comment [33, 0] - [33, 74])
+    (comment [34, 0] - [34, 4])
+    (comment [35, 0] - [35, 79])
+    (comment [36, 0] - [36, 45])
+    (comment [37, 0] - [37, 19])
+    (comment [38, 0] - [38, 4])
+    (comment [40, 0] - [40, 36]))
+  (comment [41, 7] - [41, 31]))

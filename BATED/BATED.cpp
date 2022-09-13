@@ -236,8 +236,8 @@ void AnalyzeLines(vector<TypeLine>* ent, string* testcode, string* testcomment) 
             locLine.entity = (*testcode).substr(oldindex, index - oldindex - cutR);
             locLine.comment = (*testcomment).substr(oldindex, index - oldindex - cutR);
             locLine.lineIndex = lineIndex++;
-            if (locLine.entity.length() > 0)
-                ent->push_back(locLine);
+            //if (locLine.entity.length() > 0)
+            ent->push_back(locLine);
         }
         else
         {
@@ -246,8 +246,8 @@ void AnalyzeLines(vector<TypeLine>* ent, string* testcode, string* testcomment) 
             locLine.entity = (*testcode).substr(oldindex, index - oldindex);
             locLine.comment = (*testcomment).substr(oldindex, index - oldindex);
             locLine.lineIndex = lineIndex;
-            if (locLine.entity.length() > 0)
-                ent->push_back(locLine);
+            //if (locLine.entity.length() > 0)
+            ent->push_back(locLine);
             runAgain = false;
         }
     }
@@ -913,7 +913,7 @@ long ReadNumber(string* tree, long* index) {
     return value;
 }
 
-void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT) {
+void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT) {    
     while (true)
     {
         if ((*tree)[*indexT] == '(') break;
@@ -934,6 +934,7 @@ void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT
             (*indexT)++;
         }
         string testStr = (*tree).substr(beginWord, *indexT - beginWord);
+        subTree->type = -1;
         if (testStr == "translation_unit")
             subTree->type = 1;
         else if (testStr == "ERROR")
@@ -1054,8 +1055,150 @@ void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT
             subTree->type = 59;
         else if (testStr == "null")
             subTree->type = 60;
-        else
-            subTree->type = 200;
+        else if (testStr == "continue_statement")
+            subTree->type = 61;
+        else if (testStr == "initializer_list")
+            subTree->type = 62;
+        else if (testStr == "type_qualifier")
+            subTree->type = 63;
+        else if (testStr == "compound_literal_expression")
+            subTree->type = 64;
+        else if (testStr == "preproc_if")
+            subTree->type = 65;
+        else if (testStr == "preproc_else")
+            subTree->type = 66;
+        else if (testStr == "preproc_arg")
+            subTree->type = 67;
+        else if (testStr == "preproc_ifdef")
+            subTree->type = 68;
+        else if (testStr == "preproc_def")
+            subTree->type = 69;
+        else if (testStr == "using_declaration")
+            subTree->type = 70;
+        else if (testStr == "system_lib_string")
+            subTree->type = 71;
+        else if (testStr == "parenthesized_declarator")
+            subTree->type = 72;
+        else if (testStr == "sized_type_specifier")
+            subTree->type = 73;
+        else if (testStr == "goto_statement")
+            subTree->type = 74;
+        else if (testStr == "statement_identifier")
+            subTree->type = 75;
+        else if (testStr == "labeled_statement")
+            subTree->type = 76;
+        else if (testStr == "comma_expression")
+            subTree->type = 77;
+        else if (testStr == "abstract_function_declarator")
+            subTree->type = 78;
+        else if (testStr == "abstract_parenthesized_declarator")
+            subTree->type = 79;
+        else if (testStr == "preproc_function_def")
+            subTree->type = 80;
+        else if (testStr == "preproc_params")
+            subTree->type = 81;
+        else if (testStr == "user_defined_literal")
+            subTree->type = 82;
+        else if (testStr == "literal_suffix")
+            subTree->type = 83;
+        else if (testStr == "storage_class_specifier")
+            subTree->type = 84;
+        else if (testStr == "template_type")
+            subTree->type = 85;
+        else if (testStr == "nullptr")
+            subTree->type = 86;
+        else if (testStr == "conditional_expression")
+            subTree->type = 87;
+        else if (testStr == "reference_declarator")
+            subTree->type = 88;
+        else if (testStr == "preproc_defined")
+            subTree->type = 89;
+        else if (testStr == "this")
+            subTree->type = 90;
+        else if (testStr == "auto")
+            subTree->type = 91;
+        else if (testStr == "lambda_expression")
+            subTree->type = 92;
+        else if (testStr == "lambda_capture_specifier")
+            subTree->type = 93;
+        else if (testStr == "class_specifier")
+            subTree->type = 94;
+        else if (testStr == "access_specifier")
+            subTree->type = 95;
+        else if (testStr == "default_method_clause")
+            subTree->type = 96;
+        else if (testStr == "preproc_elif")
+            subTree->type = 97;
+        else if (testStr == "template_declaration")
+            subTree->type = 98;
+        else if (testStr == "template_parameter_list")
+            subTree->type = 99;
+        else if (testStr == "type_parameter_declaration")
+            subTree->type = 100;
+        if(subTree->type == -1)
+            {
+                if (testStr == "throw_statement")
+                    subTree->type = 101;
+                else if (testStr == "new_expression")
+                    subTree->type = 102;
+                else if (testStr == "new_declarator")
+                    subTree->type = 103;
+                else if (testStr == "base_class_clause")
+                    subTree->type = 104;
+                else if (testStr == "union_specifier")
+                    subTree->type = 105;
+                else if (testStr == "enum_specifier")
+                    subTree->type = 106;
+                else if (testStr == "enumerator_list")
+                    subTree->type = 107;
+                else if (testStr == "enumerator")
+                    subTree->type = 108;
+                else if (testStr == "destructor_name")
+                    subTree->type = 109;
+                else if (testStr == "field_initializer_list")
+                    subTree->type = 110;
+                else if (testStr == "field_initializer")
+                    subTree->type = 111;
+                else if (testStr == "for_range_loop")
+                    subTree->type = 112;
+                else if (testStr == "delete_expression")
+                    subTree->type = 113;
+                else if (testStr == "virtual_function_specifier")
+                    subTree->type = 114;
+                else if (testStr == "template_method")
+                    subTree->type = 115;
+                else if (testStr == "ms_call_modifier")
+                    subTree->type = 116;
+                else if (testStr == "linkage_specification")
+                    subTree->type = 117;
+                else if (testStr == "declaration_list")
+                    subTree->type = 118;
+                else if (testStr == "concatenated_string")
+                    subTree->type = 119;
+                else if (testStr == "ms_declspec_modifier")
+                    subTree->type = 120;
+                else if (testStr == "attribute_specifier")
+                    subTree->type = 121;
+                else if (testStr == "subscript_designator")
+                    subTree->type = 122;
+                else if (testStr == "abstract_array_declarator")
+                    subTree->type = 123;
+                else if (testStr == "MISSING")
+                    subTree->type = 124;
+                else if (testStr == "namespace_definition")
+                    subTree->type = 125;
+                else if (testStr == "try_statement")
+                    subTree->type = 126;
+                else if (testStr == "catch_clause")
+                    subTree->type = 127;
+                else if (testStr == "operator_name")
+                    subTree->type = 128;
+                else
+                {
+                    printf("\nerror %s not found\n", testStr.c_str());
+                    subTree->type = 200;
+                }
+            }
         (*indexT) += 2;
         subTree->beginLine = ReadNumber(tree, indexT);
         (*indexT) += 2;
@@ -1085,6 +1228,7 @@ void AnalyzeBranch(string* source, string* tree, TypeTree* subTree, long* indexT
         }
         while (true)
         {
+            if (*indexT >= (*tree).size()) return;
             TypeTree nextTree;
             AnalyzeBranch(source, tree, &nextTree, indexT);
             subTree->subTree.push_back(nextTree);
@@ -1162,6 +1306,10 @@ void AnalyzeFile(TypeFile* typeFile) {
         free(content_buffer_tree);
 
         AnalyzeTree(typeFile);
+        printf("File: %s imported\n", typeFile->filename.c_str());
+
+        typeFile->comment = typeFile->source;
+        AnalyzeLines(&typeFile->lines, &typeFile->source, &typeFile->comment);
     }    
 
     //AnalyzeComments(&typeFile->source, &typeFile->comment);
@@ -1235,14 +1383,14 @@ void AnalyzeDir(vector<TypeFile>* locDir, string inPath) {
 typedef struct {
     string filename;
     long lineIndex;
-    TypeWord word;
+    string word;
 } TypeDeclarations;
 
 bool FindDecl(vector<TypeDeclarations>* declarations, string* actWord, string* tempFile, long* tempLineIndex)
 {
     for (TypeDeclarations actDecl : *declarations)
     {
-        if (actDecl.word.entity == *actWord)
+        if (actDecl.word == *actWord)
         {
             *tempFile = actDecl.filename;
             *tempLineIndex = actDecl.lineIndex;
@@ -1251,6 +1399,76 @@ bool FindDecl(vector<TypeDeclarations>* declarations, string* actWord, string* t
     }
     return false;
 }
+
+const int Type_identifier = 3;
+const int Type_declaration = 8;
+const int Type_function_declarator = 17;
+const int Type_storage_class_specifier = 84;
+
+void FindDuplicity(vector<TypeDeclarations>* declarations, TypeTree* actTree, vector<TypeLine>* lines, string* filename) {
+    if (actTree->type == Type_declaration)
+    {
+            for (TypeTree actTree2 : actTree->subTree)
+            {
+                if (actTree2.type == Type_function_declarator)
+                {
+                    for (TypeTree actTree3 : actTree2.subTree)
+                        if (actTree3.type == Type_identifier)
+                        {
+                            long tempLineIndex;
+                            string tempFile;
+                            string entity = (*lines)[actTree3.beginLine].entity.substr(actTree3.beginChar, actTree3.endChar - actTree3.beginChar);
+                            if (FindDecl(declarations, &entity, &tempFile, &tempLineIndex))
+                            {
+                                //printf("Duplicate declaration: %s", actFile.filename.c_str());
+                                //printf("%s", actWord.entity);
+
+                                printf("Duplicate declaration: %s %s : %d Prev: %s : %d\n", entity.c_str(), (*filename).c_str(), actTree2.beginLine, tempFile.c_str(), tempLineIndex);
+
+                            }
+                            else
+                            {
+                                TypeDeclarations locDeclaration;
+                                locDeclaration.filename = *filename;
+                                locDeclaration.lineIndex = actTree2.beginLine;
+                                locDeclaration.word = entity;
+                                (*declarations).push_back(locDeclaration);
+                            }
+                        }
+                }
+            }
+    }
+    for (TypeTree actTree : actTree->subTree)
+    {
+        FindDuplicity(declarations , &actTree, lines, filename);
+    }
+    
+    /*
+    for (TypeLine actLine : actFile.lines) {
+        for (TypeWord actWord : actLine.words) {
+            if (actWord.type == 10) {
+                long tempLineIndex;
+                string tempFile;
+                if (FindDecl(&declarations, &actWord.entity, &tempFile, &tempLineIndex))
+                {
+                    //printf("Duplicate declaration: %s", actFile.filename.c_str());
+                    //printf("%s", actWord.entity);
+
+                    printf("Duplicate declaration: %s %s : %d Prev: %s : %d\n", actWord.entity.c_str(), actFile.filename.c_str(), actLine.lineIndex, tempFile.c_str(), tempLineIndex);
+
+                }
+                else
+                {
+                    TypeDeclarations locDeclaration;
+                    locDeclaration.filename = actFile.filename;
+                    locDeclaration.lineIndex = actLine.lineIndex;
+                    locDeclaration.word = actWord;
+                    declarations.push_back(locDeclaration);
+                }
+            }
+        }
+    }*/
+};
 
 void MakeConfigCommand(TypeLine* line, long* index)
 {
@@ -1273,30 +1491,7 @@ void MakeConfigCommand(TypeLine* line, long* index)
         vector<TypeDeclarations> declarations;
         
         for (TypeFile actFile : locDir) {
-            for (TypeLine actLine : actFile.lines) {
-                for (TypeWord actWord : actLine.words) {
-                    if (actWord.type == 10) {
-                        long tempLineIndex;
-                        string tempFile;
-                        if (FindDecl(&declarations, &actWord.entity, &tempFile, &tempLineIndex))
-                        {
-                            //printf("Duplicate declaration: %s", actFile.filename.c_str());
-                            //printf("%s", actWord.entity);
-                            
-                            printf("Duplicate declaration: %s %s : %d Prev: %s : %d\n", actWord.entity.c_str(), actFile.filename.c_str(), actLine.lineIndex, tempFile.c_str(), tempLineIndex);
-                            
-                        }
-                        else
-                        {
-                            TypeDeclarations locDeclaration;
-                            locDeclaration.filename = actFile.filename;
-                            locDeclaration.lineIndex = actLine.lineIndex;
-                            locDeclaration.word = actWord;
-                            declarations.push_back(locDeclaration);
-                        }
-                    }
-                }
-            }
+            FindDuplicity(&declarations, &actFile.subTree, &actFile.lines, &actFile.filename);
         }
     }
 }

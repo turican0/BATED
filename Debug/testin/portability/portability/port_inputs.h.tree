@@ -1,0 +1,7 @@
+(translation_unit [0, 0] - [6, 0]
+  (preproc_ifdef [0, 0] - [5, 6]
+    name: (identifier [0, 8] - [0, 19])
+    (preproc_def [1, 0] - [2, 0]
+      name: (identifier [1, 8] - [1, 19]))
+    (comment [2, 0] - [2, 63]))
+  (comment [5, 7] - [5, 21]))

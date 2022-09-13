@@ -1,0 +1,37 @@
+(translation_unit [0, 0] - [11, 0]
+  (preproc_include [0, 0] - [1, 0]
+    path: (system_lib_string [0, 9] - [0, 18]))
+  (preproc_include [1, 0] - [2, 0]
+    path: (system_lib_string [1, 9] - [1, 19]))
+  (preproc_include [2, 0] - [3, 0]
+    path: (system_lib_string [2, 9] - [2, 19]))
+  (preproc_include [3, 0] - [4, 0]
+    path: (string_literal [3, 9] - [3, 17]))
+  (preproc_def [5, 0] - [6, 0]
+    name: (identifier [5, 8] - [5, 14])
+    value: (preproc_arg [5, 14] - [5, 20]))
+  (preproc_def [6, 0] - [7, 0]
+    name: (identifier [6, 8] - [6, 14])
+    value: (preproc_arg [6, 14] - [6, 21]))
+  (preproc_def [7, 0] - [8, 0]
+    name: (identifier [7, 8] - [7, 15])
+    value: (preproc_arg [7, 15] - [7, 22]))
+  (preproc_def [8, 0] - [9, 0]
+    name: (identifier [8, 8] - [8, 14])
+    value: (preproc_arg [8, 14] - [8, 21]))
+  (declaration [9, 0] - [9, 17]
+    type: (primitive_type [9, 0] - [9, 4])
+    declarator: (function_declarator [9, 5] - [9, 16]
+      declarator: (identifier [9, 5] - [9, 14])
+      parameters: (parameter_list [9, 14] - [9, 16])))
+  (declaration [10, 0] - [10, 44]
+    type: (type_identifier [10, 0] - [10, 7])
+    declarator: (function_declarator [10, 8] - [10, 43]
+      declarator: (identifier [10, 8] - [10, 16])
+      parameters: (parameter_list [10, 16] - [10, 43]
+        (parameter_declaration [10, 17] - [10, 24]
+          type: (type_identifier [10, 17] - [10, 24]))
+        (parameter_declaration [10, 26] - [10, 33]
+          type: (type_identifier [10, 26] - [10, 33]))
+        (parameter_declaration [10, 35] - [10, 42]
+          type: (type_identifier [10, 35] - [10, 42]))))))

@@ -1,0 +1,470 @@
+(translation_unit [0, 0] - [99, 0]
+  (preproc_call [0, 0] - [1, 0]
+    directive: (preproc_directive [0, 0] - [0, 7])
+    argument: (preproc_arg [0, 7] - [0, 13]))
+  (preproc_ifdef [1, 0] - [98, 6]
+    name: (identifier [1, 8] - [1, 25])
+    (preproc_def [2, 0] - [4, 0]
+      name: (identifier [2, 8] - [2, 25]))
+    (preproc_include [4, 0] - [5, 0]
+      path: (system_lib_string [4, 9] - [4, 18]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (system_lib_string [5, 9] - [5, 18]))
+    (preproc_include [6, 0] - [7, 0]
+      path: (system_lib_string [6, 9] - [6, 19]))
+    (preproc_include [7, 0] - [8, 0]
+      path: (system_lib_string [7, 9] - [7, 19]))
+    (preproc_include [8, 0] - [9, 0]
+      path: (system_lib_string [8, 9] - [8, 17]))
+    (preproc_include [9, 0] - [10, 0]
+      path: (string_literal [9, 9] - [9, 20]))
+    (preproc_include [10, 0] - [11, 0]
+      path: (string_literal [10, 9] - [10, 22]))
+    (preproc_ifdef [12, 0] - [26, 6]
+      name: (identifier [12, 7] - [12, 15])
+      (preproc_include [13, 1] - [14, 0]
+        path: (system_lib_string [13, 10] - [13, 21]))
+      (preproc_include [14, 1] - [15, 0]
+        path: (system_lib_string [14, 10] - [14, 20]))
+      (preproc_include [15, 1] - [16, 0]
+        path: (system_lib_string [15, 10] - [15, 16]))
+      (preproc_include [16, 1] - [17, 0]
+        path: (string_literal [16, 10] - [16, 22]))
+      alternative: (preproc_else [17, 0] - [26, 0]
+        (preproc_include [18, 1] - [19, 0]
+          path: (string_literal [18, 10] - [18, 20]))
+        (linkage_specification [19, 1] - [21, 2]
+          value: (string_literal [19, 8] - [19, 11])
+          body: (declaration_list [19, 12] - [21, 2]
+            (preproc_include [20, 5] - [21, 0]
+              path: (string_literal [20, 14] - [20, 27]))))
+        (preproc_include [22, 1] - [23, 0]
+          path: (system_lib_string [22, 10] - [22, 20]))
+        (preproc_def [24, 1] - [25, 0]
+          name: (identifier [24, 9] - [24, 17])
+          value: (preproc_arg [24, 17] - [24, 27]))
+        (preproc_def [25, 1] - [26, 0]
+          name: (identifier [25, 9] - [25, 15])
+          value: (preproc_arg [25, 15] - [25, 22]))))
+    (comment [28, 0] - [28, 22])
+    (comment [29, 0] - [29, 22])
+    (comment [30, 0] - [30, 21])
+    (preproc_def [32, 0] - [33, 0]
+      name: (identifier [32, 8] - [32, 19]))
+    (preproc_def [33, 0] - [34, 0]
+      name: (identifier [33, 8] - [33, 19]))
+    (preproc_def [34, 0] - [35, 0]
+      name: (identifier [34, 8] - [34, 21]))
+    (preproc_def [35, 0] - [37, 0]
+      name: (identifier [35, 8] - [35, 22]))
+    (comment [37, 0] - [37, 38])
+    (declaration [39, 0] - [39, 28]
+      (storage_class_specifier [39, 0] - [39, 6])
+      type: (primitive_type [39, 7] - [39, 11])
+      declarator: (array_declarator [39, 12] - [39, 27]
+        declarator: (identifier [39, 12] - [39, 22])
+        size: (number_literal [39, 23] - [39, 26])))
+    (declaration [40, 0] - [40, 26]
+      (storage_class_specifier [40, 0] - [40, 6])
+      type: (primitive_type [40, 7] - [40, 11])
+      declarator: (array_declarator [40, 12] - [40, 25]
+        declarator: (identifier [40, 12] - [40, 20])
+        size: (number_literal [40, 21] - [40, 24])))
+    (declaration [41, 0] - [41, 35]
+      (storage_class_specifier [41, 0] - [41, 6])
+      type: (primitive_type [41, 7] - [41, 11])
+      declarator: (array_declarator [41, 12] - [41, 34]
+        declarator: (identifier [41, 12] - [41, 29])
+        size: (number_literal [41, 30] - [41, 33])))
+    (declaration [44, 0] - [44, 51]
+      type: (sized_type_specifier [44, 0] - [44, 4])
+      declarator: (function_declarator [44, 5] - [44, 50]
+        declarator: (identifier [44, 5] - [44, 17])
+        parameters: (parameter_list [44, 17] - [44, 50]
+          (parameter_declaration [44, 18] - [44, 28]
+            type: (primitive_type [44, 18] - [44, 22])
+            declarator: (pointer_declarator [44, 22] - [44, 28]
+              declarator: (identifier [44, 24] - [44, 28])))
+          (parameter_declaration [44, 30] - [44, 49]
+            type: (type_identifier [44, 30] - [44, 41])
+            declarator: (pointer_declarator [44, 41] - [44, 49]
+              declarator: (identifier [44, 43] - [44, 49]))))))
+    (declaration [45, 0] - [45, 50]
+      type: (sized_type_specifier [45, 0] - [45, 4])
+      declarator: (function_declarator [45, 5] - [45, 49]
+        declarator: (identifier [45, 5] - [45, 16])
+        parameters: (parameter_list [45, 16] - [45, 49]
+          (parameter_declaration [45, 17] - [45, 27]
+            type: (sized_type_specifier [45, 17] - [45, 21])
+            declarator: (identifier [45, 22] - [45, 27]))
+          (parameter_declaration [45, 29] - [45, 48]
+            type: (type_identifier [45, 29] - [45, 40])
+            declarator: (pointer_declarator [45, 40] - [45, 48]
+              declarator: (identifier [45, 42] - [45, 48]))))))
+    (declaration [46, 0] - [46, 30]
+      type: (primitive_type [46, 0] - [46, 4])
+      declarator: (function_declarator [46, 5] - [46, 29]
+        declarator: (identifier [46, 5] - [46, 17])
+        parameters: (parameter_list [46, 17] - [46, 29]
+          (parameter_declaration [46, 18] - [46, 28]
+            type: (sized_type_specifier [46, 18] - [46, 22])
+            declarator: (identifier [46, 23] - [46, 28])))))
+    (declaration [47, 0] - [47, 40]
+      type: (primitive_type [47, 0] - [47, 4])
+      declarator: (function_declarator [47, 5] - [47, 39]
+        declarator: (identifier [47, 5] - [47, 16])
+        parameters: (parameter_list [47, 16] - [47, 39]
+          (parameter_declaration [47, 17] - [47, 38]
+            (type_qualifier [47, 17] - [47, 22])
+            type: (primitive_type [47, 23] - [47, 27])
+            declarator: (pointer_declarator [47, 28] - [47, 38]
+              declarator: (identifier [47, 30] - [47, 38]))))))
+    (declaration [48, 0] - [48, 49]
+      type: (type_identifier [48, 0] - [48, 4])
+      declarator: (pointer_declarator [48, 4] - [48, 48]
+        declarator: (function_declarator [48, 6] - [48, 48]
+          declarator: (identifier [48, 6] - [48, 14])
+          parameters: (parameter_list [48, 14] - [48, 48]
+            (parameter_declaration [48, 15] - [48, 31]
+              (type_qualifier [48, 15] - [48, 20])
+              type: (primitive_type [48, 21] - [48, 25])
+              declarator: (pointer_declarator [48, 25] - [48, 31]
+                declarator: (identifier [48, 27] - [48, 31])))
+            (parameter_declaration [48, 33] - [48, 47]
+              type: (primitive_type [48, 33] - [48, 41])
+              declarator: (identifier [48, 42] - [48, 47]))))))
+    (declaration [49, 0] - [49, 51]
+      type: (primitive_type [49, 0] - [49, 7])
+      declarator: (function_declarator [49, 8] - [49, 50]
+        declarator: (identifier [49, 8] - [49, 16])
+        parameters: (parameter_list [49, 16] - [49, 50]
+          (parameter_declaration [49, 17] - [49, 33]
+            (type_qualifier [49, 17] - [49, 22])
+            type: (primitive_type [49, 23] - [49, 27])
+            declarator: (pointer_declarator [49, 27] - [49, 33]
+              declarator: (identifier [49, 29] - [49, 33])))
+          (parameter_declaration [49, 35] - [49, 49]
+            type: (primitive_type [49, 35] - [49, 43])
+            declarator: (identifier [49, 44] - [49, 49])))))
+    (declaration [50, 0] - [50, 34]
+      type: (primitive_type [50, 0] - [50, 7])
+      declarator: (function_declarator [50, 8] - [50, 33]
+        declarator: (identifier [50, 8] - [50, 15])
+        parameters: (parameter_list [50, 15] - [50, 33]
+          (parameter_declaration [50, 16] - [50, 32]
+            (type_qualifier [50, 16] - [50, 21])
+            type: (primitive_type [50, 22] - [50, 26])
+            declarator: (pointer_declarator [50, 26] - [50, 32]
+              declarator: (identifier [50, 28] - [50, 32]))))))
+    (declaration [52, 0] - [52, 58]
+      type: (type_identifier [52, 0] - [52, 4])
+      declarator: (pointer_declarator [52, 4] - [52, 57]
+        declarator: (function_declarator [52, 6] - [52, 57]
+          declarator: (identifier [52, 6] - [52, 12])
+          parameters: (parameter_list [52, 12] - [52, 57]
+            (parameter_declaration [52, 13] - [52, 29]
+              (type_qualifier [52, 13] - [52, 18])
+              type: (primitive_type [52, 19] - [52, 23])
+              declarator: (pointer_declarator [52, 23] - [52, 29]
+                declarator: (identifier [52, 25] - [52, 29])))
+            (parameter_declaration [52, 31] - [52, 40]
+              type: (primitive_type [52, 31] - [52, 34])
+              declarator: (identifier [52, 35] - [52, 40]))
+            (parameter_declaration [52, 42] - [52, 56]
+              type: (primitive_type [52, 42] - [52, 50])
+              declarator: (identifier [52, 51] - [52, 56]))))))
+    (declaration [53, 0] - [53, 30]
+      type: (primitive_type [53, 0] - [53, 3])
+      declarator: (function_declarator [53, 4] - [53, 29]
+        declarator: (identifier [53, 4] - [53, 11])
+        parameters: (parameter_list [53, 11] - [53, 29]
+          (parameter_declaration [53, 12] - [53, 28]
+            type: (type_identifier [53, 12] - [53, 16])
+            declarator: (pointer_declarator [53, 16] - [53, 28]
+              declarator: (identifier [53, 18] - [53, 28]))))))
+    (declaration [54, 0] - [54, 61]
+      type: (primitive_type [54, 0] - [54, 7])
+      declarator: (function_declarator [54, 8] - [54, 60]
+        declarator: (identifier [54, 8] - [54, 15])
+        parameters: (parameter_list [54, 15] - [54, 60]
+          (parameter_declaration [54, 16] - [54, 30]
+            type: (type_identifier [54, 16] - [54, 20])
+            declarator: (pointer_declarator [54, 20] - [54, 30]
+              declarator: (identifier [54, 22] - [54, 30])))
+          (parameter_declaration [54, 32] - [54, 48]
+            type: (type_identifier [54, 32] - [54, 39])
+            declarator: (identifier [54, 40] - [54, 48]))
+          (parameter_declaration [54, 50] - [54, 59]
+            type: (primitive_type [54, 50] - [54, 54])
+            declarator: (identifier [54, 55] - [54, 59])))))
+    (declaration [55, 0] - [55, 61]
+      type: (primitive_type [55, 0] - [55, 7])
+      declarator: (function_declarator [55, 8] - [55, 60]
+        declarator: (identifier [55, 8] - [55, 15])
+        parameters: (parameter_list [55, 15] - [55, 60]
+          (parameter_declaration [55, 16] - [55, 30]
+            type: (type_identifier [55, 16] - [55, 20])
+            declarator: (pointer_declarator [55, 20] - [55, 30]
+              declarator: (identifier [55, 22] - [55, 30])))
+          (parameter_declaration [55, 32] - [55, 48]
+            type: (type_identifier [55, 32] - [55, 39])
+            declarator: (identifier [55, 40] - [55, 48]))
+          (parameter_declaration [55, 50] - [55, 59]
+            type: (primitive_type [55, 50] - [55, 54])
+            declarator: (identifier [55, 55] - [55, 59])))))
+    (declaration [57, 0] - [57, 52]
+      type: (primitive_type [57, 0] - [57, 4])
+      declarator: (function_declarator [57, 5] - [57, 51]
+        declarator: (identifier [57, 5] - [57, 16])
+        parameters: (parameter_list [57, 16] - [57, 51]
+          (parameter_declaration [57, 17] - [57, 33]
+            (type_qualifier [57, 17] - [57, 22])
+            type: (primitive_type [57, 23] - [57, 27])
+            declarator: (pointer_declarator [57, 27] - [57, 33]
+              declarator: (identifier [57, 29] - [57, 33])))
+          (parameter_declaration [57, 35] - [57, 50]
+            type: (primitive_type [57, 35] - [57, 42])
+            declarator: (pointer_declarator [57, 42] - [57, 50]
+              declarator: (identifier [57, 44] - [57, 50]))))))
+    (declaration [58, 0] - [58, 70]
+      type: (primitive_type [58, 0] - [58, 4])
+      declarator: (function_declarator [58, 5] - [58, 69]
+        declarator: (identifier [58, 5] - [58, 21])
+        parameters: (parameter_list [58, 21] - [58, 69]
+          (parameter_declaration [58, 22] - [58, 38]
+            (type_qualifier [58, 22] - [58, 27])
+            type: (primitive_type [58, 28] - [58, 32])
+            declarator: (pointer_declarator [58, 32] - [58, 38]
+              declarator: (identifier [58, 34] - [58, 38])))
+          (parameter_declaration [58, 40] - [58, 55]
+            type: (primitive_type [58, 40] - [58, 47])
+            declarator: (pointer_declarator [58, 47] - [58, 55]
+              declarator: (identifier [58, 49] - [58, 55])))
+          (optional_parameter_declaration [58, 56] - [58, 68]
+            type: (sized_type_specifier [58, 56] - [58, 60])
+            declarator: (identifier [58, 61] - [58, 65])
+            default_value: (number_literal [58, 66] - [58, 68])))))
+    (declaration [59, 0] - [59, 41]
+      type: (primitive_type [59, 0] - [59, 4])
+      declarator: (function_declarator [59, 5] - [59, 40]
+        declarator: (identifier [59, 5] - [59, 22])
+        parameters: (parameter_list [59, 22] - [59, 40]
+          (parameter_declaration [59, 23] - [59, 39]
+            (type_qualifier [59, 23] - [59, 28])
+            type: (primitive_type [59, 29] - [59, 33])
+            declarator: (pointer_declarator [59, 33] - [59, 39]
+              declarator: (identifier [59, 35] - [59, 39]))))))
+    (declaration [61, 0] - [61, 30]
+      type: (sized_type_specifier [61, 0] - [61, 4])
+      declarator: (function_declarator [61, 5] - [61, 29]
+        declarator: (identifier [61, 5] - [61, 12])
+        parameters: (parameter_list [61, 12] - [61, 29]
+          (parameter_declaration [61, 13] - [61, 28]
+            type: (type_identifier [61, 13] - [61, 17])
+            declarator: (pointer_declarator [61, 17] - [61, 28]
+              declarator: (identifier [61, 19] - [61, 28]))))))
+    (declaration [63, 0] - [63, 32]
+      type: (primitive_type [63, 0] - [63, 3])
+      declarator: (function_declarator [63, 4] - [63, 31]
+        declarator: (identifier [63, 4] - [63, 13])
+        parameters: (parameter_list [63, 13] - [63, 31]
+          (parameter_declaration [63, 14] - [63, 30]
+            (type_qualifier [63, 14] - [63, 19])
+            type: (primitive_type [63, 20] - [63, 24])
+            declarator: (pointer_declarator [63, 24] - [63, 30]
+              declarator: (identifier [63, 26] - [63, 30]))))))
+    (declaration [65, 0] - [65, 38]
+      type: (type_identifier [65, 0] - [65, 4])
+      declarator: (pointer_declarator [65, 4] - [65, 37]
+        declarator: (function_declarator [65, 6] - [65, 37]
+          declarator: (identifier [65, 6] - [65, 13])
+          parameters: (parameter_list [65, 13] - [65, 37]
+            (parameter_declaration [65, 14] - [65, 24]
+              type: (primitive_type [65, 14] - [65, 18])
+              declarator: (pointer_declarator [65, 18] - [65, 24]
+                declarator: (identifier [65, 20] - [65, 24])))
+            (parameter_declaration [65, 26] - [65, 36]
+              type: (primitive_type [65, 26] - [65, 30])
+              declarator: (pointer_declarator [65, 30] - [65, 36]
+                declarator: (identifier [65, 32] - [65, 36])))))))
+    (type_definition [67, 0] - [70, 13]
+      type: (struct_specifier [67, 8] - [70, 1]
+        body: (field_declaration_list [67, 15] - [70, 1]
+          (field_declaration [68, 1] - [68, 12]
+            type: (primitive_type [68, 1] - [68, 4])
+            declarator: (field_identifier [68, 5] - [68, 11]))
+          (field_declaration [69, 1] - [69, 20]
+            type: (primitive_type [69, 1] - [69, 5])
+            declarator: (array_declarator [69, 6] - [69, 19]
+              declarator: (array_declarator [69, 6] - [69, 14]
+                declarator: (field_identifier [69, 6] - [69, 9])
+                size: (number_literal [69, 10] - [69, 13]))
+              size: (number_literal [69, 15] - [69, 18])))))
+      declarator: (type_identifier [70, 2] - [70, 12]))
+    (declaration [72, 0] - [72, 37]
+      type: (type_identifier [72, 0] - [72, 10])
+      declarator: (function_declarator [72, 11] - [72, 36]
+        declarator: (identifier [72, 11] - [72, 21])
+        parameters: (parameter_list [72, 21] - [72, 36]
+          (parameter_declaration [72, 22] - [72, 35]
+            type: (primitive_type [72, 22] - [72, 26])
+            declarator: (pointer_declarator [72, 26] - [72, 35]
+              declarator: (identifier [72, 28] - [72, 35]))))))
+    (comment [73, 0] - [73, 43])
+    (declaration [74, 0] - [74, 47]
+      type: (primitive_type [74, 0] - [74, 4])
+      declarator: (function_declarator [74, 5] - [74, 46]
+        declarator: (identifier [74, 5] - [74, 11])
+        parameters: (parameter_list [74, 11] - [74, 46]
+          (parameter_declaration [74, 12] - [74, 28]
+            type: (primitive_type [74, 12] - [74, 16])
+            declarator: (pointer_declarator [74, 16] - [74, 28]
+              declarator: (identifier [74, 18] - [74, 28])))
+          (parameter_declaration [74, 30] - [74, 45]
+            type: (primitive_type [74, 30] - [74, 34])
+            declarator: (pointer_declarator [74, 34] - [74, 45]
+              declarator: (identifier [74, 36] - [74, 45]))))))
+    (declaration [76, 0] - [76, 25]
+      type: (primitive_type [76, 0] - [76, 3])
+      declarator: (function_declarator [76, 4] - [76, 24]
+        declarator: (identifier [76, 4] - [76, 16])
+        parameters: (parameter_list [76, 16] - [76, 24]
+          (parameter_declaration [76, 17] - [76, 23]
+            type: (primitive_type [76, 17] - [76, 20])
+            declarator: (pointer_declarator [76, 20] - [76, 23]
+              declarator: (identifier [76, 22] - [76, 23]))))))
+    (declaration [78, 0] - [78, 27]
+      type: (qualified_identifier [78, 0] - [78, 11]
+        scope: (namespace_identifier [78, 0] - [78, 3])
+        name: (type_identifier [78, 5] - [78, 11]))
+      declarator: (function_declarator [78, 12] - [78, 26]
+        declarator: (identifier [78, 12] - [78, 24])
+        parameters: (parameter_list [78, 24] - [78, 26])))
+    (preproc_ifdef [80, 0] - [82, 6]
+      name: (identifier [80, 7] - [80, 15])
+      (declaration [81, 0] - [81, 70]
+        type: (primitive_type [81, 0] - [81, 8])
+        declarator: (function_declarator [81, 9] - [81, 69]
+          declarator: (identifier [81, 9] - [81, 24])
+          parameters: (parameter_list [81, 24] - [81, 69]
+            (parameter_declaration [81, 25] - [81, 35]
+              type: (primitive_type [81, 25] - [81, 32])
+              declarator: (identifier [81, 33] - [81, 35]))
+            (parameter_declaration [81, 37] - [81, 47]
+              type: (primitive_type [81, 37] - [81, 44])
+              declarator: (identifier [81, 45] - [81, 47]))
+            (parameter_declaration [81, 49] - [81, 58]
+              type: (primitive_type [81, 49] - [81, 56])
+              declarator: (identifier [81, 57] - [81, 58]))
+            (parameter_declaration [81, 60] - [81, 68]
+              type: (sized_type_specifier [81, 60] - [81, 65])
+              declarator: (pointer_declarator [81, 65] - [81, 68]
+                declarator: (identifier [81, 67] - [81, 68])))))))
+    (declaration [84, 0] - [84, 43]
+      type: (primitive_type [84, 0] - [84, 4])
+      declarator: (function_declarator [84, 5] - [84, 42]
+        declarator: (identifier [84, 5] - [84, 17])
+        parameters: (parameter_list [84, 17] - [84, 42]
+          (parameter_declaration [84, 18] - [84, 36]
+            (type_qualifier [84, 18] - [84, 23])
+            type: (primitive_type [84, 24] - [84, 28])
+            declarator: (pointer_declarator [84, 28] - [84, 36]
+              declarator: (identifier [84, 30] - [84, 36]))))))
+    (declaration [86, 0] - [86, 58]
+      type: (qualified_identifier [86, 0] - [86, 11]
+        scope: (namespace_identifier [86, 0] - [86, 3])
+        name: (type_identifier [86, 5] - [86, 11]))
+      declarator: (function_declarator [86, 12] - [86, 57]
+        declarator: (identifier [86, 12] - [86, 31])
+        parameters: (parameter_list [86, 31] - [86, 57]
+          (parameter_declaration [86, 32] - [86, 56]
+            (type_qualifier [86, 32] - [86, 37])
+            type: (primitive_type [86, 38] - [86, 42])
+            declarator: (pointer_declarator [86, 42] - [86, 56]
+              declarator: (identifier [86, 44] - [86, 56]))))))
+    (declaration [88, 0] - [88, 80]
+      type: (qualified_identifier [88, 0] - [88, 11]
+        scope: (namespace_identifier [88, 0] - [88, 3])
+        name: (type_identifier [88, 5] - [88, 11]))
+      declarator: (function_declarator [88, 12] - [88, 79]
+        declarator: (identifier [88, 12] - [88, 31])
+        parameters: (parameter_list [88, 31] - [88, 79]
+          (parameter_declaration [88, 32] - [88, 52]
+            (type_qualifier [88, 32] - [88, 37])
+            type: (primitive_type [88, 38] - [88, 42])
+            declarator: (pointer_declarator [88, 42] - [88, 52]
+              declarator: (identifier [88, 44] - [88, 52])))
+          (parameter_declaration [88, 54] - [88, 78]
+            (type_qualifier [88, 54] - [88, 59])
+            type: (primitive_type [88, 60] - [88, 64])
+            declarator: (pointer_declarator [88, 64] - [88, 78]
+              declarator: (identifier [88, 66] - [88, 78]))))))
+    (declaration [90, 0] - [90, 84]
+      type: (qualified_identifier [90, 0] - [90, 11]
+        scope: (namespace_identifier [90, 0] - [90, 3])
+        name: (type_identifier [90, 5] - [90, 11]))
+      declarator: (function_declarator [90, 12] - [90, 83]
+        declarator: (identifier [90, 12] - [90, 35])
+        parameters: (parameter_list [90, 35] - [90, 83]
+          (parameter_declaration [90, 36] - [90, 60]
+            (type_qualifier [90, 36] - [90, 41])
+            type: (primitive_type [90, 42] - [90, 46])
+            declarator: (pointer_declarator [90, 46] - [90, 60]
+              declarator: (identifier [90, 48] - [90, 60])))
+          (parameter_declaration [90, 62] - [90, 82]
+            (type_qualifier [90, 62] - [90, 67])
+            type: (primitive_type [90, 68] - [90, 72])
+            declarator: (pointer_declarator [90, 72] - [90, 82]
+              declarator: (identifier [90, 74] - [90, 82]))))))
+    (declaration [92, 0] - [92, 102]
+      type: (qualified_identifier [92, 0] - [92, 11]
+        scope: (namespace_identifier [92, 0] - [92, 3])
+        name: (type_identifier [92, 5] - [92, 11]))
+      declarator: (function_declarator [92, 12] - [92, 101]
+        declarator: (identifier [92, 12] - [92, 31])
+        parameters: (parameter_list [92, 31] - [92, 101]
+          (parameter_declaration [92, 32] - [92, 52]
+            (type_qualifier [92, 32] - [92, 37])
+            type: (primitive_type [92, 38] - [92, 42])
+            declarator: (pointer_declarator [92, 42] - [92, 52]
+              declarator: (identifier [92, 44] - [92, 52])))
+          (parameter_declaration [92, 54] - [92, 78]
+            (type_qualifier [92, 54] - [92, 59])
+            type: (primitive_type [92, 60] - [92, 64])
+            declarator: (pointer_declarator [92, 64] - [92, 78]
+              declarator: (identifier [92, 66] - [92, 78])))
+          (parameter_declaration [92, 80] - [92, 100]
+            (type_qualifier [92, 80] - [92, 85])
+            type: (primitive_type [92, 86] - [92, 90])
+            declarator: (pointer_declarator [92, 90] - [92, 100]
+              declarator: (identifier [92, 92] - [92, 100]))))))
+    (declaration [94, 0] - [94, 65]
+      type: (qualified_identifier [94, 0] - [94, 11]
+        scope: (namespace_identifier [94, 0] - [94, 3])
+        name: (type_identifier [94, 5] - [94, 11]))
+      declarator: (function_declarator [94, 12] - [94, 64]
+        declarator: (identifier [94, 12] - [94, 27])
+        parameters: (parameter_list [94, 27] - [94, 64]
+          (parameter_declaration [94, 28] - [94, 48]
+            (type_qualifier [94, 28] - [94, 33])
+            type: (primitive_type [94, 34] - [94, 38])
+            declarator: (pointer_declarator [94, 38] - [94, 48]
+              declarator: (identifier [94, 40] - [94, 48])))
+          (parameter_declaration [94, 50] - [94, 63]
+            type: (primitive_type [94, 50] - [94, 57])
+            declarator: (identifier [94, 58] - [94, 63])))))
+    (declaration [96, 0] - [96, 56]
+      type: (primitive_type [96, 0] - [96, 3])
+      declarator: (function_declarator [96, 4] - [96, 55]
+        declarator: (identifier [96, 4] - [96, 16])
+        parameters: (parameter_list [96, 16] - [96, 55]
+          (parameter_declaration [96, 17] - [96, 32]
+            type: (primitive_type [96, 17] - [96, 21])
+            declarator: (pointer_declarator [96, 21] - [96, 32]
+              declarator: (identifier [96, 23] - [96, 32])))
+          (parameter_declaration [96, 34] - [96, 54]
+            (type_qualifier [96, 34] - [96, 39])
+            type: (primitive_type [96, 40] - [96, 44])
+            declarator: (pointer_declarator [96, 44] - [96, 54]
+              declarator: (identifier [96, 46] - [96, 54])))))))
+  (comment [98, 7] - [98, 25]))

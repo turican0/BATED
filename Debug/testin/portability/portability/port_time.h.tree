@@ -1,0 +1,53 @@
+(translation_unit [0, 0] - [21, 0]
+  (preproc_ifdef [0, 0] - [20, 6]
+    name: (identifier [0, 8] - [0, 17])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 17]))
+    (preproc_include [3, 0] - [4, 0]
+      path: (system_lib_string [3, 9] - [3, 17]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (system_lib_string [5, 9] - [5, 19]))
+    (preproc_ifdef [6, 0] - [12, 6]
+      name: (identifier [6, 7] - [6, 12])
+      (preproc_include [7, 0] - [8, 0]
+        path: (system_lib_string [7, 9] - [7, 20]))
+      alternative: (preproc_elif [8, 0] - [12, 0]
+        condition: (identifier [8, 6] - [8, 12])
+        (preproc_include [9, 0] - [10, 0]
+          path: (system_lib_string [9, 9] - [9, 20]))
+        alternative: (preproc_else [10, 0] - [12, 0]
+          (preproc_include [11, 0] - [12, 0]
+            path: (system_lib_string [11, 9] - [11, 19])))))
+    (comment [12, 7] - [12, 16])
+    (declaration [14, 0] - [14, 25]
+      type: (primitive_type [14, 0] - [14, 4])
+      declarator: (function_declarator [14, 5] - [14, 24]
+        declarator: (identifier [14, 5] - [14, 12])
+        parameters: (parameter_list [14, 12] - [14, 24]
+          (parameter_declaration [14, 13] - [14, 23]
+            type: (primitive_type [14, 13] - [14, 16])
+            declarator: (identifier [14, 17] - [14, 23])))))
+    (declaration [15, 0] - [15, 32]
+      type: (sized_type_specifier [15, 0] - [15, 13])
+      declarator: (function_declarator [15, 14] - [15, 31]
+        declarator: (identifier [15, 14] - [15, 29])
+        parameters: (parameter_list [15, 29] - [15, 31])))
+    (declaration [16, 0] - [16, 33]
+      type: (sized_type_specifier [16, 0] - [16, 13])
+      declarator: (function_declarator [16, 14] - [16, 32]
+        declarator: (identifier [16, 14] - [16, 30])
+        parameters: (parameter_list [16, 30] - [16, 32])))
+    (declaration [17, 0] - [17, 28]
+      type: (sized_type_specifier [17, 0] - [17, 13])
+      declarator: (function_declarator [17, 14] - [17, 27]
+        declarator: (identifier [17, 14] - [17, 25])
+        parameters: (parameter_list [17, 25] - [17, 27])))
+    (declaration [18, 0] - [18, 42]
+      type: (primitive_type [18, 0] - [18, 6])
+      declarator: (function_declarator [18, 7] - [18, 41]
+        declarator: (identifier [18, 7] - [18, 26])
+        parameters: (parameter_list [18, 26] - [18, 41]
+          (parameter_declaration [18, 27] - [18, 40]
+            type: (type_identifier [18, 27] - [18, 34])
+            declarator: (identifier [18, 35] - [18, 40]))))))
+  (comment [20, 7] - [20, 19]))

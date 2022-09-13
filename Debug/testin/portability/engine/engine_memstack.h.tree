@@ -1,0 +1,15 @@
+(translation_unit [0, 0] - [7, 0]
+  (preproc_ifdef [0, 0] - [5, 6]
+    name: (identifier [0, 8] - [0, 30])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 30]))
+    (declaration [3, 0] - [3, 28]
+      type: (primitive_type [3, 0] - [3, 3])
+      declarator: (function_declarator [3, 4] - [3, 27]
+        declarator: (identifier [3, 4] - [3, 17])
+        parameters: (parameter_list [3, 17] - [3, 27]
+          (parameter_declaration [3, 18] - [3, 26]
+            type: (primitive_type [3, 18] - [3, 21])
+            declarator: (identifier [3, 22] - [3, 26]))))))
+  (type_identifier [5, 7] - [5, 29]))
+c:/prenos/BATED/Debug/testin/portability/engine/engine_memstack.h	0 ms	(MISSING ";" [5, 29] - [5, 29])

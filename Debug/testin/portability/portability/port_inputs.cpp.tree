@@ -1,0 +1,4 @@
+(translation_unit [0, 0] - [3, 0]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 24]))
+  (comment [2, 0] - [2, 63]))

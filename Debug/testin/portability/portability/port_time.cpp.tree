@@ -1,0 +1,181 @@
+(translation_unit [0, 0] - [49, 0]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 22]))
+  (preproc_ifdef [2, 0] - [4, 6]
+    name: (identifier [2, 8] - [2, 13])
+    (preproc_include [3, 0] - [4, 0]
+      path: (system_lib_string [3, 9] - [3, 21])))
+  (function_definition [6, 0] - [13, 1]
+    type: (primitive_type [6, 0] - [6, 4])
+    declarator: (function_declarator [6, 5] - [6, 30]
+      declarator: (identifier [6, 5] - [6, 12])
+      parameters: (parameter_list [6, 12] - [6, 30]
+        (parameter_declaration [6, 13] - [6, 29]
+          type: (primitive_type [6, 13] - [6, 16])
+          declarator: (identifier [6, 17] - [6, 29]))))
+    body: (compound_statement [6, 31] - [13, 1]
+      (preproc_ifdef [7, 0] - [11, 6]
+        name: (identifier [7, 7] - [7, 12])
+        (expression_statement [8, 1] - [8, 21]
+          (call_expression [8, 1] - [8, 20]
+            function: (identifier [8, 1] - [8, 6])
+            arguments: (argument_list [8, 6] - [8, 20]
+              (identifier [8, 7] - [8, 19]))))
+        alternative: (preproc_else [9, 0] - [10, 29]
+          (expression_statement [10, 1] - [10, 29]
+            (call_expression [10, 1] - [10, 28]
+              function: (identifier [10, 1] - [10, 7])
+              arguments: (argument_list [10, 7] - [10, 28]
+                (binary_expression [10, 8] - [10, 27]
+                  left: (identifier [10, 8] - [10, 20])
+                  right: (number_literal [10, 23] - [10, 27])))))))
+      (comment [11, 7] - [11, 16])))
+  (expression_statement [13, 1] - [13, 2])
+  (function_definition [15, 0] - [23, 1]
+    type: (sized_type_specifier [15, 0] - [15, 13])
+    declarator: (function_declarator [15, 14] - [15, 31]
+      declarator: (identifier [15, 14] - [15, 29])
+      parameters: (parameter_list [15, 29] - [15, 31]))
+    body: (compound_statement [15, 32] - [23, 1]
+      (preproc_ifdef [16, 0] - [22, 6]
+        name: (identifier [16, 7] - [16, 12])
+        (return_statement [17, 1] - [17, 39]
+          (binary_expression [17, 8] - [17, 38]
+            left: (call_expression [17, 8] - [17, 15]
+              function: (identifier [17, 8] - [17, 13])
+              arguments: (argument_list [17, 13] - [17, 15]))
+            right: (parenthesized_expression [17, 18] - [17, 38]
+              (binary_expression [17, 19] - [17, 37]
+                left: (identifier [17, 19] - [17, 33])
+                right: (number_literal [17, 34] - [17, 37])))))
+        alternative: (preproc_else [18, 0] - [21, 69]
+          (declaration [19, 1] - [19, 26]
+            type: (struct_specifier [19, 1] - [19, 15]
+              name: (type_identifier [19, 8] - [19, 15]))
+            declarator: (identifier [19, 16] - [19, 25]))
+          (expression_statement [20, 1] - [20, 35]
+            (call_expression [20, 1] - [20, 34]
+              function: (identifier [20, 1] - [20, 13])
+              arguments: (argument_list [20, 13] - [20, 34]
+                (pointer_expression [20, 14] - [20, 24]
+                  argument: (identifier [20, 15] - [20, 24]))
+                (nullptr [20, 26] - [20, 33]))))
+          (return_statement [21, 4] - [21, 69]
+            (binary_expression [21, 11] - [21, 68]
+              left: (parenthesized_expression [21, 11] - [21, 63]
+                (binary_expression [21, 12] - [21, 62]
+                  left: (binary_expression [21, 12] - [21, 35]
+                    left: (field_expression [21, 12] - [21, 28]
+                      argument: (identifier [21, 12] - [21, 21])
+                      field: (field_identifier [21, 22] - [21, 28]))
+                    right: (number_literal [21, 31] - [21, 35]))
+                  right: (binary_expression [21, 38] - [21, 62]
+                    left: (field_expression [21, 38] - [21, 55]
+                      argument: (identifier [21, 38] - [21, 47])
+                      field: (field_identifier [21, 48] - [21, 55]))
+                    right: (number_literal [21, 58] - [21, 62]))))
+              right: (number_literal [21, 66] - [21, 68])))))))
+  (expression_statement [23, 1] - [23, 2])
+  (function_definition [25, 0] - [33, 1]
+    type: (sized_type_specifier [25, 0] - [25, 13])
+    declarator: (function_declarator [25, 14] - [25, 32]
+      declarator: (identifier [25, 14] - [25, 30])
+      parameters: (parameter_list [25, 30] - [25, 32]))
+    body: (compound_statement [25, 33] - [33, 1]
+      (preproc_ifdef [26, 0] - [32, 6]
+        name: (identifier [26, 7] - [26, 12])
+        (return_statement [27, 1] - [27, 40]
+          (binary_expression [27, 8] - [27, 39]
+            left: (call_expression [27, 8] - [27, 15]
+              function: (identifier [27, 8] - [27, 13])
+              arguments: (argument_list [27, 13] - [27, 15]))
+            right: (parenthesized_expression [27, 18] - [27, 39]
+              (binary_expression [27, 19] - [27, 38]
+                left: (identifier [27, 19] - [27, 33])
+                right: (number_literal [27, 34] - [27, 38])))))
+        alternative: (preproc_else [28, 0] - [31, 64]
+          (declaration [29, 1] - [29, 26]
+            type: (struct_specifier [29, 1] - [29, 15]
+              name: (type_identifier [29, 8] - [29, 15]))
+            declarator: (identifier [29, 16] - [29, 25]))
+          (expression_statement [30, 1] - [30, 35]
+            (call_expression [30, 1] - [30, 34]
+              function: (identifier [30, 1] - [30, 13])
+              arguments: (argument_list [30, 13] - [30, 34]
+                (pointer_expression [30, 14] - [30, 24]
+                  argument: (identifier [30, 15] - [30, 24]))
+                (nullptr [30, 26] - [30, 33]))))
+          (return_statement [31, 4] - [31, 64]
+            (parenthesized_expression [31, 11] - [31, 63]
+              (binary_expression [31, 12] - [31, 62]
+                left: (binary_expression [31, 12] - [31, 35]
+                  left: (field_expression [31, 12] - [31, 28]
+                    argument: (identifier [31, 12] - [31, 21])
+                    field: (field_identifier [31, 22] - [31, 28]))
+                  right: (number_literal [31, 31] - [31, 35]))
+                right: (binary_expression [31, 38] - [31, 62]
+                  left: (field_expression [31, 38] - [31, 55]
+                    argument: (identifier [31, 38] - [31, 47])
+                    field: (field_identifier [31, 48] - [31, 55]))
+                  right: (number_literal [31, 58] - [31, 62])))))))))
+  (expression_statement [33, 1] - [33, 2])
+  (function_definition [35, 0] - [43, 1]
+    type: (sized_type_specifier [35, 0] - [35, 13])
+    declarator: (function_declarator [35, 14] - [35, 27]
+      declarator: (identifier [35, 14] - [35, 25])
+      parameters: (parameter_list [35, 25] - [35, 27]))
+    body: (compound_statement [35, 28] - [43, 1]
+      (preproc_ifdef [36, 0] - [42, 6]
+        name: (identifier [36, 7] - [36, 12])
+        (return_statement [37, 1] - [37, 16]
+          (call_expression [37, 8] - [37, 15]
+            function: (identifier [37, 8] - [37, 13])
+            arguments: (argument_list [37, 13] - [37, 15])))
+        alternative: (preproc_else [38, 0] - [41, 71]
+          (declaration [39, 1] - [39, 26]
+            type: (struct_specifier [39, 1] - [39, 15]
+              name: (type_identifier [39, 8] - [39, 15]))
+            declarator: (identifier [39, 16] - [39, 25]))
+          (expression_statement [40, 1] - [40, 35]
+            (call_expression [40, 1] - [40, 34]
+              function: (identifier [40, 1] - [40, 13])
+              arguments: (argument_list [40, 13] - [40, 34]
+                (pointer_expression [40, 14] - [40, 24]
+                  argument: (identifier [40, 15] - [40, 24]))
+                (nullptr [40, 26] - [40, 33]))))
+          (return_statement [41, 4] - [41, 71]
+            (binary_expression [41, 11] - [41, 70]
+              left: (parenthesized_expression [41, 11] - [41, 63]
+                (binary_expression [41, 12] - [41, 62]
+                  left: (binary_expression [41, 12] - [41, 35]
+                    left: (field_expression [41, 12] - [41, 28]
+                      argument: (identifier [41, 12] - [41, 21])
+                      field: (field_identifier [41, 22] - [41, 28]))
+                    right: (number_literal [41, 31] - [41, 35]))
+                  right: (binary_expression [41, 38] - [41, 62]
+                    left: (field_expression [41, 38] - [41, 55]
+                      argument: (identifier [41, 38] - [41, 47])
+                      field: (field_identifier [41, 48] - [41, 55]))
+                    right: (number_literal [41, 58] - [41, 62]))))
+              right: (number_literal [41, 66] - [41, 70])))))))
+  (expression_statement [43, 1] - [43, 2])
+  (function_definition [45, 0] - [48, 1]
+    type: (primitive_type [45, 0] - [45, 6])
+    declarator: (function_declarator [45, 7] - [45, 41]
+      declarator: (identifier [45, 7] - [45, 26])
+      parameters: (parameter_list [45, 26] - [45, 41]
+        (parameter_declaration [45, 27] - [45, 40]
+          type: (type_identifier [45, 27] - [45, 34])
+          declarator: (identifier [45, 35] - [45, 40]))))
+    body: (compound_statement [45, 42] - [48, 1]
+      (comment [46, 1] - [46, 63])
+      (return_statement [47, 1] - [47, 50]
+        (binary_expression [47, 8] - [47, 49]
+          left: (parenthesized_expression [47, 8] - [47, 40]
+            (binary_expression [47, 9] - [47, 39]
+              left: (identifier [47, 9] - [47, 14])
+              right: (cast_expression [47, 17] - [47, 39]
+                type: (type_descriptor [47, 18] - [47, 24]
+                  type: (primitive_type [47, 18] - [47, 24]))
+                value: (identifier [47, 25] - [47, 39]))))
+          right: (number_literal [47, 43] - [47, 49]))))))

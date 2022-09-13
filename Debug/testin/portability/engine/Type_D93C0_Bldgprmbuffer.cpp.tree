@@ -1,0 +1,13 @@
+(translation_unit [0, 0] - [2, 65]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 37]))
+  (declaration [2, 0] - [2, 65]
+    type: (qualified_identifier [2, 0] - [2, 40]
+      scope: (namespace_identifier [2, 0] - [2, 3])
+      name: (template_type [2, 5] - [2, 40]
+        name: (type_identifier [2, 5] - [2, 10])
+        arguments: (template_argument_list [2, 10] - [2, 40]
+          (type_descriptor [2, 11] - [2, 35]
+            type: (type_identifier [2, 11] - [2, 35]))
+          (number_literal [2, 37] - [2, 39]))))
+    declarator: (identifier [2, 41] - [2, 64])))

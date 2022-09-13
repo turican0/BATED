@@ -1,0 +1,68 @@
+(translation_unit [0, 0] - [56, 0]
+  (preproc_ifdef [0, 0] - [55, 6]
+    name: (identifier [0, 8] - [0, 23])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 23]))
+    (comment [3, 0] - [11, 2])
+    (preproc_ifdef [12, 0] - [53, 6]
+      name: (identifier [12, 7] - [12, 15])
+      (preproc_ifdef [14, 0] - [51, 6]
+        name: (identifier [14, 7] - [14, 18])
+        (linkage_specification [15, 0] - [50, 1]
+          value: (string_literal [15, 7] - [15, 10])
+          body: (declaration_list [16, 0] - [50, 1]
+            (preproc_call [17, 0] - [20, 0]
+              directive: (preproc_directive [17, 0] - [17, 6]))
+            (type_definition [20, 0] - [20, 23]
+              type: (struct_specifier [20, 8] - [20, 18]
+                name: (type_identifier [20, 15] - [20, 18]))
+              declarator: (type_identifier [20, 19] - [20, 22]))
+            (struct_specifier [22, 0] - [25, 1]
+              name: (type_identifier [22, 7] - [22, 13])
+              body: (field_declaration_list [23, 0] - [25, 1]
+                (field_declaration [24, 4] - [24, 17]
+                  type: (primitive_type [24, 4] - [24, 8])
+                  declarator: (pointer_declarator [24, 9] - [24, 16]
+                    declarator: (field_identifier [24, 10] - [24, 16])))))
+            (declaration [29, 0] - [29, 37]
+              type: (type_identifier [29, 0] - [29, 3])
+              declarator: (pointer_declarator [29, 14] - [29, 36]
+                declarator: (function_declarator [29, 15] - [29, 36]
+                  declarator: (identifier [29, 15] - [29, 22])
+                  parameters: (parameter_list [29, 22] - [29, 36]
+                    (parameter_declaration [29, 23] - [29, 35]
+                      (type_qualifier [29, 23] - [29, 28])
+                      type: (primitive_type [29, 29] - [29, 33])
+                      declarator: (abstract_pointer_declarator [29, 34] - [29, 35]))))))
+            (declaration [30, 0] - [30, 30]
+              type: (primitive_type [30, 0] - [30, 3])
+              declarator: (function_declarator [30, 14] - [30, 29]
+                declarator: (identifier [30, 14] - [30, 22])
+                parameters: (parameter_list [30, 22] - [30, 29]
+                  (parameter_declaration [30, 23] - [30, 28]
+                    type: (type_identifier [30, 23] - [30, 26])
+                    declarator: (abstract_pointer_declarator [30, 27] - [30, 28])))))
+            (declaration [31, 0] - [31, 30]
+              type: (struct_specifier [31, 0] - [31, 13]
+                name: (type_identifier [31, 7] - [31, 13]))
+              declarator: (pointer_declarator [31, 14] - [31, 29]
+                declarator: (function_declarator [31, 15] - [31, 29]
+                  declarator: (identifier [31, 15] - [31, 22])
+                  parameters: (parameter_list [31, 22] - [31, 29]
+                    (parameter_declaration [31, 23] - [31, 28]
+                      type: (type_identifier [31, 23] - [31, 26])
+                      declarator: (abstract_pointer_declarator [31, 27] - [31, 28]))))))
+            (declaration [32, 0] - [32, 31]
+              type: (primitive_type [32, 0] - [32, 4])
+              declarator: (function_declarator [32, 14] - [32, 30]
+                declarator: (identifier [32, 14] - [32, 23])
+                parameters: (parameter_list [32, 23] - [32, 30]
+                  (parameter_declaration [32, 24] - [32, 29]
+                    type: (type_identifier [32, 24] - [32, 27])
+                    declarator: (abstract_pointer_declarator [32, 28] - [32, 29])))))
+            (comment [34, 0] - [47, 2])
+            (preproc_ifdef [49, 0] - [49, 18]
+              name: (identifier [49, 7] - [49, 18]))))))
+    (comment [53, 7] - [53, 18]))
+  (comment [55, 7] - [55, 25]))
+c:/prenos/BATED/Debug/testin/portability/portability/dirent-x.h	0 ms	(MISSING "#endif" [49, 18] - [49, 18])

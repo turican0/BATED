@@ -1,0 +1,563 @@
+(translation_unit [0, 0] - [102, 0]
+  (preproc_call [0, 0] - [1, 0]
+    directive: (preproc_directive [0, 0] - [0, 7])
+    argument: (preproc_arg [0, 7] - [0, 13]))
+  (preproc_include [2, 0] - [3, 0]
+    path: (system_lib_string [2, 9] - [2, 17]))
+  (preproc_include [3, 0] - [4, 0]
+    path: (system_lib_string [3, 9] - [3, 17]))
+  (class_specifier [5, 0] - [99, 1]
+    name: (type_identifier [5, 6] - [5, 23])
+    body: (field_declaration_list [5, 24] - [99, 1]
+      (access_specifier [6, 4] - [6, 11])
+      (function_definition [7, 8] - [7, 39]
+        declarator: (function_declarator [7, 8] - [7, 28]
+          declarator: (identifier [7, 8] - [7, 25])
+          parameters: (parameter_list [7, 26] - [7, 28]))
+        (default_method_clause [7, 29] - [7, 39]))
+      (declaration [8, 8] - [8, 50]
+        declarator: (function_declarator [8, 8] - [8, 49]
+          declarator: (identifier [8, 8] - [8, 25])
+          parameters: (parameter_list [8, 26] - [8, 49]
+            (parameter_declaration [8, 27] - [8, 35]
+              type: (primitive_type [8, 27] - [8, 30])
+              declarator: (identifier [8, 31] - [8, 35]))
+            (parameter_declaration [8, 37] - [8, 48]
+              type: (primitive_type [8, 37] - [8, 41])
+              declarator: (pointer_declarator [8, 42] - [8, 48]
+                declarator: (pointer_declarator [8, 43] - [8, 48]
+                  declarator: (identifier [8, 44] - [8, 48])))))))
+      (field_declaration [10, 8] - [10, 41]
+        type: (primitive_type [10, 8] - [10, 12])
+        declarator: (function_declarator [10, 13] - [10, 40]
+          declarator: (field_identifier [10, 13] - [10, 17])
+          parameters: (parameter_list [10, 17] - [10, 40]
+            (parameter_declaration [10, 18] - [10, 26]
+              type: (primitive_type [10, 18] - [10, 21])
+              declarator: (identifier [10, 22] - [10, 26]))
+            (parameter_declaration [10, 28] - [10, 39]
+              type: (primitive_type [10, 28] - [10, 32])
+              declarator: (pointer_declarator [10, 33] - [10, 39]
+                declarator: (pointer_declarator [10, 34] - [10, 39]
+                  declarator: (identifier [10, 35] - [10, 39])))))))
+      (comment [12, 8] - [12, 76])
+      (function_definition [13, 8] - [13, 66]
+        type: (primitive_type [13, 8] - [13, 12])
+        declarator: (function_declarator [13, 13] - [13, 36]
+          declarator: (field_identifier [13, 13] - [13, 28])
+          parameters: (parameter_list [13, 28] - [13, 30])
+          (type_qualifier [13, 31] - [13, 36]))
+        body: (compound_statement [13, 37] - [13, 66]
+          (return_statement [13, 38] - [13, 65]
+            (identifier [13, 45] - [13, 64]))))
+      (ERROR [13, 66] - [13, 67])
+      (comment [13, 68] - [13, 95])
+      (function_definition [14, 8] - [14, 66]
+        type: (primitive_type [14, 8] - [14, 12])
+        declarator: (function_declarator [14, 13] - [14, 36]
+          declarator: (field_identifier [14, 13] - [14, 28])
+          parameters: (parameter_list [14, 28] - [14, 30])
+          (type_qualifier [14, 31] - [14, 36]))
+        body: (compound_statement [14, 37] - [14, 66]
+          (return_statement [14, 38] - [14, 65]
+            (identifier [14, 45] - [14, 64]))))
+      (ERROR [14, 66] - [14, 67])
+      (comment [14, 68] - [14, 103])
+      (function_definition [15, 8] - [15, 83]
+        type: (primitive_type [15, 8] - [15, 12])
+        declarator: (function_declarator [15, 13] - [15, 44]
+          declarator: (field_identifier [15, 13] - [15, 36])
+          parameters: (parameter_list [15, 36] - [15, 38])
+          (type_qualifier [15, 39] - [15, 44]))
+        body: (compound_statement [15, 45] - [15, 83]
+          (return_statement [15, 46] - [15, 82]
+            (identifier [15, 53] - [15, 81]))))
+      (field_declaration [15, 83] - [15, 84]
+        type: (type_identifier [15, 83] - [15, 83]))
+      (comment [15, 85] - [15, 127])
+      (function_definition [16, 8] - [16, 72]
+        type: (primitive_type [16, 8] - [16, 12])
+        declarator: (function_declarator [16, 13] - [16, 39]
+          declarator: (field_identifier [16, 13] - [16, 31])
+          parameters: (parameter_list [16, 31] - [16, 33])
+          (type_qualifier [16, 34] - [16, 39]))
+        body: (compound_statement [16, 40] - [16, 72]
+          (return_statement [16, 41] - [16, 71]
+            (identifier [16, 48] - [16, 70]))))
+      (field_declaration [16, 72] - [16, 73]
+        type: (type_identifier [16, 72] - [16, 72]))
+      (comment [16, 74] - [16, 164])
+      (function_definition [17, 8] - [17, 68]
+        type: (primitive_type [17, 8] - [17, 12])
+        declarator: (function_declarator [17, 13] - [17, 37]
+          declarator: (field_identifier [17, 13] - [17, 29])
+          parameters: (parameter_list [17, 29] - [17, 31])
+          (type_qualifier [17, 32] - [17, 37]))
+        body: (compound_statement [17, 38] - [17, 68]
+          (return_statement [17, 39] - [17, 67]
+            (identifier [17, 46] - [17, 66]))))
+      (field_declaration [17, 68] - [17, 69]
+        type: (type_identifier [17, 68] - [17, 68]))
+      (comment [17, 70] - [17, 150])
+      (function_definition [18, 8] - [18, 66]
+        type: (primitive_type [18, 8] - [18, 12])
+        declarator: (function_declarator [18, 13] - [18, 36]
+          declarator: (field_identifier [18, 13] - [18, 28])
+          parameters: (parameter_list [18, 28] - [18, 30])
+          (type_qualifier [18, 31] - [18, 36]))
+        body: (compound_statement [18, 37] - [18, 66]
+          (return_statement [18, 38] - [18, 65]
+            (identifier [18, 45] - [18, 64]))))
+      (field_declaration [18, 66] - [18, 67]
+        type: (type_identifier [18, 66] - [18, 66]))
+      (comment [20, 8] - [20, 22])
+      (function_definition [21, 8] - [21, 93]
+        type: (primitive_type [21, 8] - [21, 12])
+        declarator: (function_declarator [21, 13] - [21, 50]
+          declarator: (field_identifier [21, 13] - [21, 42])
+          parameters: (parameter_list [21, 42] - [21, 44])
+          (type_qualifier [21, 45] - [21, 50]))
+        body: (compound_statement [21, 51] - [21, 93]
+          (return_statement [21, 52] - [21, 92]
+            (identifier [21, 59] - [21, 90]))))
+      (ERROR [21, 93] - [21, 94])
+      (function_definition [22, 8] - [22, 64]
+        type: (primitive_type [22, 8] - [22, 12])
+        declarator: (function_declarator [22, 13] - [22, 36]
+          declarator: (field_identifier [22, 13] - [22, 28])
+          parameters: (parameter_list [22, 28] - [22, 30])
+          (type_qualifier [22, 31] - [22, 36]))
+        body: (compound_statement [22, 37] - [22, 64]
+          (return_statement [22, 38] - [22, 63]
+            (identifier [22, 45] - [22, 61]))))
+      (ERROR [22, 64] - [22, 65])
+      (function_definition [23, 8] - [23, 64]
+        type: (primitive_type [23, 8] - [23, 12])
+        declarator: (function_declarator [23, 13] - [23, 36]
+          declarator: (field_identifier [23, 13] - [23, 28])
+          parameters: (parameter_list [23, 28] - [23, 30])
+          (type_qualifier [23, 31] - [23, 36]))
+        body: (compound_statement [23, 37] - [23, 64]
+          (return_statement [23, 38] - [23, 63]
+            (identifier [23, 45] - [23, 62]))))
+      (ERROR [23, 64] - [23, 65])
+      (function_definition [24, 8] - [24, 66]
+        type: (primitive_type [24, 8] - [24, 12])
+        declarator: (function_declarator [24, 13] - [24, 37]
+          declarator: (field_identifier [24, 13] - [24, 29])
+          parameters: (parameter_list [24, 29] - [24, 31])
+          (type_qualifier [24, 32] - [24, 37]))
+        body: (compound_statement [24, 38] - [24, 66]
+          (return_statement [24, 39] - [24, 65]
+            (identifier [24, 46] - [24, 64]))))
+      (ERROR [24, 66] - [24, 67])
+      (function_definition [25, 8] - [25, 65]
+        type: (primitive_type [25, 8] - [25, 12])
+        declarator: (function_declarator [25, 13] - [25, 37]
+          declarator: (field_identifier [25, 13] - [25, 29])
+          parameters: (parameter_list [25, 29] - [25, 31])
+          (type_qualifier [25, 32] - [25, 37]))
+        body: (compound_statement [25, 38] - [25, 65]
+          (return_statement [25, 39] - [25, 64]
+            (identifier [25, 46] - [25, 63]))))
+      (ERROR [25, 65] - [25, 66])
+      (function_definition [26, 8] - [26, 67]
+        type: (primitive_type [26, 8] - [26, 12])
+        declarator: (function_declarator [26, 13] - [26, 38]
+          declarator: (field_identifier [26, 13] - [26, 30])
+          parameters: (parameter_list [26, 30] - [26, 32])
+          (type_qualifier [26, 33] - [26, 38]))
+        body: (compound_statement [26, 39] - [26, 67]
+          (return_statement [26, 40] - [26, 66]
+            (identifier [26, 47] - [26, 65]))))
+      (ERROR [26, 67] - [26, 68])
+      (function_definition [27, 8] - [27, 62]
+        type: (primitive_type [27, 8] - [27, 12])
+        declarator: (function_declarator [27, 13] - [27, 35]
+          declarator: (field_identifier [27, 13] - [27, 27])
+          parameters: (parameter_list [27, 27] - [27, 29])
+          (type_qualifier [27, 30] - [27, 35]))
+        body: (compound_statement [27, 36] - [27, 62]
+          (return_statement [27, 37] - [27, 61]
+            (identifier [27, 44] - [27, 60]))))
+      (ERROR [27, 62] - [27, 63])
+      (function_definition [28, 8] - [28, 82]
+        type: (primitive_type [28, 8] - [28, 12])
+        declarator: (function_declarator [28, 13] - [28, 45]
+          declarator: (field_identifier [28, 13] - [28, 37])
+          parameters: (parameter_list [28, 37] - [28, 39])
+          (type_qualifier [28, 40] - [28, 45]))
+        body: (compound_statement [28, 46] - [28, 82]
+          (return_statement [28, 47] - [28, 81]
+            (identifier [28, 54] - [28, 80]))))
+      (ERROR [28, 82] - [28, 83])
+      (function_definition [29, 8] - [29, 65]
+        type: (primitive_type [29, 8] - [29, 12])
+        declarator: (function_declarator [29, 13] - [29, 37]
+          declarator: (field_identifier [29, 13] - [29, 29])
+          parameters: (parameter_list [29, 29] - [29, 31])
+          (type_qualifier [29, 32] - [29, 37]))
+        body: (compound_statement [29, 38] - [29, 65]
+          (return_statement [29, 39] - [29, 64]
+            (identifier [29, 46] - [29, 63]))))
+      (ERROR [29, 65] - [29, 66])
+      (function_definition [30, 8] - [30, 53]
+        type: (primitive_type [30, 8] - [30, 12])
+        declarator: (function_declarator [30, 13] - [30, 31]
+          declarator: (field_identifier [30, 13] - [30, 23])
+          parameters: (parameter_list [30, 23] - [30, 25])
+          (type_qualifier [30, 26] - [30, 31]))
+        body: (compound_statement [30, 32] - [30, 53]
+          (return_statement [30, 33] - [30, 52]
+            (identifier [30, 40] - [30, 51]))))
+      (ERROR [30, 53] - [30, 54])
+      (function_definition [31, 8] - [31, 61]
+        type: (primitive_type [31, 8] - [31, 12])
+        declarator: (function_declarator [31, 13] - [31, 35]
+          declarator: (field_identifier [31, 13] - [31, 27])
+          parameters: (parameter_list [31, 27] - [31, 29])
+          (type_qualifier [31, 30] - [31, 35]))
+        body: (compound_statement [31, 36] - [31, 61]
+          (return_statement [31, 37] - [31, 60]
+            (identifier [31, 44] - [31, 59]))))
+      (ERROR [31, 61] - [31, 62])
+      (function_definition [32, 8] - [32, 68]
+        type: (primitive_type [32, 8] - [32, 12])
+        declarator: (function_declarator [32, 13] - [32, 38]
+          declarator: (field_identifier [32, 13] - [32, 30])
+          parameters: (parameter_list [32, 30] - [32, 32])
+          (type_qualifier [32, 33] - [32, 38]))
+        body: (compound_statement [32, 39] - [32, 68]
+          (return_statement [32, 40] - [32, 67]
+            (identifier [32, 47] - [32, 66]))))
+      (ERROR [32, 68] - [32, 69])
+      (function_definition [33, 8] - [33, 53]
+        type: (primitive_type [33, 8] - [33, 12])
+        declarator: (function_declarator [33, 13] - [33, 31]
+          declarator: (field_identifier [33, 13] - [33, 23])
+          parameters: (parameter_list [33, 23] - [33, 25])
+          (type_qualifier [33, 26] - [33, 31]))
+        body: (compound_statement [33, 32] - [33, 53]
+          (return_statement [33, 33] - [33, 52]
+            (identifier [33, 40] - [33, 51]))))
+      (ERROR [33, 53] - [33, 54])
+      (function_definition [34, 8] - [34, 55]
+        type: (primitive_type [34, 8] - [34, 12])
+        declarator: (function_declarator [34, 13] - [34, 32]
+          declarator: (field_identifier [34, 13] - [34, 24])
+          parameters: (parameter_list [34, 24] - [34, 26])
+          (type_qualifier [34, 27] - [34, 32]))
+        body: (compound_statement [34, 33] - [34, 55]
+          (return_statement [34, 34] - [34, 54]
+            (identifier [34, 41] - [34, 53]))))
+      (ERROR [34, 55] - [34, 56])
+      (function_definition [35, 8] - [35, 57]
+        type: (primitive_type [35, 8] - [35, 12])
+        declarator: (function_declarator [35, 13] - [35, 33]
+          declarator: (field_identifier [35, 13] - [35, 25])
+          parameters: (parameter_list [35, 25] - [35, 27])
+          (type_qualifier [35, 28] - [35, 33]))
+        body: (compound_statement [35, 34] - [35, 57]
+          (return_statement [35, 35] - [35, 56]
+            (identifier [35, 42] - [35, 55]))))
+      (ERROR [35, 57] - [35, 58])
+      (function_definition [36, 8] - [36, 77]
+        type: (primitive_type [36, 8] - [36, 12])
+        declarator: (function_declarator [36, 13] - [36, 42]
+          declarator: (field_identifier [36, 13] - [36, 34])
+          parameters: (parameter_list [36, 34] - [36, 36])
+          (type_qualifier [36, 37] - [36, 42]))
+        body: (compound_statement [36, 43] - [36, 77]
+          (return_statement [36, 44] - [36, 76]
+            (identifier [36, 51] - [36, 75]))))
+      (ERROR [36, 77] - [36, 78])
+      (function_definition [37, 8] - [37, 76]
+        type: (primitive_type [37, 8] - [37, 12])
+        declarator: (function_declarator [37, 13] - [37, 40]
+          declarator: (field_identifier [37, 13] - [37, 32])
+          parameters: (parameter_list [37, 32] - [37, 34])
+          (type_qualifier [37, 35] - [37, 40]))
+        body: (compound_statement [37, 41] - [37, 76]
+          (return_statement [37, 42] - [37, 75]
+            (unary_expression [37, 49] - [37, 74]
+              argument: (identifier [37, 50] - [37, 74])))))
+      (ERROR [37, 76] - [37, 77])
+      (function_definition [38, 8] - [38, 56]
+        type: (primitive_type [38, 8] - [38, 12])
+        declarator: (function_declarator [38, 13] - [38, 32]
+          declarator: (field_identifier [38, 13] - [38, 24])
+          parameters: (parameter_list [38, 24] - [38, 26])
+          (type_qualifier [38, 27] - [38, 32]))
+        body: (compound_statement [38, 33] - [38, 56]
+          (return_statement [38, 34] - [38, 55]
+            (identifier [38, 41] - [38, 54]))))
+      (ERROR [38, 56] - [38, 57])
+      (function_definition [39, 8] - [39, 59]
+        type: (primitive_type [39, 8] - [39, 12])
+        declarator: (function_declarator [39, 13] - [39, 34]
+          declarator: (field_identifier [39, 13] - [39, 26])
+          parameters: (parameter_list [39, 26] - [39, 28])
+          (type_qualifier [39, 29] - [39, 34]))
+        body: (compound_statement [39, 35] - [39, 59]
+          (return_statement [39, 36] - [39, 58]
+            (identifier [39, 43] - [39, 57]))))
+      (ERROR [39, 59] - [39, 60])
+      (function_definition [40, 8] - [40, 65]
+        type: (primitive_type [40, 8] - [40, 12])
+        declarator: (function_declarator [40, 13] - [40, 37]
+          declarator: (field_identifier [40, 13] - [40, 29])
+          parameters: (parameter_list [40, 29] - [40, 31])
+          (type_qualifier [40, 32] - [40, 37]))
+        body: (compound_statement [40, 38] - [40, 65]
+          (return_statement [40, 39] - [40, 64]
+            (identifier [40, 46] - [40, 63]))))
+      (ERROR [40, 65] - [40, 66])
+      (function_definition [41, 8] - [41, 63]
+        type: (primitive_type [41, 8] - [41, 12])
+        declarator: (function_declarator [41, 13] - [41, 36]
+          declarator: (field_identifier [41, 13] - [41, 28])
+          parameters: (parameter_list [41, 28] - [41, 30])
+          (type_qualifier [41, 31] - [41, 36]))
+        body: (compound_statement [41, 37] - [41, 63]
+          (return_statement [41, 38] - [41, 62]
+            (identifier [41, 45] - [41, 61]))))
+      (ERROR [41, 63] - [41, 64])
+      (comment [41, 65] - [41, 90])
+      (function_definition [42, 8] - [42, 64]
+        type: (primitive_type [42, 8] - [42, 12])
+        declarator: (function_declarator [42, 13] - [42, 37]
+          declarator: (field_identifier [42, 13] - [42, 29])
+          parameters: (parameter_list [42, 29] - [42, 31])
+          (type_qualifier [42, 32] - [42, 37]))
+        body: (compound_statement [42, 38] - [42, 64]
+          (return_statement [42, 39] - [42, 63]
+            (identifier [42, 46] - [42, 62]))))
+      (ERROR [42, 64] - [42, 65])
+      (function_definition [43, 8] - [43, 63]
+        type: (primitive_type [43, 8] - [43, 12])
+        declarator: (function_declarator [43, 13] - [43, 36]
+          declarator: (field_identifier [43, 13] - [43, 28])
+          parameters: (parameter_list [43, 28] - [43, 30])
+          (type_qualifier [43, 31] - [43, 36]))
+        body: (compound_statement [43, 37] - [43, 63]
+          (return_statement [43, 38] - [43, 62]
+            (identifier [43, 45] - [43, 61]))))
+      (ERROR [43, 63] - [43, 64])
+      (function_definition [44, 8] - [44, 61]
+        type: (primitive_type [44, 8] - [44, 12])
+        declarator: (function_declarator [44, 13] - [44, 35]
+          declarator: (field_identifier [44, 13] - [44, 27])
+          parameters: (parameter_list [44, 27] - [44, 29])
+          (type_qualifier [44, 30] - [44, 35]))
+        body: (compound_statement [44, 36] - [44, 61]
+          (return_statement [44, 37] - [44, 60]
+            (identifier [44, 44] - [44, 59]))))
+      (ERROR [44, 61] - [44, 62])
+      (function_definition [45, 8] - [45, 61]
+        type: (primitive_type [45, 8] - [45, 12])
+        declarator: (function_declarator [45, 13] - [45, 35]
+          declarator: (field_identifier [45, 13] - [45, 27])
+          parameters: (parameter_list [45, 27] - [45, 29])
+          (type_qualifier [45, 30] - [45, 35]))
+        body: (compound_statement [45, 36] - [45, 61]
+          (return_statement [45, 37] - [45, 60]
+            (identifier [45, 44] - [45, 59]))))
+      (ERROR [45, 61] - [45, 62])
+      (function_definition [46, 8] - [46, 61]
+        type: (primitive_type [46, 8] - [46, 12])
+        declarator: (function_declarator [46, 13] - [46, 35]
+          declarator: (field_identifier [46, 13] - [46, 27])
+          parameters: (parameter_list [46, 27] - [46, 29])
+          (type_qualifier [46, 30] - [46, 35]))
+        body: (compound_statement [46, 36] - [46, 61]
+          (return_statement [46, 37] - [46, 60]
+            (identifier [46, 44] - [46, 59]))))
+      (ERROR [46, 61] - [46, 62])
+      (function_definition [47, 8] - [47, 53]
+        type: (primitive_type [47, 8] - [47, 12])
+        declarator: (function_declarator [47, 13] - [47, 31]
+          declarator: (field_identifier [47, 13] - [47, 23])
+          parameters: (parameter_list [47, 23] - [47, 25])
+          (type_qualifier [47, 26] - [47, 31]))
+        body: (compound_statement [47, 32] - [47, 53]
+          (return_statement [47, 33] - [47, 52]
+            (identifier [47, 40] - [47, 51]))))
+      (ERROR [47, 53] - [47, 54])
+      (function_definition [48, 8] - [48, 70]
+        type: (primitive_type [48, 8] - [48, 12])
+        declarator: (function_declarator [48, 13] - [48, 39]
+          declarator: (field_identifier [48, 13] - [48, 31])
+          parameters: (parameter_list [48, 31] - [48, 33])
+          (type_qualifier [48, 34] - [48, 39]))
+        body: (compound_statement [48, 40] - [48, 70]
+          (return_statement [48, 41] - [48, 69]
+            (identifier [48, 48] - [48, 68]))))
+      (ERROR [48, 70] - [48, 71])
+      (function_definition [49, 8] - [49, 75]
+        type: (primitive_type [49, 8] - [49, 12])
+        declarator: (function_declarator [49, 13] - [49, 41]
+          declarator: (field_identifier [49, 13] - [49, 33])
+          parameters: (parameter_list [49, 33] - [49, 35])
+          (type_qualifier [49, 36] - [49, 41]))
+        body: (compound_statement [49, 42] - [49, 75]
+          (return_statement [49, 44] - [49, 74]
+            (identifier [49, 51] - [49, 73]))))
+      (ERROR [49, 75] - [49, 76])
+      (function_definition [50, 8] - [50, 78]
+        type: (primitive_type [50, 8] - [50, 12])
+        declarator: (function_declarator [50, 13] - [50, 42]
+          declarator: (field_identifier [50, 13] - [50, 34])
+          parameters: (parameter_list [50, 34] - [50, 36])
+          (type_qualifier [50, 37] - [50, 42]))
+        body: (compound_statement [50, 43] - [50, 78]
+          (return_statement [50, 45] - [50, 77]
+            (identifier [50, 52] - [50, 76]))))
+      (field_declaration [50, 78] - [50, 79]
+        type: (type_identifier [50, 78] - [50, 78]))
+      (comment [52, 8] - [52, 20])
+      (function_definition [53, 8] - [53, 71]
+        type: (qualified_identifier [53, 8] - [53, 19]
+          scope: (namespace_identifier [53, 8] - [53, 11])
+          name: (type_identifier [53, 13] - [53, 19]))
+        declarator: (function_declarator [53, 20] - [53, 44]
+          declarator: (field_identifier [53, 20] - [53, 36])
+          parameters: (parameter_list [53, 36] - [53, 38])
+          (type_qualifier [53, 39] - [53, 44]))
+        body: (compound_statement [53, 45] - [53, 71]
+          (return_statement [53, 46] - [53, 70]
+            (identifier [53, 53] - [53, 69]))))
+      (ERROR [53, 71] - [53, 72])
+      (access_specifier [55, 4] - [55, 12])
+      (field_declaration [56, 8] - [56, 31]
+        type: (primitive_type [56, 8] - [56, 12])
+        declarator: (function_declarator [56, 13] - [56, 30]
+          declarator: (field_identifier [56, 13] - [56, 28])
+          parameters: (parameter_list [56, 28] - [56, 30])))
+      (field_declaration [58, 8] - [58, 42]
+        type: (qualified_identifier [58, 8] - [58, 32]
+          scope: (namespace_identifier [58, 8] - [58, 11])
+          name: (template_type [58, 13] - [58, 32]
+            name: (type_identifier [58, 13] - [58, 19])
+            arguments: (template_argument_list [58, 19] - [58, 32]
+              (type_descriptor [58, 20] - [58, 31]
+                type: (qualified_identifier [58, 20] - [58, 31]
+                  scope: (namespace_identifier [58, 20] - [58, 23])
+                  name: (type_identifier [58, 25] - [58, 31]))))))
+        declarator: (field_identifier [58, 33] - [58, 41]))
+      (comment [60, 8] - [60, 76])
+      (field_declaration [61, 8] - [61, 33]
+        type: (primitive_type [61, 8] - [61, 12])
+        declarator: (field_identifier [61, 13] - [61, 32]))
+      (field_declaration [62, 8] - [62, 33]
+        type: (primitive_type [62, 8] - [62, 12])
+        declarator: (field_identifier [62, 13] - [62, 32]))
+      (field_declaration [63, 8] - [63, 42]
+        type: (primitive_type [63, 8] - [63, 12])
+        declarator: (field_identifier [63, 13] - [63, 41]))
+      (field_declaration [64, 8] - [64, 36]
+        type: (primitive_type [64, 8] - [64, 12])
+        declarator: (field_identifier [64, 13] - [64, 35]))
+      (field_declaration [65, 8] - [65, 34]
+        type: (primitive_type [65, 8] - [65, 12])
+        declarator: (field_identifier [65, 13] - [65, 33]))
+      (field_declaration [66, 8] - [66, 33]
+        type: (primitive_type [66, 8] - [66, 12])
+        declarator: (field_identifier [66, 13] - [66, 32]))
+      (comment [68, 8] - [68, 22])
+      (field_declaration [69, 8] - [69, 45]
+        type: (primitive_type [69, 8] - [69, 12])
+        declarator: (field_identifier [69, 13] - [69, 44]))
+      (field_declaration [70, 8] - [70, 30]
+        type: (primitive_type [70, 8] - [70, 12])
+        declarator: (field_identifier [70, 13] - [70, 29]))
+      (field_declaration [71, 8] - [71, 31]
+        type: (primitive_type [71, 8] - [71, 12])
+        declarator: (field_identifier [71, 13] - [71, 30]))
+      (field_declaration [72, 8] - [72, 32]
+        type: (primitive_type [72, 8] - [72, 12])
+        declarator: (field_identifier [72, 13] - [72, 31]))
+      (field_declaration [73, 8] - [73, 31]
+        type: (primitive_type [73, 8] - [73, 12])
+        declarator: (field_identifier [73, 13] - [73, 30]))
+      (field_declaration [74, 8] - [74, 32]
+        type: (primitive_type [74, 8] - [74, 12])
+        declarator: (field_identifier [74, 13] - [74, 31]))
+      (field_declaration [75, 8] - [75, 30]
+        type: (primitive_type [75, 8] - [75, 12])
+        declarator: (field_identifier [75, 13] - [75, 29]))
+      (field_declaration [76, 8] - [76, 40]
+        type: (primitive_type [76, 8] - [76, 12])
+        declarator: (field_identifier [76, 13] - [76, 39]))
+      (field_declaration [77, 8] - [77, 31]
+        type: (primitive_type [77, 8] - [77, 12])
+        declarator: (field_identifier [77, 13] - [77, 30]))
+      (field_declaration [78, 8] - [78, 25]
+        type: (primitive_type [78, 8] - [78, 12])
+        declarator: (field_identifier [78, 13] - [78, 24]))
+      (field_declaration [79, 8] - [79, 29]
+        type: (primitive_type [79, 8] - [79, 12])
+        declarator: (field_identifier [79, 13] - [79, 28]))
+      (field_declaration [80, 8] - [80, 33]
+        type: (primitive_type [80, 8] - [80, 12])
+        declarator: (field_identifier [80, 13] - [80, 32]))
+      (field_declaration [81, 8] - [81, 25]
+        type: (primitive_type [81, 8] - [81, 12])
+        declarator: (field_identifier [81, 13] - [81, 24]))
+      (field_declaration [82, 8] - [82, 26]
+        type: (primitive_type [82, 8] - [82, 12])
+        declarator: (field_identifier [82, 13] - [82, 25]))
+      (field_declaration [83, 8] - [83, 27]
+        type: (primitive_type [83, 8] - [83, 12])
+        declarator: (field_identifier [83, 13] - [83, 26]))
+      (field_declaration [84, 8] - [84, 38]
+        type: (primitive_type [84, 8] - [84, 12])
+        declarator: (field_identifier [84, 13] - [84, 37]))
+      (field_declaration [85, 8] - [85, 27]
+        type: (primitive_type [85, 8] - [85, 12])
+        declarator: (field_identifier [85, 13] - [85, 26]))
+      (field_declaration [86, 8] - [86, 28]
+        type: (primitive_type [86, 8] - [86, 12])
+        declarator: (field_identifier [86, 13] - [86, 27]))
+      (field_declaration [87, 8] - [87, 31]
+        type: (primitive_type [87, 8] - [87, 12])
+        declarator: (field_identifier [87, 13] - [87, 30]))
+      (field_declaration [88, 8] - [88, 30]
+        type: (primitive_type [88, 8] - [88, 12])
+        declarator: (field_identifier [88, 13] - [88, 29]))
+      (field_declaration [89, 8] - [89, 30]
+        type: (primitive_type [89, 8] - [89, 12])
+        declarator: (field_identifier [89, 13] - [89, 29]))
+      (field_declaration [90, 8] - [90, 30]
+        type: (primitive_type [90, 8] - [90, 12])
+        declarator: (field_identifier [90, 13] - [90, 29]))
+      (field_declaration [91, 8] - [91, 29]
+        type: (primitive_type [91, 8] - [91, 12])
+        declarator: (field_identifier [91, 13] - [91, 28]))
+      (field_declaration [92, 8] - [92, 29]
+        type: (primitive_type [92, 8] - [92, 12])
+        declarator: (field_identifier [92, 13] - [92, 28]))
+      (field_declaration [93, 8] - [93, 29]
+        type: (primitive_type [93, 8] - [93, 12])
+        declarator: (field_identifier [93, 13] - [93, 28]))
+      (field_declaration [94, 8] - [94, 25]
+        type: (primitive_type [94, 8] - [94, 12])
+        declarator: (field_identifier [94, 13] - [94, 24]))
+      (field_declaration [95, 8] - [95, 34]
+        type: (primitive_type [95, 8] - [95, 12])
+        declarator: (field_identifier [95, 13] - [95, 33]))
+      (field_declaration [96, 8] - [96, 36]
+        type: (primitive_type [96, 8] - [96, 12])
+        declarator: (field_identifier [96, 13] - [96, 35]))
+      (field_declaration [97, 8] - [97, 38]
+        type: (primitive_type [97, 8] - [97, 12])
+        declarator: (field_identifier [97, 13] - [97, 37]))
+      (field_declaration [98, 8] - [98, 37]
+        type: (qualified_identifier [98, 8] - [98, 19]
+          scope: (namespace_identifier [98, 8] - [98, 11])
+          name: (type_identifier [98, 13] - [98, 19]))
+        declarator: (field_identifier [98, 20] - [98, 36]))))
+  (declaration [101, 0] - [101, 43]
+    (storage_class_specifier [101, 0] - [101, 6])
+    type: (type_identifier [101, 7] - [101, 24])
+    declarator: (identifier [101, 25] - [101, 42])))
+c:/prenos/BATED/Debug/testin/portability/engine/CommandLineParser.h	2 ms	(ERROR [13, 66] - [13, 67])

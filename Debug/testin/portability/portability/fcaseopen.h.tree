@@ -1,0 +1,65 @@
+(translation_unit [0, 0] - [14, 6]
+  (preproc_ifdef [0, 0] - [14, 6]
+    name: (identifier [0, 8] - [0, 19])
+    (preproc_def [1, 0] - [3, 0]
+      name: (identifier [1, 8] - [1, 19]))
+    (preproc_include [3, 0] - [4, 0]
+      path: (system_lib_string [3, 9] - [3, 18]))
+    (preproc_include [4, 0] - [5, 0]
+      path: (system_lib_string [4, 9] - [4, 17]))
+    (preproc_include [5, 0] - [6, 0]
+      path: (system_lib_string [5, 9] - [5, 17]))
+    (declaration [7, 0] - [7, 52]
+      type: (type_identifier [7, 0] - [7, 4])
+      declarator: (pointer_declarator [7, 4] - [7, 51]
+        declarator: (function_declarator [7, 6] - [7, 51]
+          declarator: (identifier [7, 6] - [7, 15])
+          parameters: (parameter_list [7, 15] - [7, 51]
+            (parameter_declaration [7, 16] - [7, 32]
+              type: (primitive_type [7, 16] - [7, 20])
+              (type_qualifier [7, 21] - [7, 26])
+              declarator: (pointer_declarator [7, 26] - [7, 32]
+                declarator: (identifier [7, 28] - [7, 32])))
+            (parameter_declaration [7, 34] - [7, 50]
+              type: (primitive_type [7, 34] - [7, 38])
+              (type_qualifier [7, 39] - [7, 44])
+              declarator: (pointer_declarator [7, 44] - [7, 50]
+                declarator: (identifier [7, 46] - [7, 50])))))))
+    (declaration [9, 0] - [9, 68]
+      type: (qualified_identifier [9, 0] - [9, 24]
+        scope: (namespace_identifier [9, 0] - [9, 3])
+        name: (template_type [9, 5] - [9, 24]
+          name: (type_identifier [9, 5] - [9, 11])
+          arguments: (template_argument_list [9, 11] - [9, 24]
+            (type_descriptor [9, 12] - [9, 23]
+              type: (qualified_identifier [9, 12] - [9, 23]
+                scope: (namespace_identifier [9, 12] - [9, 15])
+                name: (type_identifier [9, 17] - [9, 23]))))))
+      declarator: (function_declarator [9, 25] - [9, 67]
+        declarator: (identifier [9, 25] - [9, 42])
+        parameters: (parameter_list [9, 42] - [9, 67]
+          (parameter_declaration [9, 43] - [9, 66]
+            (type_qualifier [9, 43] - [9, 48])
+            type: (qualified_identifier [9, 49] - [9, 60]
+              scope: (namespace_identifier [9, 49] - [9, 52])
+              name: (type_identifier [9, 54] - [9, 60]))
+            declarator: (reference_declarator [9, 61] - [9, 66]
+              (identifier [9, 62] - [9, 66]))))))
+    (preproc_if [10, 0] - [12, 6]
+      condition: (unary_expression [10, 4] - [10, 20]
+        argument: (preproc_defined [10, 5] - [10, 20]
+          (identifier [10, 13] - [10, 19])))
+      (declaration [11, 0] - [11, 46]
+        type: (qualified_identifier [11, 0] - [11, 11]
+          scope: (namespace_identifier [11, 0] - [11, 3])
+          name: (type_identifier [11, 5] - [11, 11]))
+        declarator: (function_declarator [11, 12] - [11, 45]
+          declarator: (identifier [11, 12] - [11, 20])
+          parameters: (parameter_list [11, 20] - [11, 45]
+            (parameter_declaration [11, 21] - [11, 44]
+              (type_qualifier [11, 21] - [11, 26])
+              type: (qualified_identifier [11, 27] - [11, 38]
+                scope: (namespace_identifier [11, 27] - [11, 30])
+                name: (type_identifier [11, 32] - [11, 38]))
+              declarator: (reference_declarator [11, 39] - [11, 44]
+                (identifier [11, 40] - [11, 44])))))))))

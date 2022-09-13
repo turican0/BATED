@@ -1,0 +1,116 @@
+(translation_unit [0, 0] - [47, 20]
+  (preproc_include [0, 0] - [1, 0]
+    path: (system_lib_string [0, 9] - [0, 18]))
+  (preproc_include [1, 0] - [2, 0]
+    path: (system_lib_string [1, 9] - [1, 19]))
+  (preproc_include [2, 0] - [3, 0]
+    path: (system_lib_string [2, 9] - [2, 19]))
+  (preproc_include [3, 0] - [4, 0]
+    path: (system_lib_string [3, 9] - [3, 18]))
+  (preproc_ifdef [5, 0] - [12, 6]
+    name: (identifier [5, 7] - [5, 15])
+    (preproc_include [6, 4] - [7, 0]
+      path: (system_lib_string [6, 13] - [6, 23]))
+    (preproc_include [7, 4] - [8, 0]
+      path: (system_lib_string [7, 13] - [7, 19]))
+    (preproc_include [8, 4] - [9, 0]
+      path: (system_lib_string [8, 13] - [8, 24]))
+    (preproc_include [9, 4] - [10, 0]
+      path: (string_literal [9, 13] - [9, 40]))
+    alternative: (preproc_else [10, 0] - [12, 0]
+      (preproc_include [11, 4] - [12, 0]
+        path: (string_literal [11, 13] - [11, 23]))))
+  (preproc_include [14, 0] - [15, 0]
+    path: (string_literal [14, 9] - [14, 37]))
+  (preproc_include [15, 0] - [16, 0]
+    path: (string_literal [15, 9] - [15, 43]))
+  (preproc_include [16, 0] - [17, 0]
+    path: (string_literal [16, 9] - [16, 42]))
+  (preproc_include [17, 0] - [18, 0]
+    path: (string_literal [17, 9] - [17, 17]))
+  (preproc_include [19, 0] - [20, 0]
+    path: (string_literal [19, 9] - [19, 22]))
+  (preproc_include [20, 0] - [21, 0]
+    path: (string_literal [20, 9] - [20, 16]))
+  (preproc_ifdef [24, 0] - [47, 6]
+    name: (identifier [24, 8] - [24, 19])
+    (preproc_def [25, 0] - [27, 0]
+      name: (identifier [25, 8] - [25, 19]))
+    (declaration [27, 0] - [27, 15]
+      type: (primitive_type [27, 0] - [27, 4])
+      declarator: (function_declarator [27, 5] - [27, 14]
+        declarator: (identifier [27, 5] - [27, 12])
+        parameters: (parameter_list [27, 12] - [27, 14])))
+    (declaration [28, 0] - [28, 30]
+      (storage_class_specifier [28, 0] - [28, 6])
+      type: (primitive_type [28, 7] - [28, 10])
+      declarator: (identifier [28, 11] - [28, 29]))
+    (declaration [29, 0] - [29, 25]
+      (storage_class_specifier [29, 0] - [29, 6])
+      type: (primitive_type [29, 7] - [29, 10])
+      declarator: (identifier [29, 11] - [29, 24]))
+    (declaration [30, 0] - [30, 21]
+      (storage_class_specifier [30, 0] - [30, 6])
+      type: (primitive_type [30, 7] - [30, 10])
+      declarator: (identifier [30, 11] - [30, 20]))
+    (declaration [31, 0] - [31, 21]
+      (storage_class_specifier [31, 0] - [31, 6])
+      type: (primitive_type [31, 7] - [31, 10])
+      declarator: (identifier [31, 11] - [31, 20]))
+    (declaration [32, 0] - [32, 26]
+      (storage_class_specifier [32, 0] - [32, 6])
+      type: (primitive_type [32, 7] - [32, 10])
+      declarator: (identifier [32, 11] - [32, 25]))
+    (declaration [33, 0] - [33, 27]
+      (storage_class_specifier [33, 0] - [33, 6])
+      type: (primitive_type [33, 7] - [33, 10])
+      declarator: (identifier [33, 11] - [33, 26]))
+    (declaration [34, 0] - [34, 24]
+      (storage_class_specifier [34, 0] - [34, 6])
+      type: (primitive_type [34, 7] - [34, 10])
+      declarator: (identifier [34, 11] - [34, 23]))
+    (declaration [35, 0] - [35, 25]
+      (storage_class_specifier [35, 0] - [35, 6])
+      type: (primitive_type [35, 7] - [35, 10])
+      declarator: (identifier [35, 11] - [35, 24]))
+    (declaration [36, 0] - [36, 32]
+      (storage_class_specifier [36, 0] - [36, 6])
+      type: (primitive_type [36, 7] - [36, 11])
+      declarator: (identifier [36, 12] - [36, 31]))
+    (declaration [37, 0] - [37, 24]
+      (storage_class_specifier [37, 0] - [37, 6])
+      type: (primitive_type [37, 7] - [37, 11])
+      declarator: (identifier [37, 12] - [37, 23]))
+    (declaration [38, 0] - [38, 23]
+      (storage_class_specifier [38, 0] - [38, 6])
+      type: (primitive_type [38, 7] - [38, 11])
+      declarator: (identifier [38, 12] - [38, 22]))
+    (declaration [39, 0] - [39, 16]
+      (storage_class_specifier [39, 0] - [39, 6])
+      type: (primitive_type [39, 7] - [39, 11])
+      declarator: (identifier [39, 12] - [39, 15]))
+    (declaration [40, 0] - [40, 24]
+      (storage_class_specifier [40, 0] - [40, 6])
+      type: (primitive_type [40, 7] - [40, 11])
+      declarator: (identifier [40, 12] - [40, 23]))
+    (declaration [41, 0] - [41, 28]
+      (storage_class_specifier [41, 0] - [41, 6])
+      type: (primitive_type [41, 7] - [41, 11])
+      declarator: (identifier [41, 12] - [41, 27]))
+    (declaration [42, 0] - [42, 25]
+      (storage_class_specifier [42, 0] - [42, 6])
+      type: (primitive_type [42, 7] - [42, 11])
+      declarator: (identifier [42, 12] - [42, 24]))
+    (declaration [43, 0] - [43, 32]
+      (storage_class_specifier [43, 0] - [43, 6])
+      type: (primitive_type [43, 7] - [43, 11])
+      declarator: (identifier [43, 12] - [43, 31]))
+    (declaration [44, 0] - [44, 33]
+      (storage_class_specifier [44, 0] - [44, 6])
+      type: (primitive_type [44, 7] - [44, 10])
+      declarator: (identifier [44, 11] - [44, 32]))
+    (declaration [45, 0] - [45, 34]
+      (storage_class_specifier [45, 0] - [45, 6])
+      type: (primitive_type [45, 7] - [45, 11])
+      declarator: (identifier [45, 12] - [45, 33])))
+  (comment [47, 7] - [47, 20]))

@@ -1,0 +1,26 @@
+(translation_unit [0, 0] - [5, 0]
+  (preproc_include [0, 0] - [1, 0]
+    path: (string_literal [0, 9] - [0, 24]))
+  (function_definition [1, 0] - [1, 20]
+    type: (primitive_type [1, 0] - [1, 4])
+    declarator: (function_declarator [1, 5] - [1, 16]
+      declarator: (identifier [1, 5] - [1, 14])
+      parameters: (parameter_list [1, 14] - [1, 16]))
+    body: (compound_statement [1, 17] - [1, 20]))
+  (function_definition [2, 0] - [4, 1]
+    type: (type_identifier [2, 0] - [2, 7])
+    declarator: (function_declarator [2, 8] - [2, 49]
+      declarator: (identifier [2, 8] - [2, 16])
+      parameters: (parameter_list [2, 16] - [2, 49]
+        (parameter_declaration [2, 17] - [2, 26]
+          type: (type_identifier [2, 17] - [2, 24])
+          declarator: (identifier [2, 25] - [2, 26]))
+        (parameter_declaration [2, 28] - [2, 37]
+          type: (type_identifier [2, 28] - [2, 35])
+          declarator: (identifier [2, 36] - [2, 37]))
+        (parameter_declaration [2, 39] - [2, 48]
+          type: (type_identifier [2, 39] - [2, 46])
+          declarator: (identifier [2, 47] - [2, 48]))))
+    body: (compound_statement [2, 50] - [4, 1]
+      (return_statement [3, 4] - [3, 13]
+        (number_literal [3, 11] - [3, 12])))))

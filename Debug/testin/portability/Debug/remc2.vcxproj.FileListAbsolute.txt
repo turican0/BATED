@@ -1,0 +1,2 @@
+C:\prenos\remc2-merging\Debug\config.ini
+C:\prenos\remc2-development\Debug\config.ini
